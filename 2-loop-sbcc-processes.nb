@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    420074,      12153]
-NotebookOptionsPosition[    413966,      12034]
-NotebookOutlinePosition[    414360,      12050]
-CellTagsIndexPosition[    414317,      12047]
+NotebookDataLength[    422462,      12216]
+NotebookOptionsPosition[    416256,      12096]
+NotebookOutlinePosition[    416650,      12112]
+CellTagsIndexPosition[    416607,      12109]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -12026,7 +12026,69 @@ Cell[BoxData[
    3.933412288159762*^9, 3.9334123361923532`*^9, 3.9334124037582483`*^9, 
    3.933416202848118*^9, 3.933416235634486*^9},
  CellLabel->"Out[6]=",ExpressionUUID->"0acbc3fd-cbf9-49da-bddf-69a400038a7c"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[{
+ "Instead of ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["p", "TI"], "\[Mu]"], TraditionalForm], "errors" -> {}, 
+     "input" -> "p^{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "8015c69d-2c8a-4af5-9187-1ba427859102"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["q", "TI"], "\[Mu]"], TraditionalForm], "errors" -> {}, 
+     "input" -> "q^{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "73a8050d-3d84-4ff1-bd3c-47ae9e8209c7"],
+ " for Passarino Veltman, use ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SuperscriptBox[
+          StyleBox["p", "TI"], "\[Mu]"], "-", 
+         SuperscriptBox[
+          StyleBox["q", "TI"], "\[Mu]"]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "p^{\\mu}-q^{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "bcd55def-1fa0-4de2-8292-9b10d8dc9128"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SuperscriptBox[
+        StyleBox["p", "TI"], "\[Mu]"], TraditionalForm], "errors" -> {}, 
+     "input" -> "p^{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "494fe4bc-6bb4-4664-a2d2-b868bf628b91"],
+ ". Note ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", 
+            RowBox[{"{", 
+              StyleBox["r", "TI"], "}"}]}]], "\[LongEqual]", 
+         SubscriptBox["\[Sigma]", "\[Mu]\[Nu]"], 
+         SuperscriptBox[
+          StyleBox["r", "TI"], "\[Nu]"]}], TraditionalForm], "errors" -> {}, 
+     "input" -> "\\sigma_{\\mu \\{r\\}}=\\sigma_{\\mu \\nu}r^{\\nu}", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "e255b63f-db1d-48d1-b989-7a8066ba3cd2"]
+}], "Text",
+ CellChangeTimes->{{3.934275880579599*^9, 3.93427597375907*^9}, {
+  3.934276017899415*^9, 3.93427602320413*^9}, {3.934276162497779*^9, 
+  3.9342761680501432`*^9}},ExpressionUUID->"54c76296-a692-484d-a4ed-\
+45fc8a10b71d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -12145,12 +12207,13 @@ Cell[383868, 11255, 7760, 194, 189, "Output",ExpressionUUID->"cb66719a-3328-4fc3
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[391665, 11454, 1314, 38, 114, "Input",ExpressionUUID->"841ff892-84ce-4c78-9ea2-5f18f324e94f"],
-Cell[392982, 11494, 11523, 276, 249, "Output",ExpressionUUID->"4486c192-c723-48ea-8495-c861e1888a42"]
+Cell[392982, 11494, 11523, 276, 271, "Output",ExpressionUUID->"4486c192-c723-48ea-8495-c861e1888a42"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[404542, 11775, 1878, 49, 80, "Input",ExpressionUUID->"cdfb1b0a-e85a-41cd-b111-35bad079e10b"],
-Cell[406423, 11826, 7479, 201, 392, "Output",ExpressionUUID->"0acbc3fd-cbf9-49da-bddf-69a400038a7c"]
-}, Open  ]]
+Cell[406423, 11826, 7479, 201, 368, "Output",ExpressionUUID->"0acbc3fd-cbf9-49da-bddf-69a400038a7c"]
+}, Open  ]],
+Cell[413917, 12030, 2287, 60, 40, "Text",ExpressionUUID->"54c76296-a692-484d-a4ed-45fc8a10b71d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
