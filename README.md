@@ -10,3 +10,5 @@ Files contained are:
 Automated_sbcc_processes.nb - a mathematica file that automates the Package-X 1 loop calculations
 
 2-loop-sbcc_processes.nb - a mathematica file that calculated and manipulates the numerators for some 2 loop processes
+
+There is also a folder of redundant files
