@@ -1,4 +1,4 @@
-Loop calculations for the nonleptonic parts of b to s decays medaited by 2 c quarks
+Loop calculations for the nonleptonic parts of b to s decays mediated by 2 c quarks
 are stored here
 
 Files contained are:
@@ -9,4 +9,4 @@ Files contained are:
 
 Automated_sbcc_processes.nb - a mathematica file that automates the Package-X 1 loop calculations
 
-2-loop-sbcc_processes.nb - a mathematica file that calculated and manipulates the numerators for some 2 loop proces
+2-loop-sbcc_processes.nb - a mathematica file that calculated and manipulates the numerators for some 2 loop processes
