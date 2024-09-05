@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    560066,      15214]
-NotebookOptionsPosition[    550220,      15044]
-NotebookOutlinePosition[    550614,      15060]
-CellTagsIndexPosition[    550571,      15057]
+NotebookDataLength[    562617,      15274]
+NotebookOptionsPosition[    552541,      15100]
+NotebookOutlinePosition[    552935,      15116]
+CellTagsIndexPosition[    552892,      15113]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -15036,7 +15036,63 @@ Cell[TextData[{
  CellChangeTimes->{{3.9345348790675917`*^9, 3.934534952072405*^9}, {
   3.934535015593931*^9, 
   3.9345350670028067`*^9}},ExpressionUUID->"b9edadcd-167e-44aa-8c50-\
-5a4371aa43b8"]
+5a4371aa43b8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", "\"\<LiteRed.m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.934540585540966*^9, 3.934540636275991*^9}, {
+  3.9345406819235163`*^9, 3.934540744500636*^9}, {3.9345407846810513`*^9, 
+  3.934540839417014*^9}, {3.9345410783209476`*^9, 3.934541090489683*^9}, {
+  3.934541150387958*^9, 3.934541238170265*^9}, {3.934541277958083*^9, 
+  3.9345412996779222`*^9}, {3.9345413336336184`*^9, 3.93454143054247*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"**************** \"\>", "\[InvisibleSpace]", 
+   StyleBox["\<\"LiteRed v1.83\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]],
+    FrontFaceColor->RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]],
+    BackFaceColor->RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]],
+    GraphicsColor->RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]],
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]]], 
+   "\[InvisibleSpace]", "\<\" ********************\\nAuthor: Roman N. Lee, \
+Budker Institute of Nuclear Physics, Novosibirsk.\\nRelease Date: \
+11.01.2020\\nLiteRed stands for Loop InTEgrals REDuction.\\nThe package is \
+designed for the search and application of the Integration-By-Part reduction \
+rules. It also contains some other useful tools.\\nInput file timestamp: Mon \
+11 Jan 2021 10:19:15\\nSee ?LiteRed`* for a list of functions. \"\>"}],
+  SequenceForm["**************** ", 
+   Style["LiteRed v1.83", {Bold, 
+     RGBColor[1, 
+      Rational[1, 3], 
+      Rational[1, 3]]}], 
+   " ********************\nAuthor: Roman N. Lee, Budker Institute of Nuclear \
+Physics, Novosibirsk.\nRelease Date: 11.01.2020\nLiteRed stands for Loop \
+InTEgrals REDuction.\nThe package is designed for the search and application \
+of the Integration-By-Part reduction rules. It also contains some other \
+useful tools.\nInput file timestamp: Mon 11 Jan 2021 10:19:15\nSee ?LiteRed`* \
+for a list of functions. "],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.93454155627742*^9, 3.934541559938005*^9}},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"4a23ac3a-b864-4dff-85c4-2f2dbd2dff20"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -15206,12 +15262,16 @@ Cell[520732, 14212, 9479, 260, 388, "Output",ExpressionUUID->"efc5d76b-a5e8-4b50
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[530248, 14477, 7518, 221, 323, "Input",ExpressionUUID->"0e40848b-c49a-c249-9069-b196603e0256"],
-Cell[537769, 14700, 11636, 314, 431, "Output",ExpressionUUID->"88624f42-356a-49e7-a175-b8c5e0c59e5a"]
+Cell[537769, 14700, 11636, 314, 453, "Output",ExpressionUUID->"88624f42-356a-49e7-a175-b8c5e0c59e5a"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[549454, 15020, 181, 3, 45, "Subsubsection",ExpressionUUID->"21f31522-efb9-4bfa-88ee-97f4e42308f2"],
-Cell[549638, 15025, 530, 13, 58, "Text",ExpressionUUID->"b9edadcd-167e-44aa-8c50-5a4371aa43b8"]
+Cell[549638, 15025, 530, 13, 58, "Text",ExpressionUUID->"b9edadcd-167e-44aa-8c50-5a4371aa43b8"],
+Cell[CellGroupData[{
+Cell[550193, 15042, 513, 7, 29, "Input",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
+Cell[550709, 15051, 1768, 42, 156, "Print",ExpressionUUID->"4a23ac3a-b864-4dff-85c4-2f2dbd2dff20"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
