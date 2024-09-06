@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    562739,      15276]
-NotebookOptionsPosition[    552663,      15102]
-NotebookOutlinePosition[    553057,      15118]
-CellTagsIndexPosition[    553014,      15115]
+NotebookDataLength[    624535,      16817]
+NotebookOptionsPosition[    613370,      16627]
+NotebookOutlinePosition[    613764,      16643]
+CellTagsIndexPosition[    613721,      16640]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,10 +60,10 @@ Cell[BoxData["\<\"\\!\\(\\*TemplateBox[List[\\\"\\\\\\\"Package-X v2.1.1 \
 \\\"paclet:X/guide/PackageX\\\"], \\\"HyperlinkPaclet\\\"]], \\\"RowDefault\\\
 \"]\\)\"\>"], "Print",
  CellChangeTimes->{3.9343508319339523`*^9, 3.934446047444501*^9, 
-  3.9345231187999563`*^9},
+  3.9345231187999563`*^9, 3.9346031936905203`*^9},
  CellLabel->
   "During evaluation of \
-In[2]:=",ExpressionUUID->"955bb0d3-fa6f-453f-a8cf-b878e168cb05"]
+In[1]:=",ExpressionUUID->"aa866197-a5b1-4c7d-9fcc-5439d88167ef"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -11619,7 +11619,7 @@ Cell[BoxData[
    3.933139142976988*^9, 3.9331392379653406`*^9}, {3.9331394275717487`*^9, 
    3.933139435242813*^9}, 3.933139487780016*^9, {3.93341255700932*^9, 
    3.933412576744526*^9}, {3.933412608891292*^9, 3.933412616450631*^9}},
- CellLabel->"In[23]:=",ExpressionUUID->"4e1ba30c-d2e1-e841-bd37-33d2b19d75b2"],
+ CellLabel->"In[2]:=",ExpressionUUID->"4e1ba30c-d2e1-e841-bd37-33d2b19d75b2"],
 
 Cell[BoxData[
  RowBox[{"-", 
@@ -12151,8 +12151,9 @@ Cell[BoxData[
        SubscriptBox["r", "\[Mu]"]}]}], ")"}]}], ")"}]}]], "Output",
  CellChangeTimes->{3.9331392677137628`*^9, 3.9331394370480957`*^9, 
   3.933139490769497*^9, 3.933412578519433*^9, 3.933412617695956*^9, 
-  3.934350953130867*^9, 3.934449334476684*^9, 3.934531258438199*^9},
- CellLabel->"Out[23]=",ExpressionUUID->"48a561ea-24c6-4c9a-b6c4-a75ce7f43fd9"]
+  3.934350953130867*^9, 3.934449334476684*^9, 3.934531258438199*^9, 
+  3.934603204417864*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"bfe1ab23-d31d-4170-9f9a-aa6b11f358fc"]
 }, Open  ]],
 
 Cell["Including external propagators", "Text",
@@ -12177,7 +12178,7 @@ Cell[BoxData[
     "FermionLineExpand"}], "//", "Simplify"}]}]], "Input",
  CellChangeTimes->{{3.933409312744182*^9, 3.933409391972754*^9}, {
    3.9334125947310467`*^9, 3.9334126009475317`*^9}, 3.933412742848449*^9},
- CellLabel->"In[24]:=",ExpressionUUID->"1db3b0cd-b692-4f78-94d1-b36b35920922"],
+ CellLabel->"In[3]:=",ExpressionUUID->"1db3b0cd-b692-4f78-94d1-b36b35920922"],
 
 Cell[BoxData[
  RowBox[{
@@ -12417,8 +12418,9 @@ Cell[BoxData[
    SubscriptBox["r", "\[Mu]"]}]}]], "Output",
  CellChangeTimes->{{3.933409334953978*^9, 3.9334093924476624`*^9}, {
    3.9334126018812313`*^9, 3.93341262454468*^9}, 3.933412743639469*^9, 
-   3.934350957242052*^9, 3.934449338109076*^9, 3.934531263934454*^9},
- CellLabel->"Out[24]=",ExpressionUUID->"e30c7e6a-3663-4fa8-8744-54a8bcd0e08b"]
+   3.934350957242052*^9, 3.934449338109076*^9, 3.934531263934454*^9, 
+   3.9346032102347307`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"043f1901-29e4-40b4-aeea-30bc2ccd5416"]
 }, Open  ]],
 
 Cell["Combining with denominator and performing replacements", "Text",
@@ -12490,7 +12492,7 @@ Cell[BoxData[
           ")"}]}]}]}], "}"}], "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.933413054659635*^9, 3.933413057338068*^9}, 
    3.934350907077057*^9, 3.9345312515022507`*^9},
- CellLabel->"In[25]:=",ExpressionUUID->"681cb94e-d622-4dfb-9727-6bb8c07c881e"],
+ CellLabel->"In[4]:=",ExpressionUUID->"681cb94e-d622-4dfb-9727-6bb8c07c881e"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12652,8 +12654,8 @@ Cell[BoxData[
        SubscriptBox["r", "\[Mu]"]}]}], ")"}]}]}], "}"}]], "Output",
  CellChangeTimes->{
   3.933413062171112*^9, 3.934350962035082*^9, 3.934449342888917*^9, {
-   3.93453125316968*^9, 3.9345312694443073`*^9}},
- CellLabel->"Out[25]=",ExpressionUUID->"79117e4f-d75a-4b6b-9065-304c97d19e4d"]
+   3.93453125316968*^9, 3.9345312694443073`*^9}, 3.934603215417791*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"1c426b3f-5209-497d-839e-b942e4b8e468"]
 }, Open  ]],
 
 Cell["Collecting terms", "Text",
@@ -12697,7 +12699,7 @@ Cell[BoxData[
    3.934366304903063*^9, 3.9343663086590176`*^9}, {3.934449805688815*^9, 
    3.934449814610036*^9}, {3.934449846612872*^9, 3.9344499580301743`*^9}, {
    3.934531297662792*^9, 3.934531323917891*^9}},
- CellLabel->"In[26]:=",ExpressionUUID->"1c26b24c-7730-4c04-be7b-7b53c7c19878"],
+ CellLabel->"In[5]:=",ExpressionUUID->"1c26b24c-7730-4c04-be7b-7b53c7c19878"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12851,10 +12853,11 @@ Cell[BoxData[
      SubscriptBox["r", "\[Mu]"]}], 
     RowBox[{"mb", " ", "P2", " ", 
      SuperscriptBox["P3", "2"], " ", "P4"}]]}], "}"}]], "Output",
- CellChangeTimes->{3.934449959319227*^9, 3.934531324525324*^9},
- CellLabel->"Out[26]=",ExpressionUUID->"e60a747a-7210-4c30-b202-bc3a43eea14c"]
+ CellChangeTimes->{3.934449959319227*^9, 3.934531324525324*^9, 
+  3.93460321839098*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"4c2a8a4f-119d-433f-99d4-b3673463bf56"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -12900,7 +12903,7 @@ Cell[BoxData[
        SubscriptBox["\[Gamma]", "\[Alpha]"], ",", 
        "\[DoubleStruckCapitalP]L"}], "]"}], "]"}], "]"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.933412767813451*^9, 3.9334127857070417`*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"655c6719-2596-40f7-b49f-1ef64f9c8b87"],
+ CellLabel->"In[6]:=",ExpressionUUID->"655c6719-2596-40f7-b49f-1ef64f9c8b87"],
 
 Cell[BoxData[
  RowBox[{
@@ -12964,8 +12967,9 @@ Cell[BoxData[
           RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
         RowBox[{"r", ".", "r"}]}]}], ")"}]}]}], ")"}]}]], "Output",
  CellChangeTimes->{3.933412786756734*^9, 3.933416224032065*^9, 
-  3.934350844728016*^9, 3.934449358157172*^9, 3.9345231352958384`*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"511ba625-abfc-4e8a-9935-4c6ea13dd53d"]
+  3.934350844728016*^9, 3.934449358157172*^9, 3.9345231352958384`*^9, 
+  3.934603232990632*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"86a2b9ea-c509-4792-8190-41b85c43842d"]
 }, Open  ]],
 
 Cell["Including external propagators", "Text",
@@ -12991,7 +12995,7 @@ Cell[BoxData[
    3.933398983739533*^9, 3.933399063196714*^9}, {3.933399234833562*^9, 
    3.933399290388742*^9}, {3.933408605655908*^9, 3.93340865727768*^9}, {
    3.933410249078249*^9, 3.93341027665123*^9}, 3.933412962095851*^9},
- CellLabel->"In[4]:=",ExpressionUUID->"c4a4e870-e299-4841-9267-e4c958c4c3a7"],
+ CellLabel->"In[7]:=",ExpressionUUID->"c4a4e870-e299-4841-9267-e4c958c4c3a7"],
 
 Cell[BoxData[
  RowBox[{
@@ -13187,8 +13191,8 @@ Cell[BoxData[
    3.9333992362905416`*^9, 3.933399291022215*^9}, {3.933408610487586*^9, 
    3.933408637196704*^9}, 3.933410278414564*^9, 3.933412963293939*^9, 
    3.9334162290230203`*^9, 3.9343508514094296`*^9, 3.934449360805448*^9, 
-   3.934523137942851*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"6df5d534-bcdc-4256-b883-68ec9704453a"]
+   3.934523137942851*^9, 3.934603236494397*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"ffb72c20-0420-4f26-b76d-399949cc70f4"]
 }, Open  ]],
 
 Cell["Combining with the denominator and performing replacements ", "Text",
@@ -13262,7 +13266,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.933410305866954*^9, 3.933410307986758*^9}, {
    3.933411886750293*^9, 3.933411934189202*^9}, {3.933412023926758*^9, 
    3.933412064817603*^9}, 3.934530984138051*^9},
- CellLabel->"In[19]:=",ExpressionUUID->"841ff892-84ce-4c78-9ea2-5f18f324e94f"],
+ CellLabel->"In[8]:=",ExpressionUUID->"841ff892-84ce-4c78-9ea2-5f18f324e94f"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -13413,8 +13417,9 @@ Cell[BoxData[
  CellChangeTimes->{
   3.933410310666163*^9, 3.933411936665688*^9, 3.933412067820891*^9, 
    3.933416233110677*^9, {3.9343508478921127`*^9, 3.934350855056801*^9}, 
-   3.934449365037208*^9, 3.934523141870171*^9, 3.9345309890677137`*^9},
- CellLabel->"Out[19]=",ExpressionUUID->"19a47a73-aa67-491d-98d3-982f5bbf9954"]
+   3.934449365037208*^9, 3.934523141870171*^9, 3.9345309890677137`*^9, 
+   3.9346032407782393`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"b7758f8b-fbde-4b87-a08b-fe2dc2e75496"]
 }, Open  ]],
 
 Cell["Collecting terms", "Text",
@@ -13492,7 +13497,7 @@ Cell[BoxData[
    3.9343507102809143`*^9}, {3.9343662218379498`*^9, 
    3.9343662309518757`*^9}, {3.934449761263112*^9, 3.934449779785645*^9}, 
    3.9345310318436937`*^9},
- CellLabel->"In[20]:=",ExpressionUUID->"cdfb1b0a-e85a-41cd-b111-35bad079e10b"],
+ CellLabel->"In[9]:=",ExpressionUUID->"cdfb1b0a-e85a-41cd-b111-35bad079e10b"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -13664,10 +13669,10 @@ Cell[BoxData[
    3.933416202848118*^9, 3.933416235634486*^9, 3.934350601103594*^9, 
    3.9343507120127087`*^9, 3.9343508629377346`*^9, 3.9343662316384106`*^9, 
    3.934449367856846*^9, 3.934449781938542*^9, 3.934523145086073*^9, 
-   3.934531033077009*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"92f1a0e7-1b3b-4156-9170-59ce8b5babff"]
+   3.934531033077009*^9, 3.93460324410988*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"9c9501e1-54c2-48d3-ab5a-d87fc9f1230e"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -13721,6 +13726,11 @@ Cell[TextData[{
  CellChangeTimes->{{3.9345310754471893`*^9, 
   3.9345310887376423`*^9}},ExpressionUUID->"a56f58ac-f19e-4faa-b253-\
 f900687bd08c"],
+
+Cell["Finding the replacement rules:", "Text",
+ CellChangeTimes->{{3.934614578591073*^9, 
+  3.9346145906948757`*^9}},ExpressionUUID->"42e7153c-f394-4b6f-93ef-\
+36bfb9e676af"],
 
 Cell[CellGroupData[{
 
@@ -13987,6 +13997,590 @@ Cell[TextData[{
   3.934531129270636*^9},ExpressionUUID->"02288e0c-3234-4b5c-9a89-\
 dadc42256a09"],
 
+Cell[TextData[{
+ "Replacing ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SubscriptBox[
+        StyleBox["l", "TI"], "\[Mu]"], TraditionalForm], "errors" -> {}, 
+     "input" -> "l_{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "9c8a9a54-0c8f-473c-a3f9-572ef6dba28e"],
+ ",",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       SubscriptBox[
+        StyleBox["r", "TI"], "\[Mu]"], TraditionalForm], "errors" -> {}, 
+     "input" -> "r_{\\mu}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "69cb05f4-a121-4a31-a9f9-e1484d7e4641"],
+ " and l and r slash terms"
+}], "Text",
+ CellChangeTimes->{{3.934614602862146*^9, 3.9346146474830217`*^9}, {
+  3.934614727171906*^9, 
+  3.934614740055359*^9}},ExpressionUUID->"74897fb0-11a3-44e7-89da-\
+e7ef478ccb53"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"jIntegralE0IScalar", "=", 
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"jIntegralE0ISimple", "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["l", "\[Mu]"], "->", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["p", "\[Mu]"], 
+           RowBox[{"(", 
+            FractionBox["P7", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["mb", "2"]}], "-", 
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SubscriptBox["p", "\[Mu]"], "-", 
+             SubscriptBox["q", "\[Mu]"]}], ")"}], 
+           FractionBox["1", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               FractionBox["1", "2"], 
+               SuperscriptBox["mb", "2"]}], "-", 
+              RowBox[{
+               FractionBox["1", "2"], 
+               SuperscriptBox["q", "2"]}]}], ")"}]], 
+           RowBox[{"(", 
+            RowBox[{"P7", "+", 
+             RowBox[{
+              FractionBox["1", "2"], 
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P2", "-", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+             RowBox[{
+              SuperscriptBox["mb", "2"], 
+              FractionBox["P7", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  FractionBox["1", "2"], 
+                  SuperscriptBox["mb", "2"]}], "-", 
+                 RowBox[{
+                  FractionBox["1", "2"], 
+                  SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}], ",", 
+        
+        RowBox[{
+         SubscriptBox["r", "\[Mu]"], "->", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["p", "\[Mu]"], 
+           RowBox[{"(", 
+            FractionBox["P13", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["mb", "2"]}], "-", 
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SubscriptBox["p", "\[Mu]"], "-", 
+             SubscriptBox["q", "\[Mu]"]}], ")"}], 
+           FractionBox["1", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               FractionBox["1", "2"], 
+               SuperscriptBox["mb", "2"]}], "-", 
+              RowBox[{
+               FractionBox["1", "2"], 
+               SuperscriptBox["q", "2"]}]}], ")"}]], 
+           RowBox[{"(", 
+            RowBox[{"P13", "+", 
+             RowBox[{
+              FractionBox["1", "2"], 
+              RowBox[{"(", 
+               RowBox[{"P12", "-", "P3", "-", "P1", "+", "P2"}], ")"}]}], "-", 
+             RowBox[{
+              SuperscriptBox["mb", "2"], 
+              FractionBox["P13", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  FractionBox["1", "2"], 
+                  SuperscriptBox["mb", "2"]}], "-", 
+                 RowBox[{
+                  FractionBox["1", "2"], 
+                  SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}]}], 
+       "}"}]}], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Sigma]", 
+         RowBox[{"\[Mu]", ",", 
+          RowBox[{"{", "r", "}"}]}]], "->", 
+        RowBox[{
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", ",", "\[Nu]"}]], 
+         SubscriptBox["r", "\[Nu]"]}]}], ",", 
+       RowBox[{
+        SubscriptBox["\[Sigma]", 
+         RowBox[{"\[Mu]", ",", 
+          RowBox[{"{", "l", "}"}]}]], "->", 
+        RowBox[{
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", ",", "\[Nu]"}]], 
+         SubscriptBox["l", "\[Nu]"]}]}]}], "}"}]}], "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["l", "\[Nu]"], "->", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["p", "\[Nu]"], 
+         RowBox[{"(", 
+          FractionBox["P7", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              FractionBox["1", "2"], 
+              SuperscriptBox["mb", "2"]}], "-", 
+             RowBox[{
+              FractionBox["1", "2"], 
+              SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SubscriptBox["p", "\[Nu]"], "-", 
+           SubscriptBox["q", "\[Nu]"]}], ")"}], 
+         FractionBox["1", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             FractionBox["1", "2"], 
+             SuperscriptBox["mb", "2"]}], "-", 
+            RowBox[{
+             FractionBox["1", "2"], 
+             SuperscriptBox["q", "2"]}]}], ")"}]], 
+         RowBox[{"(", 
+          RowBox[{"P7", "+", 
+           RowBox[{
+            FractionBox["1", "2"], 
+            RowBox[{"(", 
+             RowBox[{"P1", "-", "P2", "-", 
+              SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+           RowBox[{
+            SuperscriptBox["mb", "2"], 
+            FractionBox["P7", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["mb", "2"]}], "-", 
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}], ",", 
+      RowBox[{
+       SubscriptBox["r", "\[Nu]"], "->", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["p", "\[Nu]"], 
+         RowBox[{"(", 
+          FractionBox["P13", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              FractionBox["1", "2"], 
+              SuperscriptBox["mb", "2"]}], "-", 
+             RowBox[{
+              FractionBox["1", "2"], 
+              SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SubscriptBox["p", "\[Nu]"], "-", 
+           SubscriptBox["q", "\[Nu]"]}], ")"}], 
+         FractionBox["1", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             FractionBox["1", "2"], 
+             SuperscriptBox["mb", "2"]}], "-", 
+            RowBox[{
+             FractionBox["1", "2"], 
+             SuperscriptBox["q", "2"]}]}], ")"}]], 
+         RowBox[{"(", 
+          RowBox[{"P13", "+", 
+           RowBox[{
+            FractionBox["1", "2"], 
+            RowBox[{"(", 
+             RowBox[{"P12", "-", "P3", "-", "P1", "+", "P2"}], ")"}]}], "-", 
+           RowBox[{
+            SuperscriptBox["mb", "2"], 
+            FractionBox["P13", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["mb", "2"]}], "-", 
+               RowBox[{
+                FractionBox["1", "2"], 
+                SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}]}], 
+     "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9343663260105*^9, 3.934366330516201*^9}, {
+   3.934447231285388*^9, 3.9344472755354137`*^9}, 3.9344501832165737`*^9, {
+   3.934523090775906*^9, 3.93452309989642*^9}, {3.934523158631206*^9, 
+   3.9345231617390757`*^9}, {3.9345314322809362`*^9, 3.934531438863494*^9}, {
+   3.934603363019697*^9, 3.934603381891572*^9}, 3.934604749303804*^9, {
+   3.934604782907728*^9, 3.9346047893392963`*^9}, {3.934605558774373*^9, 
+   3.934605585126998*^9}, 3.934605630142709*^9, {3.934605744656324*^9, 
+   3.934605759198345*^9}, {3.934608376876637*^9, 3.934608399262824*^9}, {
+   3.934608554409997*^9, 3.934608569641171*^9}, {3.934609069999126*^9, 
+   3.9346090755277147`*^9}, 3.934609268903058*^9, 3.934609353210885*^9, {
+   3.934609502864026*^9, 3.93460955627701*^9}, {3.9346096094325657`*^9, 
+   3.934609611474391*^9}, 3.934613630009474*^9, {3.9346136624598627`*^9, 
+   3.9346137665728903`*^9}, {3.934613815896146*^9, 3.9346138435700617`*^9}, {
+   3.934613877311829*^9, 3.934613926792891*^9}, {3.9346141493227043`*^9, 
+   3.934614189004126*^9}, {3.934614272404827*^9, 3.934614291016552*^9}, {
+   3.934614333028124*^9, 3.934614383012356*^9}},
+ CellLabel->
+  "In[113]:=",ExpressionUUID->"0e40848b-c49a-c249-9069-b196603e0256"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"-", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SuperscriptBox["mb", "2"], " ", "P2", " ", 
+      SuperscriptBox["P3", "2"], " ", "P4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["mb", "2"], "-", 
+         SuperscriptBox["q", "2"]}], ")"}], "2"]}]], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"8", " ", 
+           SuperscriptBox["mc", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"P13", "+", "P7"}], ")"}]}], "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"P13", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"P2", "-", "P4"}], ")"}], " ", "P7"}]}], ")"}]}]}], 
+         ")"}], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["mb", "2"], "-", 
+           SuperscriptBox["q", "2"]}], ")"}], "2"], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", 
+         ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}]}], "+", 
+       RowBox[{"mb", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         "\[DoubleStruckCapitalP]R", ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
+               ")"}]}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P12", "-", 
+                RowBox[{"4", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+           SubscriptBox["p", "\[Mu]"]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P12", "+", 
+                RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], 
+             "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P12", "+", 
+                RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+           SubscriptBox["q", "\[Mu]"]}]}], ")"}]}], "-", 
+       RowBox[{"mb", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         "\[DoubleStruckCapitalP]R", ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "-", 
+                RowBox[{"4", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["p", "\[Mu]"]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P2", "-", 
+                RowBox[{"2", " ", "P7"}], "-", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "-", 
+                RowBox[{"2", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["q", "\[Mu]"]}]}], ")"}]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "-", "\[ScriptD]"}], ")"}], " ", "mb", " ", 
+        RowBox[{"(", 
+         RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
+         ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
+               ")"}]}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P12", "-", 
+                RowBox[{"4", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+           SubscriptBox["p", "\[Nu]"]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P12", "+", 
+                RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], 
+             "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P12", "+", 
+                RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+           SubscriptBox["q", "\[Nu]"]}]}], ")"}]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "-", "\[ScriptD]"}], ")"}], " ", "mb", " ", 
+        RowBox[{"(", 
+         RowBox[{"P2", "-", "P4"}], ")"}], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
+         ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "-", 
+                RowBox[{"4", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["p", "\[Nu]"]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P1", "-", "P2", "-", 
+                RowBox[{"2", " ", "P7"}], "-", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P1"}], "+", "P2", "-", 
+                RowBox[{"2", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["q", "\[Nu]"]}]}], ")"}]}], "+", 
+       RowBox[{"4", " ", "\[ImaginaryI]", " ", "mb", " ", 
+        SuperscriptBox["mc", "2"], " ", 
+        RowBox[{"\[LeftAngleBracket]", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{
+           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+         SubscriptBox["\[Sigma]", 
+          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
+         ",", 
+         RowBox[{"\[ScriptU]", "[", 
+          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P12", "-", "P3", "-", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P12"}], "-", 
+                RowBox[{"4", " ", "P13"}], "+", "P3", "-", 
+                RowBox[{"4", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["p", "\[Nu]"]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"P12", "+", 
+                RowBox[{"2", " ", "P13"}], "-", "P3", "+", 
+                RowBox[{"2", " ", "P7"}], "-", 
+                SuperscriptBox["q", "2"]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P12"}], "+", 
+                RowBox[{"2", " ", "P13"}], "+", "P3", "+", 
+                RowBox[{"2", " ", "P7"}], "+", 
+                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+           SubscriptBox["q", "\[Nu]"]}]}], ")"}]}]}], ")"}]}]}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.9343663330765495`*^9, 3.93444727637388*^9, 3.934450184096891*^9, 
+   3.9345314573347807`*^9, 3.93460329384585*^9, 3.934603384190709*^9, 
+   3.934604762205748*^9, 3.934604803275715*^9, 3.934605570509162*^9, 
+   3.9346056453689537`*^9, 3.934605772200526*^9, 3.934608583077276*^9, 
+   3.93460909234977*^9, 3.934609309642205*^9, 3.934609379573804*^9, 
+   3.9346095779621*^9, 3.934609627269602*^9, 3.9346136404187717`*^9, {
+   3.934613710533115*^9, 3.9346137675605927`*^9}, {3.934613820048551*^9, 
+   3.934613844796256*^9}, {3.9346138796318398`*^9, 3.93461392707868*^9}, {
+   3.934614157905635*^9, 3.934614190064888*^9}, {3.934614275563157*^9, 
+   3.934614292165194*^9}, {3.93461436873732*^9, 3.934614384190585*^9}, 
+   3.9346145408368177`*^9},
+ CellLabel->
+  "Out[113]=",ExpressionUUID->"c24acdf0-93cc-4df4-b8b6-24fe1c392c74"]
+}, Open  ]],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -14207,10 +14801,13 @@ Cell[BoxData[
                 SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}]}], 
      "}"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.934366244017164*^9, 3.934366281017763*^9}, {
-  3.934450008106695*^9, 3.934450142666996*^9}, {3.93453399190609*^9, 
-  3.934533997921743*^9}, {3.934603097373207*^9, 
-  3.934603183100288*^9}},ExpressionUUID->"b8c19058-9b3a-fe47-bbca-\
-b3b9e453e994"],
+   3.934450008106695*^9, 3.934450142666996*^9}, {3.93453399190609*^9, 
+   3.934533997921743*^9}, {3.934603097373207*^9, 3.934603183100288*^9}, {
+   3.934603291910009*^9, 3.934603314283643*^9}, 3.934604856191033*^9, {
+   3.9346089279542913`*^9, 3.93460893205124*^9}, {3.934614480657105*^9, 
+   3.934614490047505*^9}},
+ CellLabel->
+  "In[111]:=",ExpressionUUID->"b8c19058-9b3a-fe47-bbca-b3b9e453e994"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -14218,7 +14815,13 @@ Cell[BoxData[
    FractionBox["1", 
     RowBox[{
      SuperscriptBox["mb", "2"], " ", "P2", " ", 
-     SuperscriptBox["P3", "2"], " ", "P4"}]], 
+     SuperscriptBox["P3", "2"], " ", "P4", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"mb", "-", "q"}], ")"}], "2"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"mb", "+", "q"}], ")"}], "2"]}]], 
    RowBox[{
     RowBox[{"(", 
      RowBox[{
@@ -14227,14 +14830,19 @@ Cell[BoxData[
      RowBox[{
       RowBox[{
        RowBox[{"-", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
+        SuperscriptBox[
+         RowBox[{"(", 
           RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}]}], " ", 
+           SuperscriptBox["mb", "2"], "-", 
+           SuperscriptBox["q", "2"]}], ")"}], "2"]}], " ", 
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+        SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", 
+        ",", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
        RowBox[{"(", 
         RowBox[{
          RowBox[{"4", " ", 
@@ -14274,539 +14882,466 @@ Cell[BoxData[
                RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
              RowBox[{"(", 
               RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-          RowBox[{"q", ".", "q"}]}]}], ")"}]}], "-", 
-      FractionBox[
-       RowBox[{"2", " ", "mb", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"-", "4"}], " ", 
-           SuperscriptBox["mc", "2"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         "\[DoubleStruckCapitalP]R", ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"P13", " ", 
-           SubscriptBox["p", "\[Mu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"P13", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
-               ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P13"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Mu]"], "-", 
-             SubscriptBox["q", "\[Mu]"]}], ")"}]}]}], ")"}]}], 
-       RowBox[{
-        RowBox[{"3", " ", 
-         SuperscriptBox["mb", "2"]}], "+", 
-        SuperscriptBox["q", "2"]}]], "-", 
-      FractionBox[
-       RowBox[{"2", " ", "mb", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"-", "4"}], " ", 
-           SuperscriptBox["mc", "2"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         "\[DoubleStruckCapitalP]R", ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"P7", " ", 
-           SubscriptBox["p", "\[Mu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"P7", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P2", "-", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P7"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Mu]"], "-", 
-             SubscriptBox["q", "\[Mu]"]}], ")"}]}]}], ")"}]}], 
-       RowBox[{
-        RowBox[{"3", " ", 
-         SuperscriptBox["mb", "2"]}], "+", 
-        SuperscriptBox["q", "2"]}]], "-", 
-      RowBox[{
-       FractionBox["1", 
+          RowBox[{"q", ".", "q"}]}]}], ")"}]}], "+", 
+      RowBox[{"mb", " ", 
+       RowBox[{"(", 
         RowBox[{
-         RowBox[{"3", " ", 
-          SuperscriptBox["mb", "2"]}], "+", 
-         SuperscriptBox["q", "2"]}]], 
-       RowBox[{"2", " ", "\[ImaginaryI]", " ", "mb", " ", 
+         RowBox[{"4", " ", 
+          SuperscriptBox["mc", "2"]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+        "\[DoubleStruckCapitalP]R", ",", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
+              ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P12", "-", 
+               RowBox[{"4", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}], " ", 
+             
+             SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+          SubscriptBox["p", "\[Mu]"]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P12", "+", 
+               RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], 
+            "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P12", "+", 
+               RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
+             
+             SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+          SubscriptBox["q", "\[Mu]"]}]}], ")"}]}], "-", 
+      RowBox[{"mb", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["mc", "2"]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+        "\[DoubleStruckCapitalP]R", ",", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P2", "+", 
+               SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+            RowBox[{
+             SuperscriptBox["q", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P2", "-", 
+               RowBox[{"4", " ", "P7"}], "+", 
+               SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+          SubscriptBox["p", "\[Mu]"]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P2", "-", 
+               RowBox[{"2", " ", "P7"}]}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mb", "2"], "+", "P1", "-", "P2", "+", 
+               RowBox[{"2", " ", "P7"}]}], ")"}], " ", 
+             SuperscriptBox["q", "2"]}], "+", 
+            SuperscriptBox["q", "4"]}], ")"}], " ", 
+          SubscriptBox["q", "\[Mu]"]}]}], ")"}]}], "-", 
+      RowBox[{"\[ImaginaryI]", " ", "mb", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["mc", "2"]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+        SubscriptBox["\[Sigma]", 
+         RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
+        ",", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
+              ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P12", "-", 
+               RowBox[{"4", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}], " ", 
+             
+             SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+          SubscriptBox["p", "\[Nu]"]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P12", "+", 
+               RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], 
+            "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P12", "+", 
+               RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
+             
+             SuperscriptBox["q", "2"]}]}], ")"}], " ", 
+          SubscriptBox["q", "\[Nu]"]}]}], ")"}]}], "+", 
+      RowBox[{"\[ImaginaryI]", " ", "mb", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", " ", 
+          SuperscriptBox["mc", "2"]}], "-", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+        SubscriptBox["\[Sigma]", 
+         RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
+        ",", 
+        RowBox[{"\[ScriptU]", "[", 
+         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P2", "+", 
+               SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+            RowBox[{
+             SuperscriptBox["q", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "P1"}], "+", "P2", "-", 
+               RowBox[{"4", " ", "P7"}], "+", 
+               SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
+          SubscriptBox["p", "\[Nu]"]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["mb", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"P1", "-", "P2", "-", 
+               RowBox[{"2", " ", "P7"}]}], ")"}]}], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["mb", "2"], "+", "P1", "-", "P2", "+", 
+               RowBox[{"2", " ", "P7"}]}], ")"}], " ", 
+             SuperscriptBox["q", "2"]}], "+", 
+            SuperscriptBox["q", "4"]}], ")"}], " ", 
+          SubscriptBox["q", "\[Nu]"]}]}], ")"}]}]}], ")"}]}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.93461449595826*^9},
+ CellLabel->
+  "Out[111]=",ExpressionUUID->"893c07ab-cc48-48c7-99b7-370f8b788e82"]
+}, Open  ]],
+
+Cell["Final results", "Text",
+ CellChangeTimes->{{3.934614759851486*^9, 
+  3.934614762772498*^9}},ExpressionUUID->"6daf28ff-1bb9-4de1-97f0-\
+6d6b31cccfc0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"scalarE0IintegralFull", "=", 
+  RowBox[{"Collect", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"FermionLineExpand", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"jIntegralE0IScalar", "/.", 
+          RowBox[{
+           SubscriptBox["q", "\[Nu]"], "->", 
+           RowBox[{
+            SubscriptBox["p", "\[Nu]"], "-", 
+            SubscriptBox["k", "\[Nu]"]}]}]}], "/.", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], "->", "k"}]}], "//", "Contract"}], ",", 
+       RowBox[{"GordonIdentity", "->", "False"}]}], "]"}], "/.", 
+     RowBox[{"k", "->", 
+      RowBox[{"p", "-", "q"}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["p", "\[Mu]"], ",", 
+      SubscriptBox["q", "\[Mu]"], ",", 
+      SubscriptBox["\[Gamma]", "\[Mu]"]}], "}"}], ",", "FullSimplify"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.934614422219866*^9, 3.934614454162171*^9}},
+ CellLabel->
+  "In[110]:=",ExpressionUUID->"43cbd4f1-1dd7-4c1f-8c2c-9cf5e55711cb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "4"}], " ", 
+         SuperscriptBox["mc", "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{"P13", "+", "P7"}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"P13", " ", 
+            RowBox[{"(", 
+             RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"P2", "-", "P4"}], ")"}], " ", "P7"}]}], ")"}]}]}], 
+       ")"}], " ", 
+      SuperscriptBox["q", "2"], " ", 
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{"\[ScriptU]", "[", 
+        RowBox[{
+         RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+       SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", 
+       ",", 
+       RowBox[{"\[ScriptU]", "[", 
+        RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}]}], 
+     RowBox[{
+      SuperscriptBox["mb", "2"], " ", "P2", " ", 
+      SuperscriptBox["P3", "2"], " ", "P4", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["mb", "2"], "-", 
+        SuperscriptBox["q", "2"]}], ")"}]}]]}], "+", 
+   FractionBox[
+    RowBox[{"4", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        SuperscriptBox["mc", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"P13", "+", "P7"}], ")"}]}], "+", 
+       RowBox[{
         RowBox[{"(", 
          RowBox[{
-          RowBox[{"4", " ", 
-           SuperscriptBox["mc", "2"]}], "-", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+          RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
         RowBox[{"(", 
          RowBox[{
           RowBox[{"P13", " ", 
-           SubscriptBox["p", "\[Nu]"]}], "+", 
+           RowBox[{"(", 
+            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
           RowBox[{
            RowBox[{"(", 
-            RowBox[{"P13", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
-               ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P13"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Nu]"], "-", 
-             SubscriptBox["q", "\[Nu]"]}], ")"}]}]}], ")"}]}]}], "+", 
-      FractionBox[
-       RowBox[{"2", " ", "\[ImaginaryI]", " ", "mb", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"-", "4"}], " ", 
-           SuperscriptBox["mc", "2"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"P7", " ", 
-           SubscriptBox["p", "\[Nu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"P7", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P2", "-", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P7"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Nu]"], "-", 
-             SubscriptBox["q", "\[Nu]"]}], ")"}]}]}], ")"}]}], 
+            RowBox[{"P2", "-", "P4"}], ")"}], " ", "P7"}]}], ")"}]}]}], ")"}],
+      " ", 
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"\[ScriptU]", "[", 
        RowBox[{
-        RowBox[{"3", " ", 
-         SuperscriptBox["mb", "2"]}], "+", 
-        SuperscriptBox["q", "2"]}]]}], ")"}]}]}], "}"}]], "Output",
- CellChangeTimes->{3.9343662820933228`*^9, 3.93445006445999*^9, 
-  3.9344501085088367`*^9, 3.934450143230031*^9, 3.9345231538284883`*^9, 
-  3.934534009681055*^9},
- CellLabel->"Out[28]=",ExpressionUUID->"efc5d76b-a5e8-4b50-a2bc-f34e6a7fb876"]
+        RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+      "\[DoubleStruckCapitalP]R", ",", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+     SubscriptBox["p", "\[Mu]"]}], 
+    RowBox[{"mb", " ", "P2", " ", 
+     SuperscriptBox["P3", "2"], " ", "P4", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["mb", "2"], "-", 
+       SuperscriptBox["q", "2"]}], ")"}]}]]}], "}"}]], "Output",
+ CellChangeTimes->{{3.934614437122855*^9, 3.93461445483077*^9}},
+ CellLabel->
+  "Out[110]=",ExpressionUUID->"8be83173-5ec3-46ec-8083-b38070104fac"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"jIntegralE0IScalar", "=", 
-  RowBox[{"FullSimplify", "[", 
+ RowBox[{"scalarE0IIintegralFull", "=", 
+  RowBox[{"Collect", "[", 
    RowBox[{
     RowBox[{
-     RowBox[{"jIntegralE0ISimple", "/.", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{
-         SubscriptBox["l", "\[Mu]"], "->", 
-         RowBox[{
-          RowBox[{
-           SubscriptBox["p", "\[Mu]"], 
-           RowBox[{"(", 
-            FractionBox["P7", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["mb", "2"]}], "-", 
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Mu]"], "-", 
-             SubscriptBox["q", "\[Mu]"]}], ")"}], 
-           FractionBox["1", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               FractionBox["1", "2"], 
-               SuperscriptBox["mb", "2"]}], "-", 
-              RowBox[{
-               FractionBox["1", "2"], 
-               SuperscriptBox["q", "2"]}]}], ")"}]], 
-           RowBox[{"(", 
-            RowBox[{"P7", "+", 
-             RowBox[{
-              FractionBox["1", "2"], 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P2", "-", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-             RowBox[{
-              SuperscriptBox["mb", "2"], 
-              FractionBox["P7", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{
-                  FractionBox["1", "2"], 
-                  SuperscriptBox["mb", "2"]}], "-", 
-                 RowBox[{
-                  FractionBox["1", "2"], 
-                  SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}], ",", 
-        
-        RowBox[{
-         SubscriptBox["r", "\[Mu]"], "->", 
-         RowBox[{
-          RowBox[{
-           SubscriptBox["p", "\[Mu]"], 
-           RowBox[{"(", 
-            FractionBox["P13", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["mb", "2"]}], "-", 
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Mu]"], "-", 
-             SubscriptBox["q", "\[Mu]"]}], ")"}], 
-           FractionBox["1", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               FractionBox["1", "2"], 
-               SuperscriptBox["mb", "2"]}], "-", 
-              RowBox[{
-               FractionBox["1", "2"], 
-               SuperscriptBox["q", "2"]}]}], ")"}]], 
-           RowBox[{"(", 
-            RowBox[{"P13", "+", 
-             RowBox[{
-              FractionBox["1", "2"], 
-              RowBox[{"(", 
-               RowBox[{"P12", "-", "P3", "-", "P1", "+", "P2"}], ")"}]}], "-", 
-             RowBox[{
-              SuperscriptBox["mb", "2"], 
-              FractionBox["P13", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{
-                  FractionBox["1", "2"], 
-                  SuperscriptBox["mb", "2"]}], "-", 
-                 RowBox[{
-                  FractionBox["1", "2"], 
-                  SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}]}], 
-       "}"}]}], "/.", 
-     RowBox[{"{", 
+     RowBox[{"FermionLineExpand", "[", 
       RowBox[{
        RowBox[{
-        SubscriptBox["\[Sigma]", 
-         RowBox[{"\[Mu]", ",", 
-          RowBox[{"{", "r", "}"}]}]], "->", 
         RowBox[{
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], 
-         SubscriptBox["r", "\[Nu]"]}]}], ",", 
-       RowBox[{
-        SubscriptBox["\[Sigma]", 
-         RowBox[{"\[Mu]", ",", 
-          RowBox[{"{", "l", "}"}]}]], "->", 
-        RowBox[{
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], 
-         SubscriptBox["l", "\[Nu]"]}]}]}], "}"}]}], "/.", 
+         RowBox[{"jIntegralE0IIScalar", "/.", 
+          RowBox[{
+           SubscriptBox["q", "\[Nu]"], "->", 
+           RowBox[{
+            SubscriptBox["p", "\[Nu]"], "-", 
+            SubscriptBox["k", "\[Nu]"]}]}]}], "/.", 
+         RowBox[{
+          RowBox[{"p", "-", "q"}], "->", "k"}]}], "//", "Contract"}], ",", 
+       RowBox[{"GordonIdentity", "->", "False"}]}], "]"}], "/.", 
+     RowBox[{"k", "->", 
+      RowBox[{"p", "-", "q"}]}]}], ",", 
     RowBox[{"{", 
      RowBox[{
-      RowBox[{
-       SubscriptBox["l", "\[Nu]"], "->", 
-       RowBox[{
-        RowBox[{
-         SubscriptBox["p", "\[Nu]"], 
-         RowBox[{"(", 
-          FractionBox["P7", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              FractionBox["3", "2"], 
-              SuperscriptBox["mb", "2"]}], "+", 
-             RowBox[{
-              FractionBox["1", "2"], 
-              SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
-        RowBox[{
-         RowBox[{"(", 
-          RowBox[{
-           SubscriptBox["p", "\[Nu]"], "-", 
-           SubscriptBox["q", "\[Nu]"]}], ")"}], 
-         FractionBox["1", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{
-             FractionBox["3", "2"], 
-             SuperscriptBox["mb", "2"]}], "+", 
-            RowBox[{
-             FractionBox["1", "2"], 
-             SuperscriptBox["q", "2"]}]}], ")"}]], 
-         RowBox[{"(", 
-          RowBox[{"P7", "+", 
-           RowBox[{
-            FractionBox["1", "2"], 
-            RowBox[{"(", 
-             RowBox[{"P1", "-", "P2", "-", 
-              SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-           RowBox[{
-            SuperscriptBox["mb", "2"], 
-            FractionBox["P7", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{
-                FractionBox["3", "2"], 
-                SuperscriptBox["mb", "2"]}], "+", 
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}], ",", 
-      RowBox[{
-       SubscriptBox["r", "\[Nu]"], "->", 
-       RowBox[{
-        RowBox[{
-         SubscriptBox["p", "\[Nu]"], 
-         RowBox[{"(", 
-          FractionBox["P13", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              FractionBox["3", "2"], 
-              SuperscriptBox["mb", "2"]}], "+", 
-             RowBox[{
-              FractionBox["1", "2"], 
-              SuperscriptBox["q", "2"]}]}], ")"}]], ")"}]}], "+", 
-        RowBox[{
-         RowBox[{"(", 
-          RowBox[{
-           SubscriptBox["p", "\[Nu]"], "-", 
-           SubscriptBox["q", "\[Nu]"]}], ")"}], 
-         FractionBox["1", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{
-             FractionBox["3", "2"], 
-             SuperscriptBox["mb", "2"]}], "+", 
-            RowBox[{
-             FractionBox["1", "2"], 
-             SuperscriptBox["q", "2"]}]}], ")"}]], 
-         RowBox[{"(", 
-          RowBox[{"P13", "+", 
-           RowBox[{
-            FractionBox["1", "2"], 
-            RowBox[{"(", 
-             RowBox[{"P12", "-", "P3", "-", "P1", "+", "P2"}], ")"}]}], "-", 
-           RowBox[{
-            SuperscriptBox["mb", "2"], 
-            FractionBox["P13", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{
-                FractionBox["3", "2"], 
-                SuperscriptBox["mb", "2"]}], "+", 
-               RowBox[{
-                FractionBox["1", "2"], 
-                SuperscriptBox["q", "2"]}]}], ")"}]]}]}], ")"}]}]}]}]}], 
-     "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.9343663260105*^9, 3.934366330516201*^9}, {
-   3.934447231285388*^9, 3.9344472755354137`*^9}, 3.9344501832165737`*^9, {
-   3.934523090775906*^9, 3.93452309989642*^9}, {3.934523158631206*^9, 
-   3.9345231617390757`*^9}, {3.9345314322809362`*^9, 3.934531438863494*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"0e40848b-c49a-c249-9069-b196603e0256"],
+      SubscriptBox["p", "\[Mu]"], ",", 
+      SubscriptBox["q", "\[Mu]"], ",", 
+      SubscriptBox["\[Gamma]", "\[Mu]"]}], "}"}], ",", "FullSimplify"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{3.934614459640732*^9},
+ CellLabel->
+  "In[112]:=",ExpressionUUID->"3836c786-8bf5-4a7d-a011-07ca1ab391fb"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   FractionBox["1", 
-    RowBox[{
-     SuperscriptBox["mb", "2"], " ", "P2", " ", 
-     SuperscriptBox["P3", "2"], " ", "P4"}]], 
    RowBox[{
-    RowBox[{"(", 
+    FractionBox["1", 
      RowBox[{
-      RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-    RowBox[{"(", 
-     RowBox[{
+      SuperscriptBox["mb", "2"], " ", "P2", " ", 
+      SuperscriptBox["P3", "2"], " ", "P4", " ", 
+      RowBox[{"(", 
+       RowBox[{"mb", "-", "q"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"mb", "+", "q"}], ")"}]}]], 
+    RowBox[{
+     RowBox[{"(", 
       RowBox[{
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"-", "8"}], " ", 
-          SuperscriptBox["mc", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{"P13", "+", "P7"}], ")"}]}], "+", 
-         RowBox[{"2", " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"P13", " ", 
-             RowBox[{"(", 
-              RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{"P2", "-", "P4"}], ")"}], " ", "P7"}]}], ")"}]}]}], 
-        ")"}], " ", 
-       RowBox[{"\[LeftAngleBracket]", 
-        RowBox[{"\[ScriptU]", "[", 
-         RowBox[{
-          RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-        SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", 
-        ",", 
-        RowBox[{"\[ScriptU]", "[", 
-         RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}]}], "+", 
+       RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{
+        RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+      SubscriptBox["\[Gamma]", "\[Mu]"], ",", "\[DoubleStruckCapitalP]L", ",", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+     RowBox[{"(", 
       RowBox[{
-       FractionBox["1", 
-        SuperscriptBox[
-         RowBox[{"(", 
-          RowBox[{
-           SuperscriptBox["mb", "2"], "-", 
-           SuperscriptBox["q", "2"]}], ")"}], "2"]], 
-       RowBox[{"mb", " ", 
+       RowBox[{
+        SuperscriptBox["mb", "2"], " ", 
         RowBox[{"(", 
          RowBox[{
           RowBox[{"4", " ", 
-           SuperscriptBox["mc", "2"]}], "-", 
+           SuperscriptBox["mc", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "P12"}], "+", "P3"}], ")"}]}], "+", 
           RowBox[{
            RowBox[{"(", 
             RowBox[{
              RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
            RowBox[{"(", 
-            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         "\[DoubleStruckCapitalP]R", ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", "P3"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"P1", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"P12", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}]}]}], 
+         ")"}]}], "+", 
+       RowBox[{
         RowBox[{"(", 
          RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"P12", "+", 
+             RowBox[{"2", " ", "P13"}], "-", "P3", "+", 
+             RowBox[{"2", " ", "P7"}]}], ")"}]}], "-", 
           RowBox[{
            RowBox[{"(", 
             RowBox[{
-             RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P12", "-", "P2", "+", "P3"}], ")"}]}], "+", 
-             RowBox[{
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P12", "+", 
-                RowBox[{"4", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
-              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
-           SubscriptBox["p", "\[Mu]"]}], "-", 
-          RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
            RowBox[{"(", 
             RowBox[{
              RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"-", "P3"}], " ", 
               RowBox[{"(", 
-               RowBox[{"P1", "-", "P12", "+", 
-                RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], 
-             "+", 
-             RowBox[{
+               RowBox[{"P1", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"P12", " ", 
               RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P12", "+", 
-                RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
-              SuperscriptBox["q", "2"]}]}], ")"}], " ", 
-           SubscriptBox["q", "\[Mu]"]}]}], ")"}]}]}], "+", 
-      RowBox[{
-       FractionBox["1", 
-        SuperscriptBox[
-         RowBox[{"(", 
-          RowBox[{
-           SuperscriptBox["mb", "2"], "-", 
-           SuperscriptBox["q", "2"]}], ")"}], "2"]], 
-       RowBox[{"mb", " ", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"2", " ", "P13", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"2", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "-", "P4"}], ")"}], " ", "P7"}]}], ")"}]}]}], 
+         ")"}], " ", 
+        SuperscriptBox["q", "2"]}], "+", 
+       RowBox[{
         RowBox[{"(", 
          RowBox[{
           RowBox[{"4", " ", 
@@ -14817,204 +15352,184 @@ Cell[BoxData[
              RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
            RowBox[{"(", 
             RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         "\[DoubleStruckCapitalP]R", ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
         RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P2", "+", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-             RowBox[{
-              SuperscriptBox["q", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P2", "-", 
-                RowBox[{"4", " ", "P7"}], "+", 
-                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
-           SubscriptBox["p", "\[Mu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P2", "-", 
-                RowBox[{"2", " ", "P7"}]}], ")"}]}], "-", 
-             RowBox[{
-              RowBox[{"(", 
-               RowBox[{
-                SuperscriptBox["mb", "2"], "+", "P1", "-", "P2", "+", 
-                RowBox[{"2", " ", "P7"}]}], ")"}], " ", 
-              SuperscriptBox["q", "2"]}], "+", 
-             SuperscriptBox["q", "4"]}], ")"}], " ", 
-           SubscriptBox["q", "\[Mu]"]}]}], ")"}]}]}], "+", 
-      FractionBox[
-       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+         RowBox[{"mb", "-", "q"}], ")"}], " ", 
         RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", "mb", " ", 
-        RowBox[{"(", 
-         RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"P13", " ", 
-           SubscriptBox["p", "\[Nu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"P13", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P1"}], "+", "P12", "+", "P2", "-", "P3"}], 
-               ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P13"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Nu]"], "-", 
-             SubscriptBox["q", "\[Nu]"]}], ")"}]}]}], ")"}]}], 
-       RowBox[{
-        RowBox[{"3", " ", 
-         SuperscriptBox["mb", "2"]}], "+", 
-        SuperscriptBox["q", "2"]}]], "+", 
-      FractionBox[
-       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", "mb", " ", 
-        RowBox[{"(", 
-         RowBox[{"P2", "-", "P4"}], ")"}], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"P7", " ", 
-           SubscriptBox["p", "\[Nu]"]}], "+", 
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"P7", "+", 
-             RowBox[{
-              FractionBox["1", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{"P1", "-", "P2", "-", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "-", 
-             FractionBox[
-              RowBox[{"2", " ", 
-               SuperscriptBox["mb", "2"], " ", "P7"}], 
-              RowBox[{
-               RowBox[{"3", " ", 
-                SuperscriptBox["mb", "2"]}], "+", 
-               SuperscriptBox["q", "2"]}]]}], ")"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             SubscriptBox["p", "\[Nu]"], "-", 
-             SubscriptBox["q", "\[Nu]"]}], ")"}]}]}], ")"}]}], 
-       RowBox[{
-        RowBox[{"3", " ", 
-         SuperscriptBox["mb", "2"]}], "+", 
-        SuperscriptBox["q", "2"]}]], "+", 
+         RowBox[{"mb", "+", "q"}], ")"}], " ", 
+        RowBox[{"q", ".", "q"}]}]}], ")"}]}]}], "+", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"mb", " ", "P2", " ", 
+      SuperscriptBox["P3", "2"], " ", "P4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"mb", "-", "q"}], ")"}], "2"], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"mb", "+", "q"}], ")"}], "2"]}]], 
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
       RowBox[{
-       FractionBox["1", 
-        SuperscriptBox[
-         RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"2", "-", "\[ScriptD]"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"]}], "-", 
           RowBox[{
-           RowBox[{"3", " ", 
-            SuperscriptBox["mb", "2"]}], "+", 
-           SuperscriptBox["q", "2"]}], ")"}], "2"]], 
-       RowBox[{"4", " ", "\[ImaginaryI]", " ", "mb", " ", 
-        SuperscriptBox["mc", "2"], " ", 
-        RowBox[{"\[LeftAngleBracket]", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{
-           RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
-         SubscriptBox["\[Sigma]", 
-          RowBox[{"\[Mu]", ",", "\[Nu]"}]], ",", "\[DoubleStruckCapitalP]R", 
-         ",", 
-         RowBox[{"\[ScriptU]", "[", 
-          RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}]}], ")"}], " ", 
         RowBox[{"(", 
          RowBox[{
           RowBox[{
+           SuperscriptBox["mb", "2"], " ", 
            RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              SuperscriptBox["q", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "P12"}], "-", 
-                RowBox[{"4", " ", "P13"}], "+", "P3", "-", 
-                RowBox[{"4", " ", "P7"}], "+", 
-                SuperscriptBox["q", "2"]}], ")"}]}], "+", 
-             RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"-", "3"}], " ", "P12"}], "-", 
-                RowBox[{"8", " ", "P13"}], "+", 
-                RowBox[{"3", " ", "P3"}], "-", 
-                RowBox[{"8", " ", "P7"}], "+", 
-                RowBox[{"3", " ", 
-                 SuperscriptBox["q", "2"]}]}], ")"}]}]}], ")"}], " ", 
-           SubscriptBox["p", "\[Nu]"]}], "+", 
+            RowBox[{"P1", "-", "P12", "+", 
+             RowBox[{"2", " ", "P13"}], "-", "P2", "+", "P3"}], ")"}]}], "+", 
+          
           RowBox[{
            RowBox[{"(", 
             RowBox[{
+             RowBox[{"-", "P1"}], "+", "P12", "+", 
+             RowBox[{"2", " ", "P13"}], "+", "P2", "-", "P3"}], ")"}], " ", 
+           SuperscriptBox["q", "2"]}]}], ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"P2", "-", "P4"}], ")"}]}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["mb", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"P1", "-", "P2", "-", 
+             RowBox[{"2", " ", "P7"}]}], ")"}]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["mb", "2"], "+", "P1", "-", "P2", "+", 
+             RowBox[{"2", " ", "P7"}]}], ")"}], " ", 
+           SuperscriptBox["q", "2"]}], "+", 
+          SuperscriptBox["q", "4"]}], ")"}]}]}], ")"}], " ", 
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{
+        RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+      "\[DoubleStruckCapitalP]R", ",", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+     SubscriptBox["p", "\[Mu]"]}]}], "+", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{"mb", " ", "P2", " ", 
+      SuperscriptBox["P3", "2"], " ", "P4", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"mb", "-", "q"}], ")"}], "2"], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"mb", "+", "q"}], ")"}], "2"]}]], 
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["q", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"P12", "+", 
+             RowBox[{"2", " ", "P13"}], "-", "P3", "+", 
+             RowBox[{"2", " ", "P7"}], "-", 
+             SuperscriptBox["q", "2"]}], ")"}]}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
              RowBox[{
-              SuperscriptBox["mb", "2"], " ", 
+              RowBox[{"-", "P1"}], " ", "P3"}], "-", 
+             SuperscriptBox["P3", "2"], "+", 
+             RowBox[{"P12", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"2", " ", "P13", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"P3", " ", "P4"}], "+", 
+             RowBox[{"2", " ", "P2", " ", "P7"}], "-", 
+             RowBox[{"2", " ", "P4", " ", "P7"}], "+", 
+             RowBox[{
               RowBox[{"(", 
                RowBox[{
-                RowBox[{"3", " ", "P12"}], "+", 
-                RowBox[{"2", " ", "P13"}], "-", 
-                RowBox[{"3", " ", "P3"}], "+", 
-                RowBox[{"2", " ", "P7"}], "-", 
-                RowBox[{"3", " ", 
-                 SuperscriptBox["q", "2"]}]}], ")"}]}], "+", 
+                RowBox[{"-", "P2"}], "+", "P4"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}]}]}], ")"}]}], "+", 
+       RowBox[{
+        SuperscriptBox["mb", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", " ", 
+           SuperscriptBox["mc", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "P12"}], "+", 
+             RowBox[{"2", " ", "P13"}], "+", "P3", "+", 
+             RowBox[{"2", " ", "P7"}], "+", 
+             SuperscriptBox["q", "2"]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "\[ScriptD]"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
              RowBox[{
-              SuperscriptBox["q", "2"], " ", 
+              RowBox[{"-", "P1"}], " ", "P3"}], "-", 
+             SuperscriptBox["P3", "2"], "+", 
+             RowBox[{"P12", " ", 
               RowBox[{"(", 
-               RowBox[{"P12", "+", 
-                RowBox[{"2", " ", "P13"}], "-", "P3", "+", 
-                RowBox[{"2", " ", "P7"}], "-", 
-                SuperscriptBox["q", "2"]}], ")"}]}]}], ")"}], " ", 
-           SubscriptBox["q", "\[Nu]"]}]}], ")"}]}]}]}], ")"}]}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.9343663330765495`*^9, 3.93444727637388*^9, 
-  3.934450184096891*^9, 3.9345314573347807`*^9},
- CellLabel->"Out[27]=",ExpressionUUID->"88624f42-356a-49e7-a175-b8c5e0c59e5a"]
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "-", 
+             RowBox[{"2", " ", "P13", " ", 
+              RowBox[{"(", 
+               RowBox[{"P2", "+", "P3", "-", "P4"}], ")"}]}], "+", 
+             RowBox[{"P3", " ", "P4"}], "-", 
+             RowBox[{"2", " ", "P2", " ", "P7"}], "+", 
+             RowBox[{"2", " ", "P4", " ", "P7"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "P2"}], "+", "P4"}], ")"}], " ", 
+              SuperscriptBox["q", "2"]}]}], ")"}]}]}], ")"}]}]}], ")"}], " ", 
+     
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{
+        RowBox[{"p", "-", "q"}], ",", "0"}], "]"}], ",", 
+      "\[DoubleStruckCapitalP]R", ",", 
+      RowBox[{"\[ScriptU]", "[", 
+       RowBox[{"p", ",", "mb"}], "]"}], "\[RightAngleBracket]"}], " ", 
+     SubscriptBox["q", "\[Mu]"]}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.934614500489887*^9},
+ CellLabel->
+  "Out[112]=",ExpressionUUID->"7d5cde73-cb0c-4b6b-9f61-4e238d26764a"]
 }, Open  ]]
 }, Open  ]],
 
@@ -15049,7 +15564,20 @@ Cell[BoxData[
   3.934540839417014*^9}, {3.9345410783209476`*^9, 3.934541090489683*^9}, {
   3.934541150387958*^9, 3.934541238170265*^9}, {3.934541277958083*^9, 
   3.9345412996779222`*^9}, {3.9345413336336184`*^9, 3.93454143054247*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetDelayed", "write", 
+   "\"Tag \\!\\(\\*RowBox[{\\\"TypeOf\\\"}]\\) in \\!\\(\\*RowBox[{\\\"TypeOf\
+\\\", \\\"[\\\", \\\"expr_\\\", \\\"]\\\"}]\\) is Protected.\"", 2, 115, 1, 
+   27296858051427090601, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.934615799741435*^9},
+ CellLabel->
+  "During evaluation of \
+In[115]:=",ExpressionUUID->"54749d51-1924-4758-a833-8c23ae88d63b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -15090,10 +15618,1007 @@ of the Integration-By-Part reduction rules. It also contains some other \
 useful tools.\nInput file timestamp: Mon 11 Jan 2021 10:19:15\nSee ?LiteRed`* \
 for a list of functions. "],
   Editable->False]], "Print",
- CellChangeTimes->{{3.93454155627742*^9, 3.934541559938005*^9}},
+ CellChangeTimes->{{3.93454155627742*^9, 3.934541559938005*^9}, 
+   3.9346158031929607`*^9},
  CellLabel->
   "During evaluation of \
-In[2]:=",ExpressionUUID->"4a23ac3a-b864-4dff-85c4-2f2dbd2dff20"]
+In[115]:=",ExpressionUUID->"d2a8f756-3c25-4fde-8247-e84bf73f9675"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "LiteRed`*"}]], "Input",
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"aa7232fa-7a9e-4ac5-8a3f-cb8f2d3518df"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          StyleBox["LiteRed`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              StyleBox["LiteRed`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["A", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "A", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DiskSave", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "DiskSave", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Highj", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Highj", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jVars", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jVars", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SPs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SPs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ABIBP", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ABIBP", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Ds", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Ds", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["HighjIndex", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "HighjIndex", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LI", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "LI", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SR", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SR", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ABIBPLI", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ABIBPLI", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["EMs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "EMs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Highjs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Highjs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LMs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "LMs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SubstituteAlways", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SubstituteAlways", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ABLI", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ABLI", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ExecuteDefinitions", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ExecuteDefinitions", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IBP", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "IBP", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["LoweringDRR", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "LoweringDRR", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ToAB", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ToAB", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["AnalyzeSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "AnalyzeSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ExtMappedSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ExtMappedSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IBPLI", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "IBPLI", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["MappedSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "MappedSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ToDShifts", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ToDShifts", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["AttachGraph", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "AttachGraph", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ExtUniqueSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ExtUniqueSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IBPReduce", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "IBPReduce", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["MIs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "MIs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Toj", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Toj", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["A$", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "A$", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Factor1", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Factor1", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IdentifyMIs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "IdentifyMIs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["NamingFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "NamingFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ToMIsRule", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ToMIsRule", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["B", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "B", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Factor2", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Factor2", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["j", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "j", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["NewBasis", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "NewBasis", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["UniqueSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "UniqueSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["BasisDirectory", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "BasisDirectory", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Factor3", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Factor3", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jComplexity", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jComplexity", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["NMIs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "NMIs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ZerojRule", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ZerojRule", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["BasisSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "BasisSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FeynParUF", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FeynParUF", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jExtRules", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jExtRules", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["NonZeroSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "NonZeroSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["ZeroSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "ZeroSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["CheckDefinitions", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "CheckDefinitions", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FeynParUFFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FeynParUFFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jGraph", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jGraph", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PolyMapToVPInv", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "PolyMapToVPInv", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LiteRedLog", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "$LiteRedLog", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["CheckZeroAlways", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "CheckZeroAlways", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FindExtSymmetries", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FindExtSymmetries", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jPattern", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jPattern", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PolyNForm", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "PolyNForm", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LiteRedMonitor", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "$LiteRedMonitor", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["CheckZeroFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "CheckZeroFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FindSymmetries", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FindSymmetries", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jRules", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jRules", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PolyVPInv", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "PolyVPInv", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LiteRedReleaseDate", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "$LiteRedReleaseDate", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["Collectj", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Collectj", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FromAB", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FromAB", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["js", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "js", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["RaisingDRR", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "RaisingDRR", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$LiteRedVersion", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "$LiteRedVersion", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["CollectjList", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "CollectjList", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FromDShifts", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "FromDShifts", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jSector", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jSector", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SimpleSectors", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SimpleSectors", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$NamingFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "$NamingFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["CutDs", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "CutDs", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Fromj", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Fromj", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jsOrder", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jsOrder", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SimplifyAlways", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SimplifyAlways", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], ""},
+               {
+                ButtonBox[
+                 StyleBox["Definitions", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Definitions", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["GenerateIBP", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "GenerateIBP", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jsOrderingFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jsOrderingFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SimplifyFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SimplifyFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], ""},
+               {
+                ButtonBox[
+                 StyleBox["Dinv", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Dinv", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["GramP", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "GramP", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jSymMatrices", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jSymMatrices", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Solvej", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "Solvej", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], ""},
+               {
+                ButtonBox[
+                 StyleBox["DiskRecover", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "DiskRecover", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["GramPFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "GramPFunction", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["jSymmetries", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "jSymmetries", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SolvejSector", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-801ad04c-ae88-4ff2-8cd6-329dba4eea84", {
+                   "SolvejSector", "LiteRed`"}, False},
+                 ButtonNote->"LiteRed`",
+                 Evaluator->Automatic], ""}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.19]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellChangeTimes->{{3.934615794059761*^9, 3.9346158035767107`*^9}},
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"362349f1-7430-4b86-9173-8fad60b938bd"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -15122,157 +16647,173 @@ Cell[580, 22, 166, 3, 98, "Title",ExpressionUUID->"35157487-1876-4fb0-ae37-ee002
 Cell[749, 27, 1110, 20, 150, "Text",ExpressionUUID->"2e82e70b-4c22-4560-9f10-421945d79eb6"],
 Cell[CellGroupData[{
 Cell[1884, 51, 190, 3, 29, "Input",ExpressionUUID->"9d346cbc-31b9-a849-83ca-c6216a5e8843"],
-Cell[2077, 56, 517, 9, 43, "Print",ExpressionUUID->"955bb0d3-fa6f-453f-a8cf-b878e168cb05"]
+Cell[2077, 56, 541, 9, 43, "Print",ExpressionUUID->"aa866197-a5b1-4c7d-9fcc-5439d88167ef"]
 }, Open  ]],
-Cell[2609, 68, 19183, 339, 193, "Text",ExpressionUUID->"ae8a0d71-eec9-4610-ae39-670099822619"],
-Cell[21795, 409, 49045, 813, 462, "Text",ExpressionUUID->"8b7acbd1-ab18-4f6e-bd6c-489d8f947531"],
-Cell[70843, 1224, 2629, 72, 60, "Text",ExpressionUUID->"52cd0f4a-ebca-460f-8951-fb1ade135d74"],
+Cell[2633, 68, 19183, 339, 193, "Text",ExpressionUUID->"ae8a0d71-eec9-4610-ae39-670099822619"],
+Cell[21819, 409, 49045, 813, 462, "Text",ExpressionUUID->"8b7acbd1-ab18-4f6e-bd6c-489d8f947531"],
+Cell[70867, 1224, 2629, 72, 60, "Text",ExpressionUUID->"52cd0f4a-ebca-460f-8951-fb1ade135d74"],
 Cell[CellGroupData[{
-Cell[73497, 1300, 214, 4, 67, "Section",ExpressionUUID->"70c83104-98ca-4357-b2c2-24e8b7c33849"],
-Cell[73714, 1306, 172, 3, 35, "Text",ExpressionUUID->"1fb7e79c-a084-4256-b3ec-d5537bb44f4c"],
+Cell[73521, 1300, 214, 4, 67, "Section",ExpressionUUID->"70c83104-98ca-4357-b2c2-24e8b7c33849"],
+Cell[73738, 1306, 172, 3, 35, "Text",ExpressionUUID->"1fb7e79c-a084-4256-b3ec-d5537bb44f4c"],
 Cell[CellGroupData[{
-Cell[73911, 1313, 177, 4, 54, "Subsection",ExpressionUUID->"7bee964a-2e21-46fb-a142-21565116137a"],
+Cell[73935, 1313, 177, 4, 54, "Subsection",ExpressionUUID->"7bee964a-2e21-46fb-a142-21565116137a"],
 Cell[CellGroupData[{
-Cell[74113, 1321, 1418, 33, 52, "Input",ExpressionUUID->"abcde8d8-c148-462b-8e0d-99c110015ead"],
-Cell[75534, 1356, 24899, 774, 603, "Output",ExpressionUUID->"c133e944-d3bb-4e38-8077-32c42fb45cb8"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[100470, 2135, 710, 15, 30, "Input",ExpressionUUID->"92325070-89ad-4f68-a1e3-9daaf5cc9a9a"],
-Cell[101183, 2152, 25133, 755, 584, "Output",ExpressionUUID->"08df455c-97a2-4da6-a6fc-917a2af5bc6d"]
+Cell[74137, 1321, 1418, 33, 52, "Input",ExpressionUUID->"abcde8d8-c148-462b-8e0d-99c110015ead"],
+Cell[75558, 1356, 24899, 774, 603, "Output",ExpressionUUID->"c133e944-d3bb-4e38-8077-32c42fb45cb8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[126353, 2912, 485, 11, 29, "Input",ExpressionUUID->"6da66528-972c-4dbd-a2a7-6e70a699fb7b"],
-Cell[126841, 2925, 24818, 769, 583, "Output",ExpressionUUID->"42cc63cb-b763-4e20-af71-7d601ad26061"]
+Cell[100494, 2135, 710, 15, 30, "Input",ExpressionUUID->"92325070-89ad-4f68-a1e3-9daaf5cc9a9a"],
+Cell[101207, 2152, 25133, 755, 584, "Output",ExpressionUUID->"08df455c-97a2-4da6-a6fc-917a2af5bc6d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[126377, 2912, 485, 11, 29, "Input",ExpressionUUID->"6da66528-972c-4dbd-a2a7-6e70a699fb7b"],
+Cell[126865, 2925, 24818, 769, 583, "Output",ExpressionUUID->"42cc63cb-b763-4e20-af71-7d601ad26061"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[151708, 3700, 139, 3, 54, "Subsection",ExpressionUUID->"604d0315-f3c2-b24a-93b6-a18b1ea3d71c"],
+Cell[151732, 3700, 139, 3, 54, "Subsection",ExpressionUUID->"604d0315-f3c2-b24a-93b6-a18b1ea3d71c"],
 Cell[CellGroupData[{
-Cell[151872, 3707, 389, 9, 30, "Input",ExpressionUUID->"74f423ad-26ea-4bae-9fb9-1ef047690885"],
-Cell[152264, 3718, 221, 3, 33, "Output",ExpressionUUID->"69244317-81bf-4132-b0fc-ec466dddcbe7"]
+Cell[151896, 3707, 389, 9, 30, "Input",ExpressionUUID->"74f423ad-26ea-4bae-9fb9-1ef047690885"],
+Cell[152288, 3718, 221, 3, 33, "Output",ExpressionUUID->"69244317-81bf-4132-b0fc-ec466dddcbe7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[152522, 3726, 691, 16, 46, "Input",ExpressionUUID->"30cc702e-9cbc-4858-9f86-7fdeb45c7e5d"],
-Cell[153216, 3744, 49631, 1453, 932, "Output",ExpressionUUID->"45868a6b-e18c-4d4a-8a2d-7bc67b1102d7"]
+Cell[152546, 3726, 691, 16, 46, "Input",ExpressionUUID->"30cc702e-9cbc-4858-9f86-7fdeb45c7e5d"],
+Cell[153240, 3744, 49631, 1453, 932, "Output",ExpressionUUID->"45868a6b-e18c-4d4a-8a2d-7bc67b1102d7"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[202884, 5202, 796, 23, 42, "Input",ExpressionUUID->"65c6c88a-3b68-4e14-855d-0ad279150490"],
-Cell[203683, 5227, 222, 4, 33, "Output",ExpressionUUID->"612475b8-893b-4aa2-8130-f284622fdf94"]
+Cell[202908, 5202, 796, 23, 42, "Input",ExpressionUUID->"65c6c88a-3b68-4e14-855d-0ad279150490"],
+Cell[203707, 5227, 222, 4, 33, "Output",ExpressionUUID->"612475b8-893b-4aa2-8130-f284622fdf94"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[203942, 5236, 514, 12, 48, "Input",ExpressionUUID->"92e4ee6c-929a-4b5a-98b9-982e7c62f087"],
-Cell[204459, 5250, 26232, 776, 657, "Output",ExpressionUUID->"84e5e3bc-b19d-4323-8a87-d69ce928aeb7"]
+Cell[203966, 5236, 514, 12, 48, "Input",ExpressionUUID->"92e4ee6c-929a-4b5a-98b9-982e7c62f087"],
+Cell[204483, 5250, 26232, 776, 657, "Output",ExpressionUUID->"84e5e3bc-b19d-4323-8a87-d69ce928aeb7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[230728, 6031, 668, 16, 48, "Input",ExpressionUUID->"fcd921cc-1696-434e-a639-c90cfcb7efac"],
-Cell[231399, 6049, 52352, 1546, 1249, "Output",ExpressionUUID->"9c3bbaa8-cc38-4f6c-be30-7bc02045f96e"]
+Cell[230752, 6031, 668, 16, 48, "Input",ExpressionUUID->"fcd921cc-1696-434e-a639-c90cfcb7efac"],
+Cell[231423, 6049, 52352, 1546, 1249, "Output",ExpressionUUID->"9c3bbaa8-cc38-4f6c-be30-7bc02045f96e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[283788, 7600, 300, 7, 31, "Input",ExpressionUUID->"5eed6010-05a5-4290-b7bc-a8d7102de92e"],
-Cell[284091, 7609, 160, 2, 33, "Output",ExpressionUUID->"be2e0d58-35ba-43ef-8b5e-a8fe5d835910"]
+Cell[283812, 7600, 300, 7, 31, "Input",ExpressionUUID->"5eed6010-05a5-4290-b7bc-a8d7102de92e"],
+Cell[284115, 7609, 160, 2, 33, "Output",ExpressionUUID->"be2e0d58-35ba-43ef-8b5e-a8fe5d835910"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[284288, 7616, 1306, 34, 64, "Input",ExpressionUUID->"bc14ea50-06fa-4474-b3b5-9d02a51584a6"],
-Cell[285597, 7652, 108632, 3212, 4042, "Output",ExpressionUUID->"dd04a183-b319-426c-8e41-393cfe3cb1b6"]
+Cell[284312, 7616, 1306, 34, 64, "Input",ExpressionUUID->"bc14ea50-06fa-4474-b3b5-9d02a51584a6"],
+Cell[285621, 7652, 108632, 3212, 4042, "Output",ExpressionUUID->"dd04a183-b319-426c-8e41-393cfe3cb1b6"]
 }, Open  ]],
-Cell[394244, 10867, 162, 2, 30, "Input",ExpressionUUID->"d57b7f1e-23fa-4d68-b8d9-30ce9523dba5"],
+Cell[394268, 10867, 162, 2, 30, "Input",ExpressionUUID->"d57b7f1e-23fa-4d68-b8d9-30ce9523dba5"],
 Cell[CellGroupData[{
-Cell[394431, 10873, 708, 20, 48, "Input",ExpressionUUID->"9fb20f5c-2726-406f-8a00-718c1519662a"],
-Cell[395142, 10895, 8907, 210, 179, "Output",ExpressionUUID->"609b5c06-8052-4ab7-a830-4037bfcafcf9"]
+Cell[394455, 10873, 708, 20, 48, "Input",ExpressionUUID->"9fb20f5c-2726-406f-8a00-718c1519662a"],
+Cell[395166, 10895, 8907, 210, 179, "Output",ExpressionUUID->"609b5c06-8052-4ab7-a830-4037bfcafcf9"]
 }, Open  ]]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[404110, 11112, 159, 3, 53, "Section",ExpressionUUID->"b3014bcd-1c00-3247-8835-1e1949824b30"],
-Cell[404272, 11117, 183, 3, 35, "Text",ExpressionUUID->"b4841061-6efe-4f29-a2e4-5daba4f20eb4"],
-Cell[404458, 11122, 12666, 214, 205, "Input",ExpressionUUID->"ebbbd494-4393-4048-ab80-010bfd5adfed"],
-Cell[417127, 11338, 358, 7, 58, "Text",ExpressionUUID->"21a17750-be8c-45a4-bea4-dc84abcec5c2"],
-Cell[CellGroupData[{
-Cell[417510, 11349, 180, 3, 54, "Subsection",ExpressionUUID->"d0ce5cc3-c688-4038-940c-57b2c8cb77b7"],
-Cell[417693, 11354, 2832, 86, 225, "Text",ExpressionUUID->"8fefdab9-8e80-4e66-94ad-acd17b2eef67"],
-Cell[CellGroupData[{
-Cell[420550, 11444, 1831, 55, 50, "Input",ExpressionUUID->"277ec4cc-1345-43c8-bca0-8de6b3a7acda"],
-Cell[422384, 11501, 1725, 51, 83, "Output",ExpressionUUID->"96a71da8-bbea-4c39-8f7c-bb695afe7729"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[424158, 11558, 127, 3, 38, "Subsection",ExpressionUUID->"8a76209d-3a10-114f-8d61-501a43cc52dd"],
-Cell[424288, 11563, 220, 5, 35, "Text",ExpressionUUID->"232cb79e-6a33-4bab-9d59-ce6f99a23153"],
+Cell[404134, 11112, 159, 3, 53, "Section",ExpressionUUID->"b3014bcd-1c00-3247-8835-1e1949824b30"],
+Cell[404296, 11117, 183, 3, 35, "Text",ExpressionUUID->"b4841061-6efe-4f29-a2e4-5daba4f20eb4"],
+Cell[404482, 11122, 12666, 214, 205, "Input",ExpressionUUID->"ebbbd494-4393-4048-ab80-010bfd5adfed"],
+Cell[417151, 11338, 358, 7, 58, "Text",ExpressionUUID->"21a17750-be8c-45a4-bea4-dc84abcec5c2"],
 Cell[CellGroupData[{
-Cell[424533, 11572, 157, 3, 45, "Subsubsection",ExpressionUUID->"9effd798-5562-cb47-87e8-f24369d3c959"],
-Cell[424693, 11577, 173, 3, 35, "Text",ExpressionUUID->"fe4f1296-a6e3-455e-b30c-2589c20bcbee"],
+Cell[417534, 11349, 180, 3, 54, "Subsection",ExpressionUUID->"d0ce5cc3-c688-4038-940c-57b2c8cb77b7"],
+Cell[417717, 11354, 2832, 86, 225, "Text",ExpressionUUID->"8fefdab9-8e80-4e66-94ad-acd17b2eef67"],
 Cell[CellGroupData[{
-Cell[424891, 11584, 1566, 37, 74, "Input",ExpressionUUID->"4e1ba30c-d2e1-e841-bd37-33d2b19d75b2"],
-Cell[426460, 11623, 20531, 531, 504, "Output",ExpressionUUID->"48a561ea-24c6-4c9a-b6c4-a75ce7f43fd9"]
-}, Open  ]],
-Cell[447006, 12157, 172, 3, 35, "Text",ExpressionUUID->"8ed08a27-cf5d-465b-92eb-c9164987e034"],
-Cell[CellGroupData[{
-Cell[447203, 12164, 646, 15, 29, "Input",ExpressionUUID->"1db3b0cd-b692-4f78-94d1-b36b35920922"],
-Cell[447852, 12181, 9060, 239, 209, "Output",ExpressionUUID->"e30c7e6a-3663-4fa8-8744-54a8bcd0e08b"]
-}, Open  ]],
-Cell[456927, 12423, 196, 3, 35, "Text",ExpressionUUID->"957f9522-5a3a-4716-973b-2dcd1b8ba34b"],
-Cell[CellGroupData[{
-Cell[457148, 12430, 2128, 62, 151, "Input",ExpressionUUID->"681cb94e-d622-4dfb-9727-6bb8c07c881e"],
-Cell[459279, 12494, 6553, 161, 171, "Output",ExpressionUUID->"79117e4f-d75a-4b6b-9065-304c97d19e4d"]
-}, Open  ]],
-Cell[465847, 12658, 159, 3, 35, "Text",ExpressionUUID->"57addeea-5960-4cb8-939b-2fa0b16cf2ee"],
-Cell[CellGroupData[{
-Cell[466031, 12665, 1449, 34, 31, "Input",ExpressionUUID->"1c26b24c-7730-4c04-be7b-7b53c7c19878"],
-Cell[467483, 12701, 5752, 153, 227, "Output",ExpressionUUID->"e60a747a-7210-4c30-b202-bc3a43eea14c"]
+Cell[420574, 11444, 1831, 55, 50, "Input",ExpressionUUID->"277ec4cc-1345-43c8-bca0-8de6b3a7acda"],
+Cell[422408, 11501, 1725, 51, 83, "Output",ExpressionUUID->"96a71da8-bbea-4c39-8f7c-bb695afe7729"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[473284, 12860, 156, 3, 37, "Subsubsection",ExpressionUUID->"aaa277a2-3ff6-2544-b130-2aefe0b12f3a"],
-Cell[473443, 12865, 172, 3, 35, "Text",ExpressionUUID->"c933c7e8-9d5b-4ee8-af45-8d1d06ad2dcd"],
+Cell[424182, 11558, 127, 3, 38, "Subsection",ExpressionUUID->"8a76209d-3a10-114f-8d61-501a43cc52dd"],
+Cell[424312, 11563, 220, 5, 35, "Text",ExpressionUUID->"232cb79e-6a33-4bab-9d59-ce6f99a23153"],
 Cell[CellGroupData[{
-Cell[473640, 12872, 1274, 30, 96, "Input",ExpressionUUID->"655c6719-2596-40f7-b49f-1ef64f9c8b87"],
-Cell[474917, 12904, 2157, 63, 58, "Output",ExpressionUUID->"511ba625-abfc-4e8a-9935-4c6ea13dd53d"]
+Cell[424557, 11572, 157, 3, 45, "Subsubsection",ExpressionUUID->"9effd798-5562-cb47-87e8-f24369d3c959"],
+Cell[424717, 11577, 173, 3, 35, "Text",ExpressionUUID->"fe4f1296-a6e3-455e-b30c-2589c20bcbee"],
+Cell[CellGroupData[{
+Cell[424915, 11584, 1565, 37, 74, "Input",ExpressionUUID->"4e1ba30c-d2e1-e841-bd37-33d2b19d75b2"],
+Cell[426483, 11623, 20555, 532, 504, "Output",ExpressionUUID->"bfe1ab23-d31d-4170-9f9a-aa6b11f358fc"]
 }, Open  ]],
-Cell[477089, 12970, 171, 3, 35, "Text",ExpressionUUID->"1ef985ac-fcdc-416f-85b0-96b0e363e102"],
+Cell[447053, 12158, 172, 3, 35, "Text",ExpressionUUID->"8ed08a27-cf5d-465b-92eb-c9164987e034"],
 Cell[CellGroupData[{
-Cell[477285, 12977, 791, 16, 29, "Input",ExpressionUUID->"c4a4e870-e299-4841-9267-e4c958c4c3a7"],
-Cell[478079, 12995, 7830, 195, 189, "Output",ExpressionUUID->"6df5d534-bcdc-4256-b883-68ec9704453a"]
+Cell[447250, 12165, 645, 15, 29, "Input",ExpressionUUID->"1db3b0cd-b692-4f78-94d1-b36b35920922"],
+Cell[447898, 12182, 9087, 240, 209, "Output",ExpressionUUID->"043f1901-29e4-40b4-aeea-30bc2ccd5416"]
 }, Open  ]],
-Cell[485924, 13193, 254, 4, 35, "Text",ExpressionUUID->"b873cd5f-42d8-45e9-9dfa-4acca2b2978e"],
+Cell[457000, 12425, 196, 3, 35, "Text",ExpressionUUID->"957f9522-5a3a-4716-973b-2dcd1b8ba34b"],
 Cell[CellGroupData[{
-Cell[486203, 13201, 2202, 63, 151, "Input",ExpressionUUID->"841ff892-84ce-4c78-9ea2-5f18f324e94f"],
-Cell[488408, 13266, 5802, 150, 171, "Output",ExpressionUUID->"19a47a73-aa67-491d-98d3-982f5bbf9954"]
+Cell[457221, 12432, 2127, 62, 151, "Input",ExpressionUUID->"681cb94e-d622-4dfb-9727-6bb8c07c881e"],
+Cell[459351, 12496, 6574, 161, 171, "Output",ExpressionUUID->"1c426b3f-5209-497d-839e-b942e4b8e468"]
 }, Open  ]],
-Cell[494225, 13419, 160, 3, 35, "Text",ExpressionUUID->"1ea5517a-9dfe-4bab-8efb-4e5436ec12ab"],
+Cell[465940, 12660, 159, 3, 35, "Text",ExpressionUUID->"57addeea-5960-4cb8-939b-2fa0b16cf2ee"],
 Cell[CellGroupData[{
-Cell[494410, 13426, 2721, 68, 86, "Input",ExpressionUUID->"cdfb1b0a-e85a-41cd-b111-35bad079e10b"],
-Cell[497134, 13496, 6130, 171, 278, "Output",ExpressionUUID->"92f1a0e7-1b3b-4156-9170-59ce8b5babff"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[503313, 13673, 231, 4, 37, "Subsubsection",ExpressionUUID->"7d1c9622-35d7-fa44-a850-b11a51b17c2b"],
-Cell[503547, 13679, 1608, 43, 37, "Text",ExpressionUUID->"a56f58ac-f19e-4faa-b253-f900687bd08c"],
-Cell[CellGroupData[{
-Cell[505180, 13726, 1495, 43, 44, "Input",ExpressionUUID->"7d149277-ba30-40e1-939d-35f646bbabe2"],
-Cell[506678, 13771, 507, 13, 47, "Output",ExpressionUUID->"44ed0d81-0fca-49bf-8391-08d1c2f3efbe"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[507222, 13789, 1955, 57, 99, "Input",ExpressionUUID->"bbed2386-41c9-4473-9654-9a1c42a75979"],
-Cell[509180, 13848, 457, 11, 47, "Output",ExpressionUUID->"98004285-acb4-4b6d-acd7-728e0b05e482"]
-}, Open  ]],
-Cell[509652, 13862, 1492, 51, 64, "Input",ExpressionUUID->"0e529aad-a66b-3f46-bfc2-e4352d2ef273"],
-Cell[511147, 13915, 1529, 50, 64, "Input",ExpressionUUID->"a37a0217-12e4-9c44-8cf7-11f7dcb2fa6f"],
-Cell[512679, 13967, 726, 20, 40, "Text",ExpressionUUID->"02288e0c-3234-4b5c-9a89-dadc42256a09"],
-Cell[CellGroupData[{
-Cell[513430, 13991, 7421, 221, 323, "Input",ExpressionUUID->"b8c19058-9b3a-fe47-bbca-b3b9e453e994"],
-Cell[520854, 14214, 9479, 260, 388, "Output",ExpressionUUID->"efc5d76b-a5e8-4b50-a2bc-f34e6a7fb876"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[530370, 14479, 7518, 221, 323, "Input",ExpressionUUID->"0e40848b-c49a-c249-9069-b196603e0256"],
-Cell[537891, 14702, 11636, 314, 453, "Output",ExpressionUUID->"88624f42-356a-49e7-a175-b8c5e0c59e5a"]
+Cell[466124, 12667, 1448, 34, 31, "Input",ExpressionUUID->"1c26b24c-7730-4c04-be7b-7b53c7c19878"],
+Cell[467575, 12703, 5775, 154, 227, "Output",ExpressionUUID->"4c2a8a4f-119d-433f-99d4-b3673463bf56"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[549576, 15022, 181, 3, 45, "Subsubsection",ExpressionUUID->"21f31522-efb9-4bfa-88ee-97f4e42308f2"],
-Cell[549760, 15027, 530, 13, 58, "Text",ExpressionUUID->"b9edadcd-167e-44aa-8c50-5a4371aa43b8"],
+Cell[473399, 12863, 156, 3, 45, "Subsubsection",ExpressionUUID->"aaa277a2-3ff6-2544-b130-2aefe0b12f3a"],
+Cell[473558, 12868, 172, 3, 35, "Text",ExpressionUUID->"c933c7e8-9d5b-4ee8-af45-8d1d06ad2dcd"],
 Cell[CellGroupData[{
-Cell[550315, 15044, 513, 7, 29, "Input",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
-Cell[550831, 15053, 1768, 42, 156, "Print",ExpressionUUID->"4a23ac3a-b864-4dff-85c4-2f2dbd2dff20"]
+Cell[473755, 12875, 1274, 30, 96, "Input",ExpressionUUID->"655c6719-2596-40f7-b49f-1ef64f9c8b87"],
+Cell[475032, 12907, 2182, 64, 58, "Output",ExpressionUUID->"86a2b9ea-c509-4792-8190-41b85c43842d"]
+}, Open  ]],
+Cell[477229, 12974, 171, 3, 35, "Text",ExpressionUUID->"1ef985ac-fcdc-416f-85b0-96b0e363e102"],
+Cell[CellGroupData[{
+Cell[477425, 12981, 791, 16, 29, "Input",ExpressionUUID->"c4a4e870-e299-4841-9267-e4c958c4c3a7"],
+Cell[478219, 12999, 7852, 195, 189, "Output",ExpressionUUID->"ffb72c20-0420-4f26-b76d-399949cc70f4"]
+}, Open  ]],
+Cell[486086, 13197, 254, 4, 35, "Text",ExpressionUUID->"b873cd5f-42d8-45e9-9dfa-4acca2b2978e"],
+Cell[CellGroupData[{
+Cell[486365, 13205, 2201, 63, 151, "Input",ExpressionUUID->"841ff892-84ce-4c78-9ea2-5f18f324e94f"],
+Cell[488569, 13270, 5829, 151, 171, "Output",ExpressionUUID->"b7758f8b-fbde-4b87-a08b-fe2dc2e75496"]
+}, Open  ]],
+Cell[494413, 13424, 160, 3, 35, "Text",ExpressionUUID->"1ea5517a-9dfe-4bab-8efb-4e5436ec12ab"],
+Cell[CellGroupData[{
+Cell[494598, 13431, 2720, 68, 86, "Input",ExpressionUUID->"cdfb1b0a-e85a-41cd-b111-35bad079e10b"],
+Cell[497321, 13501, 6150, 171, 278, "Output",ExpressionUUID->"9c9501e1-54c2-48d3-ab5a-d87fc9f1230e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[503520, 13678, 231, 4, 45, "Subsubsection",ExpressionUUID->"7d1c9622-35d7-fa44-a850-b11a51b17c2b"],
+Cell[503754, 13684, 1608, 43, 37, "Text",ExpressionUUID->"a56f58ac-f19e-4faa-b253-f900687bd08c"],
+Cell[505365, 13729, 174, 3, 35, "Text",ExpressionUUID->"42e7153c-f394-4b6f-93ef-36bfb9e676af"],
+Cell[CellGroupData[{
+Cell[505564, 13736, 1495, 43, 44, "Input",ExpressionUUID->"7d149277-ba30-40e1-939d-35f646bbabe2"],
+Cell[507062, 13781, 507, 13, 47, "Output",ExpressionUUID->"44ed0d81-0fca-49bf-8391-08d1c2f3efbe"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[507606, 13799, 1955, 57, 99, "Input",ExpressionUUID->"bbed2386-41c9-4473-9654-9a1c42a75979"],
+Cell[509564, 13858, 457, 11, 47, "Output",ExpressionUUID->"98004285-acb4-4b6d-acd7-728e0b05e482"]
+}, Open  ]],
+Cell[510036, 13872, 1492, 51, 64, "Input",ExpressionUUID->"0e529aad-a66b-3f46-bfc2-e4352d2ef273"],
+Cell[511531, 13925, 1529, 50, 64, "Input",ExpressionUUID->"a37a0217-12e4-9c44-8cf7-11f7dcb2fa6f"],
+Cell[513063, 13977, 726, 20, 40, "Text",ExpressionUUID->"02288e0c-3234-4b5c-9a89-dadc42256a09"],
+Cell[513792, 13999, 883, 24, 37, "Text",ExpressionUUID->"74897fb0-11a3-44e7-89da-e7ef478ccb53"],
+Cell[CellGroupData[{
+Cell[514700, 14027, 8379, 234, 323, "Input",ExpressionUUID->"0e40848b-c49a-c249-9069-b196603e0256"],
+Cell[523082, 14263, 12247, 317, 262, "Output",ExpressionUUID->"c24acdf0-93cc-4df4-b8b6-24fe1c392c74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[535366, 14585, 7619, 224, 323, "Input",ExpressionUUID->"b8c19058-9b3a-fe47-bbca-b3b9e453e994"],
+Cell[542988, 14811, 10528, 293, 237, "Output",ExpressionUUID->"893c07ab-cc48-48c7-99b7-370f8b788e82"]
+}, Open  ]],
+Cell[553531, 15107, 155, 3, 35, "Text",ExpressionUUID->"6daf28ff-1bb9-4de1-97f0-6d6b31cccfc0"],
+Cell[CellGroupData[{
+Cell[553711, 15114, 1006, 28, 71, "Input",ExpressionUUID->"43cbd4f1-1dd7-4c1f-8c2c-9cf5e55711cb"],
+Cell[554720, 15144, 2904, 86, 114, "Output",ExpressionUUID->"8be83173-5ec3-46ec-8083-b38070104fac"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[557661, 15235, 984, 28, 71, "Input",ExpressionUUID->"3836c786-8bf5-4a7d-a011-07ca1ab391fb"],
+Cell[558648, 15265, 9469, 266, 302, "Output",ExpressionUUID->"7d5cde73-cb0c-4b6b-9f61-4e238d26764a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[568166, 15537, 181, 3, 45, "Subsubsection",ExpressionUUID->"21f31522-efb9-4bfa-88ee-97f4e42308f2"],
+Cell[568350, 15542, 530, 13, 58, "Text",ExpressionUUID->"b9edadcd-167e-44aa-8c50-5a4371aa43b8"],
+Cell[CellGroupData[{
+Cell[568905, 15559, 518, 8, 29, "Input",ExpressionUUID->"46426ff6-fa79-4f05-a71e-554be2c63728"],
+Cell[569426, 15569, 434, 10, 28, "Message",ExpressionUUID->"54749d51-1924-4758-a833-8c23ae88d63b"],
+Cell[569863, 15581, 1798, 43, 156, "Print",ExpressionUUID->"d2a8f756-3c25-4fde-8247-e84bf73f9675"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[571698, 15629, 135, 3, 29, "Input",ExpressionUUID->"aa7232fa-7a9e-4ac5-8a3f-cb8f2d3518df"],
+Cell[571836, 15634, 41470, 986, 489, "Output",ExpressionUUID->"362349f1-7430-4b86-9173-8fad60b938bd"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
