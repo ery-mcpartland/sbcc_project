@@ -1,115 +1,33 @@
 BasisDirectory[e0] = StringDrop[DirectoryName[$Input], -1]
-e0 /: BasisSectors[e0] := {js[e0, 0, 1, 1, 0, 0, 0, 0], 
-   js[e0, 1, 0, 1, 0, 0, 0, 0], js[e0, 0, 0, 0, 1, 1, 1, 0], 
-   js[e0, 0, 0, 1, 1, 0, 1, 0], js[e0, 0, 1, 0, 0, 1, 0, 1], 
-   js[e0, 0, 1, 0, 1, 1, 0, 0], js[e0, 0, 1, 1, 0, 0, 0, 1], 
-   js[e0, 0, 1, 1, 0, 0, 1, 0], js[e0, 0, 1, 1, 0, 1, 0, 0], 
-   js[e0, 0, 1, 1, 1, 0, 0, 0], js[e0, 1, 0, 0, 0, 1, 0, 1], 
-   js[e0, 1, 0, 0, 1, 1, 0, 0], js[e0, 1, 0, 1, 0, 0, 0, 1], 
-   js[e0, 1, 0, 1, 0, 0, 1, 0], js[e0, 1, 0, 1, 0, 1, 0, 0], 
-   js[e0, 1, 0, 1, 1, 0, 0, 0], js[e0, 0, 0, 0, 1, 1, 1, 1], 
-   js[e0, 0, 0, 1, 1, 0, 1, 1], js[e0, 0, 1, 0, 0, 1, 1, 1], 
-   js[e0, 1, 0, 0, 0, 1, 1, 1]}
+e0 /: BasisSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/BasisSectors[e0]"]]
 e0 /: CutDs[e0] := {0, 0, 0, 0, 0, 0, 0}
 e0 /: Definitions[e0] := {Hold[MetricTensor[] === d, SetDim[d]], 
    Hold[VecQ[l], Declare[l, Vector]], Hold[VecQ[r], Declare[r, Vector]], 
-   Hold[VecQ[p], Declare[p, Vector]], Hold[VecQ[q], Declare[q, Vector]]}
-e0 /: Ds[e0] := {-1 + sp[l + q, l + q], -1 + sp[l, l], -1 + sp[l + r, l + r], 
-   sp[r, r], sp[l + q + r, l + q + r], sp[l, p - q], sp[p - q, r]}
+   Hold[VecQ[p], Declare[p, Vector]], Hold[VecQ[q], Declare[q, Vector]], 
+   Hold[TypeOf[mb] === Failure["TypeError", 
+      <|"MessageTemplate" -> "Cannot find a definition for `1`.", 
+       "MessageParameters" -> {mb}, "Body" -> {mb}, "Stack" -> {}, 
+       "Exception" -> "LookupNotFound", "Constraint" -> "Lookup[mb,v11745]", 
+       "Source" -> HoldForm[mb]|>], Declare[mb, Failure["TypeError", 
+      <|"MessageTemplate" -> "Cannot find a definition for `1`.", 
+       "MessageParameters" -> {mb}, "Body" -> {mb}, "Stack" -> {}, 
+       "Exception" -> "LookupNotFound", "Constraint" -> "Lookup[mb,v11745]", 
+       "Source" -> HoldForm[mb]|>]]], 
+   Hold[TypeOf[p] === Failure["TypeError", 
+      <|"MessageTemplate" -> "Cannot find a definition for `1`.", 
+       "MessageParameters" -> {p}, "Body" -> {p}, "Stack" -> {}, 
+       "Exception" -> "LookupNotFound", "Constraint" -> "Lookup[p,v11751]", 
+       "Source" -> HoldForm[p]|>], Declare[p, Failure["TypeError", 
+      <|"MessageTemplate" -> "Cannot find a definition for `1`.", 
+       "MessageParameters" -> {p}, "Body" -> {p}, "Stack" -> {}, 
+       "Exception" -> "LookupNotFound", "Constraint" -> "Lookup[p,v11751]", 
+       "Source" -> HoldForm[p]|>]]], Hold[sp[p, p] === mb^2, sp[p, p] = mb^2]}
+e0 /: Ds[e0] := {-mc^2 + sp[l + q, l + q], -mc^2 + sp[l, l], 
+   -mc^2 + sp[l + r, l + r], sp[r, r], -mc^2 + sp[l + q + r, l + q + r], 
+   sp[l, p - q], sp[p - q, r]}
 e0 /: EMs[e0] := {p, q}
-e0 /: IBP[e0] := {-(#5*j[e0, -1 + #1, #2, #3, #4, 1 + #5, #6, #7]) - 
-     #3*j[e0, #1, -1 + #2, 1 + #3, #4, #5, #6, #7] - 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] + 
-     #5*j[e0, #1, #2, #3, -1 + #4, 1 + #5, #6, #7] + 
-     (d - #1 - 2*#2 - #3 - #6)*j[e0, #1, #2, #3, #4, #5, #6, #7] + 
-     #3*j[e0, #1, #2, 1 + #3, -1 + #4, #5, #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7] - 
-     2*#2*j[e0, #1, 1 + #2, #3, #4, #5, #6, #7] - 
-     #1*j[e0, 1 + #1, -1 + #2, #3, #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-2 + sp[q, q]) + 
-     #1*j[e0, 1 + #1, #2, #3, #4, #5, #6, #7]*(-2 + sp[q, q]), 
-    -(#5*j[e0, -1 + #1, #2, #3, #4, 1 + #5, #6, #7]) + 
-     #4*j[e0, #1, -1 + #2, #3, 1 + #4, #5, #6, #7] - 
-     #3*j[e0, #1, -1 + #2, 1 + #3, #4, #5, #6, #7] - 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] - 
-     #4*j[e0, #1, #2, -1 + #3, 1 + #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, #3, -1 + #4, 1 + #5, #6, #7] - 
-     #7*j[e0, #1, #2, #3, #4, #5, -1 + #6, 1 + #7] + 
-     (-#3 + #4)*j[e0, #1, #2, #3, #4, #5, #6, #7] + 
-     #3*j[e0, #1, #2, 1 + #3, -1 + #4, #5, #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-2 + sp[q, q]), 
-    #5*j[e0, -1 + #1, #2, #3, #4, 1 + #5, #6, #7] + 
-     #3*j[e0, #1, -1 + #2, 1 + #3, #4, #5, #6, #7] - 
-     #5*j[e0, #1, #2, #3, -1 + #4, 1 + #5, #6, #7] + 
-     (#1 + #2 - #3 - #5)*j[e0, #1, #2, #3, #4, #5, #6, #7] - 
-     #6*j[e0, #1, #2, #3, #4, #5, 1 + #6, -1 + #7] + 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7] - 
-     #3*j[e0, #1, #2, 1 + #3, -1 + #4, #5, #6, #7] - 
-     #2*j[e0, #1, 1 + #2, -1 + #3, #4, #5, #6, #7] + 
-     #2*j[e0, #1, 1 + #2, #3, -1 + #4, #5, #6, #7] + 
-     #1*j[e0, 1 + #1, #2, #3, -1 + #4, #5, #6, #7] - 
-     #1*j[e0, 1 + #1, #2, #3, #4, -1 + #5, #6, #7] + 
-     #1*j[e0, 1 + #1, #2, #3, #4, #5, #6, #7], 
-    #5*j[e0, -1 + #1, #2, #3, #4, 1 + #5, #6, #7] + 
-     #3*j[e0, #1, -1 + #2, 1 + #3, #4, #5, #6, #7] - 
-     #5*j[e0, #1, #2, #3, -1 + #4, 1 + #5, #6, #7] + 
-     (d - #3 - 2*#4 - #5 - #7)*j[e0, #1, #2, #3, #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7] - 
-     #3*j[e0, #1, #2, 1 + #3, -1 + #4, #5, #6, #7], 
-    -(#2*j[e0, -1 + #1, 1 + #2, #3, #4, #5, #6, #7]) + 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] + 
-     (-#1 + #2 + #3 - #5)*j[e0, #1, #2, #3, #4, #5, #6, #7] - 
-     2*#5*j[e0, #1, #2, #3, #4, 1 + #5, -1 + #6, #7] - 
-     2*#5*j[e0, #1, #2, #3, #4, 1 + #5, #6, -1 + #7] - 
-     #3*j[e0, #1, #2, 1 + #3, #4, -1 + #5, #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, -1 + #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, #6, -1 + #7] - 
-     2*#2*j[e0, #1, 1 + #2, #3, #4, #5, -1 + #6, #7] + 
-     #1*j[e0, 1 + #1, -1 + #2, #3, #4, #5, #6, #7] - 
-     2*#1*j[e0, 1 + #1, #2, #3, #4, #5, -1 + #6, #7] - 
-     #6*j[e0, #1, #2, #3, #4, #5, 1 + #6, #7]*(sp[p, p] - sp[p, q]) - 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-1 + 2*sp[p, q] - sp[q, q]) - 
-     #1*j[e0, 1 + #1, #2, #3, #4, #5, #6, #7]*(2*sp[p, q] - sp[q, q]) + 
-     #2*j[e0, #1, 1 + #2, #3, #4, #5, #6, #7]*sp[q, q] + 
-     #3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7]*(1 + sp[q, q]), 
-    #4*j[e0, -1 + #1, #2, #3, 1 + #4, #5, #6, #7] - 
-     #4*j[e0, #1, -1 + #2, #3, 1 + #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] + 
-     #4*j[e0, #1, #2, -1 + #3, 1 + #4, #5, #6, #7] + 
-     (#3 - #5)*j[e0, #1, #2, #3, #4, #5, #6, #7] - 
-     2*#5*j[e0, #1, #2, #3, #4, 1 + #5, -1 + #6, #7] - 
-     2*#5*j[e0, #1, #2, #3, #4, 1 + #5, #6, -1 + #7] - 
-     #4*j[e0, #1, #2, #3, 1 + #4, -1 + #5, #6, #7] - 
-     2*#4*j[e0, #1, #2, #3, 1 + #4, #5, #6, -1 + #7] + 
-     #4*j[e0, #1, #2, #3, 1 + #4, #5, #6, #7] - 
-     #3*j[e0, #1, #2, 1 + #3, #4, -1 + #5, #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, -1 + #6, #7] - 
-     2*#3*j[e0, #1, #2, 1 + #3, #4, #5, #6, -1 + #7] - 
-     #7*j[e0, #1, #2, #3, #4, #5, #6, 1 + #7]*(sp[p, p] - sp[p, q]) - 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-1 + 2*sp[p, q] - sp[q, q]) + 
-     #3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7]*(1 + sp[q, q]), 
-    -(#2*j[e0, -1 + #1, 1 + #2, #3, #4, #5, #6, #7]) + 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] + 
-     (-#1 + #2 + #3 - #5)*j[e0, #1, #2, #3, #4, #5, #6, #7] - 
-     #3*j[e0, #1, #2, 1 + #3, #4, -1 + #5, #6, #7] + 
-     #1*j[e0, 1 + #1, -1 + #2, #3, #4, #5, #6, #7] - 
-     #6*j[e0, #1, #2, #3, #4, #5, 1 + #6, #7]*(sp[p, q] - sp[q, q]) - 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-1 + sp[q, q]) + 
-     #2*j[e0, #1, 1 + #2, #3, #4, #5, #6, #7]*sp[q, q] - 
-     #1*j[e0, 1 + #1, #2, #3, #4, #5, #6, #7]*sp[q, q] + 
-     #3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7]*(1 + sp[q, q]), 
-    #4*j[e0, -1 + #1, #2, #3, 1 + #4, #5, #6, #7] - 
-     #4*j[e0, #1, -1 + #2, #3, 1 + #4, #5, #6, #7] + 
-     #5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7] + 
-     #4*j[e0, #1, #2, -1 + #3, 1 + #4, #5, #6, #7] + 
-     (#3 - #5)*j[e0, #1, #2, #3, #4, #5, #6, #7] - 
-     #4*j[e0, #1, #2, #3, 1 + #4, -1 + #5, #6, #7] + 
-     #4*j[e0, #1, #2, #3, 1 + #4, #5, #6, #7] - 
-     #3*j[e0, #1, #2, 1 + #3, #4, -1 + #5, #6, #7] - 
-     #7*j[e0, #1, #2, #3, #4, #5, #6, 1 + #7]*(sp[p, q] - sp[q, q]) - 
-     #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, #7]*(-1 + sp[q, q]) + 
-     #3*j[e0, #1, #2, 1 + #3, #4, #5, #6, #7]*(1 + sp[q, q])} & 
+e0 /: IBP[e0] := Get[StringJoin[BasisDirectory[e0], "/IBP[e0]"]]
 e0 /: Information[e0] := (If[ValueQ[e0::usage], 
     Information[e0, LongForm -> False]]; 
    Print[Grid[Partition[Union[Replace[Replace[First /@ UpValues[e0] /. 
@@ -138,8 +56,12 @@ e0 /: jRules[e0, 0, 0, 1, 1, 1, 1, 0] :=
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 0, 1, 1, 1, 1, 0]"]]
 e0 /: jRules[e0, 0, 0, 1, 1, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 0, 1, 1, 1, 1, 1]"]]
+e0 /: jRules[e0, 0, 1, 0, 0, 1, 0, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 0, 0, 1, 0, 0]"]]
 e0 /: jRules[e0, 0, 1, 0, 0, 1, 0, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 0, 0, 1, 0, 1]"]]
+e0 /: jRules[e0, 0, 1, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 0, 0, 1, 1, 0]"]]
 e0 /: jRules[e0, 0, 1, 0, 0, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 0, 0, 1, 1, 1]"]]
 e0 /: jRules[e0, 0, 1, 0, 1, 1, 0, 0] := 
@@ -182,18 +104,12 @@ e0 /: jRules[e0, 0, 1, 1, 1, 1, 1, 0] :=
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 1, 1, 1, 1, 0]"]]
 e0 /: jRules[e0, 0, 1, 1, 1, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 0, 1, 1, 1, 1, 1, 1]"]]
+e0 /: jRules[e0, 1, 0, 0, 0, 1, 0, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 0, 0, 1, 0, 0]"]]
 e0 /: jRules[e0, 1, 0, 0, 0, 1, 0, 1] := 
-  {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-      (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-      (n7_)?Positive] /; True :> Expand[j[e0, 0, 0, n1, n5, 0, n7, 0]/
-      ((j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n2*
-       (j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-       (-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-         j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-         j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-         j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (-sp[p, q] + sp[q, q]))^n6)]}
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 0, 0, 1, 0, 1]"]]
+e0 /: jRules[e0, 1, 0, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 0, 0, 1, 1, 0]"]]
 e0 /: jRules[e0, 1, 0, 0, 0, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 0, 0, 1, 1, 1]"]]
 e0 /: jRules[e0, 1, 0, 0, 1, 1, 0, 0] := 
@@ -205,16 +121,7 @@ e0 /: jRules[e0, 1, 0, 0, 1, 1, 1, 0] :=
 e0 /: jRules[e0, 1, 0, 0, 1, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 0, 1, 1, 1, 1]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 0, 0, 0] := 
-  {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-      (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-      (n7_)?NonPositive] /; True :> Expand[j[e0, n2, n1, n3, 0, n5, 0, 0]/
-      ((j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-         j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-         j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (3 - sp[q, q]))^n4*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-         j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (sp[p, q] - sp[q, q]))^n7*(-j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-         j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 0, 0, 0, 0]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 0, 0, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 0, 0, 0, 1]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 0, 1, 0] := 
@@ -222,16 +129,7 @@ e0 /: jRules[e0, 1, 0, 1, 0, 0, 1, 0] :=
 e0 /: jRules[e0, 1, 0, 1, 0, 0, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 0, 0, 1, 1]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 1, 0, 0] := 
-  {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-      (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-      (n7_)?NonPositive] /; True :> Expand[j[e0, n2, n1, n3, 0, n5, 0, 0]/
-      ((j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-         j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-         j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (3 - sp[q, q]))^n4*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-         j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-          (sp[p, q] - sp[q, q]))^n7*(-j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-         j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 0, 1, 0, 0]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 1, 0, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 0, 1, 0, 1]"]]
 e0 /: jRules[e0, 1, 0, 1, 0, 1, 1, 0] := 
@@ -254,8 +152,12 @@ e0 /: jRules[e0, 1, 0, 1, 1, 1, 1, 0] :=
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 1, 1, 1, 0]"]]
 e0 /: jRules[e0, 1, 0, 1, 1, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 0, 1, 1, 1, 1, 1]"]]
+e0 /: jRules[e0, 1, 1, 0, 0, 1, 0, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 1, 0, 0, 1, 0, 0]"]]
 e0 /: jRules[e0, 1, 1, 0, 0, 1, 0, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 1, 0, 0, 1, 0, 1]"]]
+e0 /: jRules[e0, 1, 1, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 1, 0, 0, 1, 1, 0]"]]
 e0 /: jRules[e0, 1, 1, 0, 0, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 1, 0, 0, 1, 1, 1]"]]
 e0 /: jRules[e0, 1, 1, 0, 1, 1, 0, 0] := 
@@ -299,759 +201,184 @@ e0 /: jRules[e0, 1, 1, 1, 1, 1, 1, 0] :=
 e0 /: jRules[e0, 1, 1, 1, 1, 1, 1, 1] := 
   Get[StringJoin[BasisDirectory[e0], "/jRules[e0, 1, 1, 1, 1, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 0, 0, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 0, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 0, 0, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 0, 1, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 0, 1, 1, 0, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?Positive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 1, 1, 0, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 0, 1, 1, 0, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?Positive, (n5_)?NonPositive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 1, 1, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 0, 1, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 1, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 0, 1, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 0, 1, 1, 1, 1, 1]"]]
+e0 /: jSymmetries[e0, 0, 1, 0, 0, 1, 0, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 0, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 0, 1, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 0, 1, 0, 1]"]]
+e0 /: jSymmetries[e0, 0, 1, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}, {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 1, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 1, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 0, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 0, 1, 1, 0, 0, 0, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n2, n3, n4, 0, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*(-j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n1*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n2, n3, 0, n5, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*(2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*(-j[e0, -1, 0, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           sp[q, q])^n1)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, 0, 0, n6, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}, {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n3, n2, n4, 0, 0, n7]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n5*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n1)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n3, n2, 0, 0, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (2*j[e0, 0, 0, 0, 0, 0, -1, 0] + j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n5*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n1)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n3, n2, 0, 0, 0, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (j[e0, 0, 0, 0, 0, 0, -1, 0] + j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n1*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n3, n2, n4, 0, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*(j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*(j[e0, 0, 0, 0, 0, -1, 0, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, 0])^n1*(j[e0, -1, 0, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0])^n5)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 0, 1, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 0, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, 0, n3, n2, n4, 0, 0, n7]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n5*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n1)]}}
-e0 /: jSymmetries[e0, 0, 1, 1, 0, 0, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, 0, 0, n6, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 0, 0, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 0, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 1, 0, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, 0, n2, n3, 0, n5, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*(2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*(-j[e0, -1, 0, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           sp[q, q])^n1)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 1, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 1, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 0, 0, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, 0, n2, n3, n4, 0, 0, 0]/((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*
-        (-j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*(-j[e0, -1, 0, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           sp[q, q])^n1*(2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, 
-           -1, 0, 0] + 2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, 0, n3, n2, n4, 0, 0, n7]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n5*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n1)]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, 0, n3, n2, n4, 0, 0, 0]/((-j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (j[e0, 0, 0, 0, 0, 0, -1, 0] + j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n1*
-        (j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n5)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 0, 0, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 0, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, 0, n3, n2, n4, 0, 0, n7]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n6*
-        (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n5*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + 2*sp[q, q]))^n1)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 0, 0, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 0, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 0, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 0, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 0, 1, 1, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 0, 1, 1, 1, 1, 1, 1]"]]
+e0 /: jSymmetries[e0, 1, 0, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 0, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 0, 0, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 0, 0, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, 0, 0, n4, n5, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(sp[p, q] - sp[q, q]))^n6*
-        (-j[e0, 0, 0, -1, 0, 0, 0, 0] + 2*j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(-1 + sp[q, q]))^n3*
-        (2*j[e0, -1, 0, 0, 0, 0, 0, 0] - j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n2)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}, {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, 0, 0, n5, n4, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, -1, 0] - 2*j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (sp[p, q] - sp[q, q]))^n6*(j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (sp[p, q] - sp[q, q]))^n7*(j[e0, -1, 0, 0, 0, 0, 0, 0] - 
-          j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, -1, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n3*
-        (2*j[e0, -1, 0, 0, 0, 0, 0, 0] - j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n2)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
-e0 /: jSymmetries[e0, 1, 0, 0, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 0, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 0, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
-      True :> Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 0, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 0, 0, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
-       (n4_)?Positive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 0, 1, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 0, 0, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n3, 0, n1, n4, 0, 0, n7]/
-       ((j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n2*
-        (j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n5*
-        (-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}}
-e0 /: jSymmetries[e0, 1, 0, 1, 0, 0, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, 0, 0, n6, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 0, 0, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 0, 0, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?NonPositive, (n6_)?Positive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 0, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 0, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 0, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 0, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, 
-       (n7_)?NonPositive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, 
-       n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 0, 1, 1, 0, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n3, 0, n1, n4, 0, 0, n7]/
-       ((j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n2*
-        (j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n5*
-        (-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 0, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n3, 0, n1, n4, 0, 0, n7]/
-       ((j[e0, 0, 0, 0, 0, -1, 0, 0] - j[e0, 0, 0, 0, 0, 0, 0, 0])^n2*
-        (j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0])^n5*
-        (-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 0, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 0, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 0, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 0, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 0, 1, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 0, 1, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 0, 0, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?NonPositive, 
-       (n7_)?Positive] /; True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 0, 1, 1, 1, 1, 1]"]]
+e0 /: jSymmetries[e0, 1, 1, 0, 0, 1, 1, 0] := 
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 0, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 0, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, 
-       (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-      True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 0, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
-e0 /: jSymmetries[e0, 1, 1, 0, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 0, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 0, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, 0, n5, n4, n6, 0]/
-       ((-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-2 + sp[q, q]))^n3*(-j[e0, 0, 0, 0, 0, 0, -1, 0] - 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n7)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 0, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 0, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?NonPositive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 1, 0, 0, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, 0, 0, n6, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n2, n1, n3, 0, 0, 0, 0]/
-       ((-j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (sp[p, q] - sp[q, q]))^n7*(j[e0, -1, 0, 0, 0, 0, 0, 0] - 
-          j[e0, 0, -1, 0, 0, 0, 0, 0] + j[e0, 0, 0, -1, 0, 0, 0, 0] + 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5*
-        (-j[e0, 0, 0, 0, 0, 0, -1, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (-sp[p, q] + sp[q, q]))^n6)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n2, n1, n3, 0, n5, 0, 0]/
-       ((j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (3 - sp[q, q]))^n4*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (sp[p, q] - sp[q, q]))^n7*(-j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}}
-e0 /: jSymmetries[e0, 1, 1, 1, 0, 0, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 1, 0, 0, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, 0, 0, n6, 0]/
-       ((-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
-        (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
-          j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
-        (2*j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, 0, -1, 0, 0] + 
-          2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(1 + sp[q, q]))^n5)]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 0, 1, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 0, 0, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 0, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 0, 1, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
-   {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n2, n1, n3, 0, n5, 0, 0]/
-       ((j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] + 
-          j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
-          j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (3 - sp[q, q]))^n4*(2*j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
-           (sp[p, q] - sp[q, q]))^n7*(-j[e0, 0, 0, 0, 0, 0, -1, 0] + 
-          j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6)]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 0, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 0, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 0, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 0, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 0, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 0, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 1, 1, 0, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: jSymmetries[e0, 1, 1, 1, 1, 0, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 0, 1, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 0, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 0, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 0, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?NonPositive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 0, 1, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 1, 0, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 1, 0, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 1, 0, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 1, 0, 1]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 1, 1, 0] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 1, 1, 0]"]]
 e0 /: jSymmetries[e0, 1, 1, 1, 1, 1, 1, 1] := 
-  {{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
-       (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; True :> 
-     Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}
-e0 /: LI[e0] := {#5*j[e0, #1, #2, -1 + #3, #4, 1 + #5, #6, #7]*
-      (sp[p, q] - sp[q, q]) - (#1 + #5 - #6 - #7)*j[e0, #1, #2, #3, #4, #5, 
-       #6, #7]*(sp[p, q] - sp[q, q]) + #1*j[e0, 1 + #1, -1 + #2, #3, #4, #5, 
-       #6, #7]*(sp[p, q] - sp[q, q]) + 2*#5*j[e0, #1, #2, #3, #4, 1 + #5, 
-       -1 + #6, #7]*sp[q, q] + 2*#5*j[e0, #1, #2, #3, #4, 1 + #5, #6, 
-       -1 + #7]*sp[q, q] + 2*#1*j[e0, 1 + #1, #2, #3, #4, #5, -1 + #6, #7]*
-      sp[q, q] + #1*j[e0, 1 + #1, #2, #3, #4, #5, #6, #7]*
-      (sp[p, q] - sp[q, q])*sp[q, q] + #5*j[e0, #1, #2, #3, #4, 1 + #5, #6, 
-       #7]*(sp[p, q] - sp[q, q])*(1 + sp[q, q]) + 
-     (#7*j[e0, -1 + #1, #2, #3, #4, #5, #6, 1 + #7]*(sp[p, p] - 2*sp[p, q] + 
-        sp[q, q]))/2 - (#6*j[e0, -1 + #1, #2, #3, #4, #5, 1 + #6, #7]*
-       (sp[p, p] - 2*sp[p, q] + sp[q, q]))/2 - 
-     (#7*j[e0, #1, -1 + #2, #3, #4, #5, #6, 1 + #7]*(sp[p, p] - 2*sp[p, q] + 
-        sp[q, q]))/2 + (#6*j[e0, #1, -1 + #2, #3, #4, #5, 1 + #6, #7]*
-       (sp[p, p] - 2*sp[p, q] + sp[q, q]))/2 + 
-     (#7*j[e0, #1, #2, -1 + #3, #4, #5, #6, 1 + #7]*(sp[p, p] - 2*sp[p, q] + 
-        sp[q, q]))/2 - (#7*j[e0, #1, #2, #3, #4, -1 + #5, #6, 1 + #7]*
-       (sp[p, p] - 2*sp[p, q] + sp[q, q]))/2 + 
-     (#7*j[e0, #1, #2, #3, #4, #5, #6, 1 + #7]*(sp[p, p] - 2*sp[p, q] + 
-        sp[q, q]))/2 + (#6*j[e0, #1, #2, #3, #4, #5, 1 + #6, #7]*sp[q, q]*
-       (sp[p, p] - 2*sp[p, q] + sp[q, q]))/2} & 
+  Get[StringJoin[BasisDirectory[e0], "/jSymmetries[e0, 1, 1, 1, 1, 1, 1, 1]"]]
+e0 /: LI[e0] := Get[StringJoin[BasisDirectory[e0], "/LI[e0]"]]
 e0 /: LMs[e0] := {l, r}
-e0 /: MappedSectors[e0] := {js[e0, 1, 0, 1, 0, 0, 0, 0], 
-   js[e0, 1, 0, 0, 0, 1, 0, 1], js[e0, 1, 0, 1, 0, 1, 0, 0]}
-e0 /: MIs[e0] := {j[e0, 0, 1, 1, 0, 0, 0, 0], j[e0, 0, 0, 0, 1, 1, 1, 0], 
+e0 /: MappedSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/MappedSectors[e0]"]]
+e0 /: MIs[e0] := {j[e0, 0, 1, 0, 0, 1, 0, 0], j[e0, 0, 0, 0, 1, 1, 1, 0], 
    j[e0, 0, 0, 1, 1, 0, 1, 0], j[e0, 0, 1, 0, 0, 1, 0, 1], 
-   j[e0, 0, 1, 0, 1, 1, 0, 0], j[e0, 0, 1, 1, 0, 0, 0, 1], 
-   j[e0, 0, 1, 1, 0, 0, 1, 0], j[e0, 0, 1, 1, 0, 1, 0, 0], 
-   j[e0, 1, 0, 0, 1, 1, 0, 0], j[e0, 1, 0, 1, 0, 0, 0, 1], 
-   j[e0, 1, 0, 1, 0, 0, 1, 0], j[e0, 1, 0, 1, 1, 0, 0, 0], 
-   j[e0, 1, 1, 1, 0, 0, 0, 0], j[e0, 0, 0, 1, 1, 0, 2, 0], 
+   j[e0, 0, 1, 0, 0, 1, 1, 0], j[e0, 0, 1, 0, 1, 1, 0, 0], 
+   j[e0, 0, 1, 1, 0, 0, 0, 1], j[e0, 0, 1, 1, 0, 1, 0, 0], 
+   j[e0, 1, 0, 0, 0, 1, 1, 0], j[e0, 1, 0, 1, 0, 0, 0, 1], 
+   j[e0, 0, 0, 0, 2, 1, 1, 0], j[e0, 0, 0, 1, 1, 0, 2, 0], 
    j[e0, 0, 2, 0, 0, 1, 0, 1], j[e0, 0, 2, 0, 1, 1, 0, 0], 
-   j[e0, 2, 0, 1, 0, 0, 0, 1], j[e0, 2, 0, 1, 1, 0, 0, 0], 
-   j[e0, 0, 0, 1, 1, 1, 1, 0], j[e0, 0, 1, 0, 0, 1, 1, 1], 
-   j[e0, 0, 1, 0, 1, 1, 0, 1], j[e0, 0, 1, 0, 1, 1, 1, 0], 
-   j[e0, 0, 1, 1, 0, 0, 1, 1], j[e0, 0, 1, 1, 0, 1, 0, 1], 
-   j[e0, 0, 1, 1, 0, 1, 1, 0], j[e0, 1, 0, 0, 0, 1, 1, 1], 
-   j[e0, 1, 0, 0, 1, 1, 1, 0], j[e0, 1, 0, 1, 0, 0, 1, 1], 
+   j[e0, 2, 0, 1, 0, 0, 0, 1], j[e0, 0, 0, 1, 1, 1, 1, 0], 
+   j[e0, 0, 1, 0, 0, 1, 1, 1], j[e0, 0, 1, 0, 1, 1, 0, 1], 
+   j[e0, 0, 1, 0, 1, 1, 1, 0], j[e0, 0, 1, 1, 0, 0, 1, 1], 
+   j[e0, 0, 1, 1, 0, 1, 0, 1], j[e0, 0, 1, 1, 0, 1, 1, 0], 
+   j[e0, 1, 0, 0, 0, 1, 1, 1], j[e0, 1, 0, 1, 0, 0, 1, 1], 
    j[e0, 1, 0, 1, 0, 1, 0, 1], j[e0, 1, 0, 1, 0, 1, 1, 0], 
    j[e0, 1, 0, 1, 1, 0, 0, 1], j[e0, 1, 0, 1, 1, 0, 1, 0], 
-   j[e0, 1, 1, 0, 0, 1, 0, 1], j[e0, 1, 1, 0, 1, 1, 0, 0], 
-   j[e0, 1, 1, 1, 0, 0, 0, 1], j[e0, 1, 1, 1, 0, 0, 1, 0], 
-   j[e0, 1, 1, 1, 0, 1, 0, 0], j[e0, 0, 0, 2, 1, 1, 1, 0], 
-   j[e0, 0, 2, 0, 1, 1, 0, 1], j[e0, 0, 2, 0, 1, 1, 1, 0], 
+   j[e0, 1, 1, 0, 0, 1, 1, 0], j[e0, 1, 1, 1, 0, 1, 0, 0], 
+   j[e0, 0, 0, 2, 1, 1, 1, 0], j[e0, 0, 2, 0, 1, 1, 0, 1], 
+   j[e0, 0, 2, 0, 1, 1, 1, 0], j[e0, 0, 1, 0, 2, 1, 1, 0], 
    j[e0, 0, 2, 1, 0, 1, 0, 1], j[e0, 0, 1, 2, 0, 1, 0, 1], 
-   j[e0, 2, 0, 1, 0, 1, 0, 1], j[e0, 1, 0, 1, 0, 2, 0, 1], 
+   j[e0, 2, 0, 1, 0, 1, 0, 1], j[e0, 1, 0, 2, 0, 1, 0, 1], 
    j[e0, 2, 0, 1, 1, 0, 0, 1], j[e0, 2, 0, 1, 1, 0, 1, 0], 
-   j[e0, 1, 0, 2, 1, 0, 1, 0], j[e0, 2, 1, 0, 0, 1, 0, 1], 
-   j[e0, 2, 1, 1, 0, 0, 0, 1], j[e0, 1, 2, 1, 0, 0, 0, 1], 
-   j[e0, 0, 1, 0, 1, 1, 1, 1], j[e0, 0, 1, 1, 0, 1, 1, 1], 
-   j[e0, 0, 1, 1, 1, 1, 1, 0], j[e0, 1, 0, 0, 1, 1, 1, 1], 
+   j[e0, 1, 0, 2, 1, 0, 1, 0], j[e0, 0, 1, 0, 1, 1, 1, 1], 
+   j[e0, 0, 1, 1, 0, 1, 1, 1], j[e0, 0, 1, 1, 1, 1, 1, 0], 
    j[e0, 1, 0, 1, 0, 1, 1, 1], j[e0, 1, 0, 1, 1, 0, 1, 1], 
-   j[e0, 1, 0, 1, 1, 1, 0, 1], j[e0, 1, 0, 1, 1, 1, 1, 0], 
-   j[e0, 1, 1, 0, 0, 1, 1, 1], j[e0, 1, 1, 0, 1, 1, 0, 1], 
-   j[e0, 1, 1, 0, 1, 1, 1, 0], j[e0, 1, 1, 1, 0, 0, 1, 1], 
-   j[e0, 1, 1, 1, 0, 1, 0, 1], j[e0, 1, 1, 1, 0, 1, 1, 0], 
-   j[e0, 1, 1, 1, 1, 1, 0, 0], j[e0, 0, 2, 0, 1, 1, 1, 1], 
+   j[e0, 1, 0, 1, 1, 1, 1, 0], j[e0, 1, 1, 0, 0, 1, 1, 1], 
+   j[e0, 1, 1, 1, 0, 0, 1, 1], j[e0, 1, 1, 1, 0, 1, 0, 1], 
+   j[e0, 1, 1, 1, 0, 1, 1, 0], j[e0, 0, 2, 0, 1, 1, 1, 1], 
    j[e0, 0, 1, 0, 2, 1, 1, 1], j[e0, 0, 1, 2, 1, 1, 1, 0], 
    j[e0, 0, 1, 1, 2, 1, 1, 0], j[e0, 0, 1, 1, 1, 1, 2, 0], 
    j[e0, 2, 0, 1, 1, 0, 1, 1], j[e0, 1, 0, 2, 1, 0, 1, 1], 
-   j[e0, 1, 0, 1, 2, 1, 0, 1], j[e0, 2, 0, 1, 1, 1, 1, 0], 
-   j[e0, 1, 0, 2, 1, 1, 1, 0], j[e0, 1, 0, 1, 1, 2, 1, 0], 
-   j[e0, 2, 1, 0, 1, 1, 0, 1], j[e0, 1, 1, 0, 2, 1, 0, 1], 
-   j[e0, 2, 1, 1, 0, 1, 0, 1], j[e0, 1, 2, 1, 0, 1, 0, 1], 
-   j[e0, 1, 0, 1, 1, 1, 1, 1], j[e0, 1, 1, 0, 1, 1, 1, 1], 
-   j[e0, 1, 1, 1, 0, 1, 1, 1], j[e0, 1, 1, 1, 1, 1, 0, 1], 
-   j[e0, 1, 1, 1, 1, 1, 1, 0], j[e0, 1, 1, 1, 1, 1, 1, 1]}
-e0 /: NonZeroSectors[e0] := {js[e0, 0, 1, 1, 0, 0, 0, 0], 
-   js[e0, 1, 0, 1, 0, 0, 0, 0], js[e0, 0, 0, 0, 1, 1, 1, 0], 
-   js[e0, 0, 0, 1, 1, 0, 1, 0], js[e0, 0, 1, 0, 0, 1, 0, 1], 
-   js[e0, 0, 1, 0, 1, 1, 0, 0], js[e0, 0, 1, 1, 0, 0, 0, 1], 
-   js[e0, 0, 1, 1, 0, 0, 1, 0], js[e0, 0, 1, 1, 0, 1, 0, 0], 
-   js[e0, 0, 1, 1, 1, 0, 0, 0], js[e0, 1, 0, 0, 0, 1, 0, 1], 
-   js[e0, 1, 0, 0, 1, 1, 0, 0], js[e0, 1, 0, 1, 0, 0, 0, 1], 
-   js[e0, 1, 0, 1, 0, 0, 1, 0], js[e0, 1, 0, 1, 0, 1, 0, 0], 
-   js[e0, 1, 0, 1, 1, 0, 0, 0], js[e0, 1, 1, 1, 0, 0, 0, 0], 
-   js[e0, 0, 0, 0, 1, 1, 1, 1], js[e0, 0, 0, 1, 1, 0, 1, 1], 
-   js[e0, 0, 0, 1, 1, 1, 1, 0], js[e0, 0, 1, 0, 0, 1, 1, 1], 
-   js[e0, 0, 1, 0, 1, 1, 0, 1], js[e0, 0, 1, 0, 1, 1, 1, 0], 
-   js[e0, 0, 1, 1, 0, 0, 1, 1], js[e0, 0, 1, 1, 0, 1, 0, 1], 
-   js[e0, 0, 1, 1, 0, 1, 1, 0], js[e0, 0, 1, 1, 1, 0, 0, 1], 
-   js[e0, 0, 1, 1, 1, 0, 1, 0], js[e0, 0, 1, 1, 1, 1, 0, 0], 
-   js[e0, 1, 0, 0, 0, 1, 1, 1], js[e0, 1, 0, 0, 1, 1, 0, 1], 
-   js[e0, 1, 0, 0, 1, 1, 1, 0], js[e0, 1, 0, 1, 0, 0, 1, 1], 
-   js[e0, 1, 0, 1, 0, 1, 0, 1], js[e0, 1, 0, 1, 0, 1, 1, 0], 
-   js[e0, 1, 0, 1, 1, 0, 0, 1], js[e0, 1, 0, 1, 1, 0, 1, 0], 
-   js[e0, 1, 0, 1, 1, 1, 0, 0], js[e0, 1, 1, 0, 0, 1, 0, 1], 
-   js[e0, 1, 1, 0, 1, 1, 0, 0], js[e0, 1, 1, 1, 0, 0, 0, 1], 
-   js[e0, 1, 1, 1, 0, 0, 1, 0], js[e0, 1, 1, 1, 0, 1, 0, 0], 
-   js[e0, 1, 1, 1, 1, 0, 0, 0], js[e0, 0, 0, 1, 1, 1, 1, 1], 
-   js[e0, 0, 1, 0, 1, 1, 1, 1], js[e0, 0, 1, 1, 0, 1, 1, 1], 
-   js[e0, 0, 1, 1, 1, 0, 1, 1], js[e0, 0, 1, 1, 1, 1, 0, 1], 
-   js[e0, 0, 1, 1, 1, 1, 1, 0], js[e0, 1, 0, 0, 1, 1, 1, 1], 
-   js[e0, 1, 0, 1, 0, 1, 1, 1], js[e0, 1, 0, 1, 1, 0, 1, 1], 
-   js[e0, 1, 0, 1, 1, 1, 0, 1], js[e0, 1, 0, 1, 1, 1, 1, 0], 
-   js[e0, 1, 1, 0, 0, 1, 1, 1], js[e0, 1, 1, 0, 1, 1, 0, 1], 
-   js[e0, 1, 1, 0, 1, 1, 1, 0], js[e0, 1, 1, 1, 0, 0, 1, 1], 
-   js[e0, 1, 1, 1, 0, 1, 0, 1], js[e0, 1, 1, 1, 0, 1, 1, 0], 
-   js[e0, 1, 1, 1, 1, 0, 0, 1], js[e0, 1, 1, 1, 1, 0, 1, 0], 
-   js[e0, 1, 1, 1, 1, 1, 0, 0], js[e0, 0, 1, 1, 1, 1, 1, 1], 
-   js[e0, 1, 0, 1, 1, 1, 1, 1], js[e0, 1, 1, 0, 1, 1, 1, 1], 
-   js[e0, 1, 1, 1, 0, 1, 1, 1], js[e0, 1, 1, 1, 1, 0, 1, 1], 
-   js[e0, 1, 1, 1, 1, 1, 0, 1], js[e0, 1, 1, 1, 1, 1, 1, 0], 
-   js[e0, 1, 1, 1, 1, 1, 1, 1]}
-e0 /: SimpleSectors[e0] := {js[e0, 0, 1, 1, 0, 0, 0, 0], 
-   js[e0, 1, 0, 1, 0, 0, 0, 0], js[e0, 0, 0, 0, 1, 1, 1, 0], 
-   js[e0, 0, 0, 1, 1, 0, 1, 0], js[e0, 0, 1, 0, 0, 1, 0, 1], 
-   js[e0, 0, 1, 0, 1, 1, 0, 0], js[e0, 1, 0, 0, 0, 1, 0, 1], 
-   js[e0, 1, 0, 0, 1, 1, 0, 0]}
+   j[e0, 2, 0, 1, 1, 1, 1, 0], j[e0, 1, 0, 2, 1, 1, 1, 0], 
+   j[e0, 1, 0, 1, 2, 1, 1, 0], j[e0, 1, 1, 1, 0, 1, 1, 1]}
+e0 /: NonZeroSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/NonZeroSectors[e0]"]]
+e0 /: SimpleSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/SimpleSectors[e0]"]]
 e0 /: SPs[e0] := {sp[l, l], sp[l, p], sp[l, q], sp[l, r], sp[p, r], sp[q, r], 
    sp[r, r]}
-e0 /: SR[e0] := Module[{LiteRed`Private`jsc$ = jSector[j[e0, ##1]]}, 
-    If[MemberQ[UniqueSectors[e0], LiteRed`Private`jsc$], 
-     DeleteCases[DeleteDuplicates[Collectj[j[e0, ##1] - 
-         (j[e0, ##1] /. jSymmetries @@ LiteRed`Private`jsc$)]], 0], {}]] & 
-e0 /: Toj[e0] := {sp[l, l] -> 1 + j[e0, 0, -1, 0, 0, 0, 0, 0], 
+e0 /: SR[e0] := Get[StringJoin[BasisDirectory[e0], "/SR[e0]"]]
+e0 /: Toj[e0] := {sp[l, l] -> mc^2 + j[e0, 0, -1, 0, 0, 0, 0, 0], 
    sp[l, p] -> (j[e0, -1, 0, 0, 0, 0, 0, 0] - j[e0, 0, -1, 0, 0, 0, 0, 0] + 
       2*j[e0, 0, 0, 0, 0, 0, -1, 0] - sp[q, q])/2, 
    sp[l, q] -> (j[e0, -1, 0, 0, 0, 0, 0, 0] - j[e0, 0, -1, 0, 0, 0, 0, 0] - 
       sp[q, q])/2, sp[l, r] -> (-j[e0, 0, -1, 0, 0, 0, 0, 0] + 
       j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0])/2, 
-   sp[p, r] -> (-1 - j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 
-       0] - j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, -1, 0, 0] + 
+   sp[p, r] -> (-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
+      j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, -1, 0, 0] + 
       2*j[e0, 0, 0, 0, 0, 0, 0, -1])/2, 
-   sp[q, r] -> (-1 - j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 
-       0] - j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, -1, 0, 0])/2, 
+   sp[q, r] -> (-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
+      j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, 0, -1, 0, 0])/2, 
    sp[r, r] -> j[e0, 0, 0, 0, -1, 0, 0, 0]}
-e0 /: UniqueSectors[e0] := {js[e0, 0, 1, 1, 0, 0, 0, 0], 
-   js[e0, 0, 0, 0, 1, 1, 1, 0], js[e0, 0, 0, 1, 1, 0, 1, 0], 
-   js[e0, 0, 1, 0, 0, 1, 0, 1], js[e0, 0, 1, 0, 1, 1, 0, 0], 
-   js[e0, 0, 1, 1, 0, 0, 0, 1], js[e0, 0, 1, 1, 0, 0, 1, 0], 
-   js[e0, 0, 1, 1, 0, 1, 0, 0], js[e0, 0, 1, 1, 1, 0, 0, 0], 
-   js[e0, 1, 0, 0, 1, 1, 0, 0], js[e0, 1, 0, 1, 0, 0, 0, 1], 
-   js[e0, 1, 0, 1, 0, 0, 1, 0], js[e0, 1, 0, 1, 1, 0, 0, 0], 
-   js[e0, 1, 1, 1, 0, 0, 0, 0], js[e0, 0, 0, 0, 1, 1, 1, 1], 
-   js[e0, 0, 0, 1, 1, 0, 1, 1], js[e0, 0, 0, 1, 1, 1, 1, 0], 
-   js[e0, 0, 1, 0, 0, 1, 1, 1], js[e0, 0, 1, 0, 1, 1, 0, 1], 
-   js[e0, 0, 1, 0, 1, 1, 1, 0], js[e0, 0, 1, 1, 0, 0, 1, 1], 
-   js[e0, 0, 1, 1, 0, 1, 0, 1], js[e0, 0, 1, 1, 0, 1, 1, 0], 
-   js[e0, 0, 1, 1, 1, 0, 0, 1], js[e0, 0, 1, 1, 1, 0, 1, 0], 
-   js[e0, 0, 1, 1, 1, 1, 0, 0], js[e0, 1, 0, 0, 0, 1, 1, 1], 
-   js[e0, 1, 0, 0, 1, 1, 0, 1], js[e0, 1, 0, 0, 1, 1, 1, 0], 
-   js[e0, 1, 0, 1, 0, 0, 1, 1], js[e0, 1, 0, 1, 0, 1, 0, 1], 
-   js[e0, 1, 0, 1, 0, 1, 1, 0], js[e0, 1, 0, 1, 1, 0, 0, 1], 
-   js[e0, 1, 0, 1, 1, 0, 1, 0], js[e0, 1, 0, 1, 1, 1, 0, 0], 
-   js[e0, 1, 1, 0, 0, 1, 0, 1], js[e0, 1, 1, 0, 1, 1, 0, 0], 
-   js[e0, 1, 1, 1, 0, 0, 0, 1], js[e0, 1, 1, 1, 0, 0, 1, 0], 
-   js[e0, 1, 1, 1, 0, 1, 0, 0], js[e0, 1, 1, 1, 1, 0, 0, 0], 
-   js[e0, 0, 0, 1, 1, 1, 1, 1], js[e0, 0, 1, 0, 1, 1, 1, 1], 
-   js[e0, 0, 1, 1, 0, 1, 1, 1], js[e0, 0, 1, 1, 1, 0, 1, 1], 
-   js[e0, 0, 1, 1, 1, 1, 0, 1], js[e0, 0, 1, 1, 1, 1, 1, 0], 
-   js[e0, 1, 0, 0, 1, 1, 1, 1], js[e0, 1, 0, 1, 0, 1, 1, 1], 
-   js[e0, 1, 0, 1, 1, 0, 1, 1], js[e0, 1, 0, 1, 1, 1, 0, 1], 
-   js[e0, 1, 0, 1, 1, 1, 1, 0], js[e0, 1, 1, 0, 0, 1, 1, 1], 
-   js[e0, 1, 1, 0, 1, 1, 0, 1], js[e0, 1, 1, 0, 1, 1, 1, 0], 
-   js[e0, 1, 1, 1, 0, 0, 1, 1], js[e0, 1, 1, 1, 0, 1, 0, 1], 
-   js[e0, 1, 1, 1, 0, 1, 1, 0], js[e0, 1, 1, 1, 1, 0, 0, 1], 
-   js[e0, 1, 1, 1, 1, 0, 1, 0], js[e0, 1, 1, 1, 1, 1, 0, 0], 
-   js[e0, 0, 1, 1, 1, 1, 1, 1], js[e0, 1, 0, 1, 1, 1, 1, 1], 
-   js[e0, 1, 1, 0, 1, 1, 1, 1], js[e0, 1, 1, 1, 0, 1, 1, 1], 
-   js[e0, 1, 1, 1, 1, 0, 1, 1], js[e0, 1, 1, 1, 1, 1, 0, 1], 
-   js[e0, 1, 1, 1, 1, 1, 1, 0], js[e0, 1, 1, 1, 1, 1, 1, 1]}
+e0 /: UniqueSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/UniqueSectors[e0]"]]
 e0 /: ZerojRule[e0] := LiteRed`Private`jjj:j[e0, __] :> 
    0 /; Module[{LiteRed`Private`jjs = 
        Rest[List @@ jSector[LiteRed`Private`jjj]]}, 
      Or @@ (BitOr[LiteRed`Private`jjs, #1] === #1 & ) /@ 
-       {{1, 1, 0, 1, 0, 1, 1}, {1, 1, 0, 0, 1, 1, 0}, {0, 0, 1, 1, 1, 0, 1}, 
-        {0, 0, 1, 0, 1, 1, 1}}]
-e0 /: ZeroSectors[e0] := {js[e0, 0, 0, 0, 0, 0, 0, 0], 
-   js[e0, 0, 0, 0, 0, 0, 0, 1], js[e0, 0, 0, 0, 0, 0, 1, 0], 
-   js[e0, 0, 0, 0, 0, 1, 0, 0], js[e0, 0, 0, 0, 1, 0, 0, 0], 
-   js[e0, 0, 0, 1, 0, 0, 0, 0], js[e0, 0, 1, 0, 0, 0, 0, 0], 
-   js[e0, 1, 0, 0, 0, 0, 0, 0], js[e0, 0, 0, 0, 0, 0, 1, 1], 
-   js[e0, 0, 0, 0, 0, 1, 0, 1], js[e0, 0, 0, 0, 0, 1, 1, 0], 
-   js[e0, 0, 0, 0, 1, 0, 0, 1], js[e0, 0, 0, 0, 1, 0, 1, 0], 
-   js[e0, 0, 0, 0, 1, 1, 0, 0], js[e0, 0, 0, 1, 0, 0, 0, 1], 
-   js[e0, 0, 0, 1, 0, 0, 1, 0], js[e0, 0, 0, 1, 0, 1, 0, 0], 
-   js[e0, 0, 0, 1, 1, 0, 0, 0], js[e0, 0, 1, 0, 0, 0, 0, 1], 
-   js[e0, 0, 1, 0, 0, 0, 1, 0], js[e0, 0, 1, 0, 0, 1, 0, 0], 
-   js[e0, 0, 1, 0, 1, 0, 0, 0], js[e0, 1, 0, 0, 0, 0, 0, 1], 
-   js[e0, 1, 0, 0, 0, 0, 1, 0], js[e0, 1, 0, 0, 0, 1, 0, 0], 
-   js[e0, 1, 0, 0, 1, 0, 0, 0], js[e0, 1, 1, 0, 0, 0, 0, 0], 
-   js[e0, 0, 0, 0, 0, 1, 1, 1], js[e0, 0, 0, 0, 1, 0, 1, 1], 
-   js[e0, 0, 0, 0, 1, 1, 0, 1], js[e0, 0, 0, 1, 0, 0, 1, 1], 
-   js[e0, 0, 0, 1, 0, 1, 0, 1], js[e0, 0, 0, 1, 0, 1, 1, 0], 
-   js[e0, 0, 0, 1, 1, 0, 0, 1], js[e0, 0, 0, 1, 1, 1, 0, 0], 
-   js[e0, 0, 1, 0, 0, 0, 1, 1], js[e0, 0, 1, 0, 0, 1, 1, 0], 
-   js[e0, 0, 1, 0, 1, 0, 0, 1], js[e0, 0, 1, 0, 1, 0, 1, 0], 
-   js[e0, 1, 0, 0, 0, 0, 1, 1], js[e0, 1, 0, 0, 0, 1, 1, 0], 
-   js[e0, 1, 0, 0, 1, 0, 0, 1], js[e0, 1, 0, 0, 1, 0, 1, 0], 
-   js[e0, 1, 1, 0, 0, 0, 0, 1], js[e0, 1, 1, 0, 0, 0, 1, 0], 
-   js[e0, 1, 1, 0, 0, 1, 0, 0], js[e0, 1, 1, 0, 1, 0, 0, 0], 
-   js[e0, 0, 0, 1, 0, 1, 1, 1], js[e0, 0, 0, 1, 1, 1, 0, 1], 
-   js[e0, 0, 1, 0, 1, 0, 1, 1], js[e0, 1, 0, 0, 1, 0, 1, 1], 
-   js[e0, 1, 1, 0, 0, 0, 1, 1], js[e0, 1, 1, 0, 0, 1, 1, 0], 
-   js[e0, 1, 1, 0, 1, 0, 0, 1], js[e0, 1, 1, 0, 1, 0, 1, 0], 
-   js[e0, 1, 1, 0, 1, 0, 1, 1]}
+       {{1, 1, 0, 1, 0, 1, 1}, {0, 0, 1, 0, 1, 1, 1}, {0, 0, 1, 1, 1, 0, 1}}]
+e0 /: ZeroSectors[e0] := Get[StringJoin[BasisDirectory[e0], 
+    "/ZeroSectors[e0]"]]
 e0::usage = "2-loop basis with 2 external momenta.\nUse Information[e0] to \
 get basis summary.\nThis string can be redefined by setting \
 e0::usage=\"\[Ellipsis]\""; Information[e0, LongForm -> False]; 
