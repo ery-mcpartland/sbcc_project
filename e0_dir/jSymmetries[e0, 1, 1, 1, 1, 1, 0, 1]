@@ -1,0 +1,8 @@
+{{j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
+   Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[e0, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?Positive] /; True :> 
+   Expand[j[e0, n3, n5, n1, n4, n2, 0, n7]/
+     (-j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1] + 
+       j[e0, 0, 0, 0, 0, 0, 0, 0]*(-sp[p, q] + sp[q, q]))^n6]}}

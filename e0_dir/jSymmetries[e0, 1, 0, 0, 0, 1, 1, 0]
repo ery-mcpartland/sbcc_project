@@ -1,0 +1,12 @@
+{{j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
+     (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
+    True :> Expand[j[e0, n1, n2, 0, 0, n5, n6, 0]/
+     ((2*j[e0, -1, 0, 0, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
+        2*j[e0, 0, 0, 0, 0, -1, 0, 0] + 4*mc^2*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
+      (-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - j[e0, 0, 0, 0, 0, 0, 0, -1] - 
+        2*j[e0, 0, 0, 0, 0, 0, 0, 0]*(sp[p, q] - sp[q, q]))^n7*
+      (-j[e0, 0, 0, -1, 0, 0, 0, 0] + 2*j[e0, 0, 0, 0, 0, -1, 0, 0] + 
+        2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n3)]}, 
+ {j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?NonPositive, 
+     (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] /; 
+    True :> Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}}

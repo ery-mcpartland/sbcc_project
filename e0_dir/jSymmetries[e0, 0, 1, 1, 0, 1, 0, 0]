@@ -1,0 +1,30 @@
+{{j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
+   Expand[j[e0, 0, n2, n3, 0, n5, 0, 0]/((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*
+      (2*j[e0, 0, 0, 0, 0, 0, -1, 0] + j[e0, 0, 0, 0, 0, 0, 0, -1])^n7*
+      (2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 2*j[e0, 0, 0, -1, 0, 0, 0, 0] - 
+        j[e0, 0, 0, 0, -1, 0, 0, 0] + 4*mc^2*j[e0, 0, 0, 0, 0, 0, 0, 0])^n4*
+      (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
+        2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n1)]}, 
+ {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
+   Expand[j[e0, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
+   Expand[j[e0, 0, n2, n5, 0, n3, 0, 0]/((-j[e0, 0, 0, 0, 0, 0, -1, 0])^n6*
+      (-j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] - 
+        j[e0, 0, 0, -1, 0, 0, 0, 0] + j[e0, 0, 0, 0, -1, 0, 0, 0] + 
+        j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n4*
+      (-j[e0, -1, 0, 0, 0, 0, 0, 0] + 2*j[e0, 0, -1, 0, 0, 0, 0, 0] + 
+        2*j[e0, 0, 0, 0, 0, 0, 0, 0]*sp[q, q])^n1*
+      (-j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
+         (-sp[p, q] + sp[q, q]))^n7)]}, 
+ {j[e0, (n1_)?NonPositive, (n2_)?Positive, (n3_)?Positive, (n4_)?NonPositive, 
+     (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] /; True :> 
+   Expand[j[e0, n1, n2, n5, 0, n3, n6, 0]/
+     ((j[e0, -1, 0, 0, 0, 0, 0, 0] + j[e0, 0, -1, 0, 0, 0, 0, 0] + 
+        j[e0, 0, 0, -1, 0, 0, 0, 0] - j[e0, 0, 0, 0, -1, 0, 0, 0] + 
+        j[e0, 0, 0, 0, 0, -1, 0, 0] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
+         (4*mc^2 - sp[q, q]))^n4*(-2*j[e0, 0, 0, 0, 0, 0, -1, 0] - 
+        j[e0, 0, 0, 0, 0, 0, 0, -1] + j[e0, 0, 0, 0, 0, 0, 0, 0]*
+         (-sp[p, q] + sp[q, q]))^n7)]}}

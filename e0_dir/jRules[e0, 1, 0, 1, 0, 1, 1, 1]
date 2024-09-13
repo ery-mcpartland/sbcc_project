@@ -5,425 +5,261 @@
    (n6*j[e0, n1, n2, n3, n4, n5, 1 + n6, -1 + n7])/(-1 + n7) + 
    j[e0, n1, 1 + n2, -1 + n3, n4, n5, n6, n7] - j[e0, n1, 1 + n2, n3, n4, 
     -1 + n5, n6, n7] + (2*n4*j[e0, n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
+     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])) - 
    (2*n5*j[e0, n1, 1 + n2, -1 + n3, n4, 1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
+     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])) - 
    (2*n4*j[e0, n1, 1 + n2, -1 + n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) + 
-   (2*n5*j[e0, n1, 1 + n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*(-1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   (2*n5*j[e0, n1, 1 + n2, n3, n4, 1 + n5, n6, -2 + n7]*(-1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) - 
-   (2*n3*j[e0, n1, 1 + n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*(1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) - 
-   (2*n3*j[e0, n1, 1 + n2, 1 + n3, n4, n5, n6, -2 + n7]*(1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   (2*n1*j[e0, 1 + n1, 1 + n2, n3, n4, n5, -1 + n6, -1 + n7]*
-     (-2*sp[p, q]^2 + sp[p, p]*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])*(sp[p, p] - 2*sp[p, q] - 
-      sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+     (sp[p, q] - sp[q, q]))/((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])) + 
+   (2*n5*j[e0, n1, 1 + n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*sp[q, q])/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*n5*j[e0, n1, 1 + n2, n3, n4, 1 + n5, n6, -2 + n7]*sp[q, q])/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])) - 
+   (2*n3*j[e0, n1, 1 + n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*sp[q, q])/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])) - 
+   (2*n3*j[e0, n1, 1 + n2, 1 + n3, n4, n5, n6, -2 + n7]*sp[q, q])/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*mc^2*n1*j[e0, 1 + n1, 1 + n2, n3, n4, n5, -1 + n6, -1 + n7]*
+     (-2*sp[p, q]^2 + mb^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
    (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-2 + sp[q, q]))/
-    ((-1 + n7)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
+     (sp[p, q] - sp[q, q])*(-2*mc^2 + sp[q, q]))/
+    ((-1 + n7)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
       2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
    ((1 + n2)*j[e0, -1 + n1, 2 + n2, n3, n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-2 + sp[q, q]))/
-    ((-1 + n7)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
+     (sp[p, q] - sp[q, q])*(-2*mc^2 + sp[q, q]))/
+    ((-1 + n7)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
       2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
    (n4*j[e0, n1, 1 + n2, n3, 1 + n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-2 + sp[q, q]))/
-    ((-1 + n7)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (n4*j[e0, n1, 1 + n2, n3, 1 + n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q])*
-     (-2 + sp[q, q]))/((-1 + n7)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-      sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q])*
-     (2*sp[p, q]^2 - sp[p, p]*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2))/
-    ((-sp[p, p] + 2*sp[p, q] - sp[q, q])*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (j[e0, n1, 1 + n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q])*
-     (4*sp[p, p] + 2*n2*sp[p, p] + 2*n5*sp[p, p] - 2*n6*sp[p, p] - 
-      2*n7*sp[p, p] - 8*sp[p, q] - 4*n2*sp[p, q] - 4*n5*sp[p, q] + 
-      4*n6*sp[p, q] + 4*n7*sp[p, q] - 6*sp[p, q]^2 + 2*d*sp[p, q]^2 - 
-      4*n1*sp[p, q]^2 - 4*n2*sp[p, q]^2 - 2*n4*sp[p, q]^2 - 2*n5*sp[p, q]^2 + 
-      2*n7*sp[p, q]^2 + 4*sp[q, q] + 2*n2*sp[q, q] + 2*n5*sp[q, q] - 
-      2*n6*sp[q, q] - 2*n7*sp[q, q] + sp[p, p]*sp[q, q] - 
-      d*sp[p, p]*sp[q, q] + 2*n1*sp[p, p]*sp[q, q] + n2*sp[p, p]*sp[q, q] + 
-      n4*sp[p, p]*sp[q, q] + n6*sp[p, p]*sp[q, q] + 10*sp[p, q]*sp[q, q] - 
-      2*d*sp[p, q]*sp[q, q] + 4*n1*sp[p, q]*sp[q, q] + 
-      6*n2*sp[p, q]*sp[q, q] + 2*n4*sp[p, q]*sp[q, q] + 
-      4*n5*sp[p, q]*sp[q, q] - 2*n6*sp[p, q]*sp[q, q] - 
-      4*n7*sp[p, q]*sp[q, q] - 5*sp[q, q]^2 + d*sp[q, q]^2 - 
-      2*n1*sp[q, q]^2 - 3*n2*sp[q, q]^2 - n4*sp[q, q]^2 - 2*n5*sp[q, q]^2 + 
-      n6*sp[q, q]^2 + 2*n7*sp[q, q]^2))/((-1 + n7)*(-sp[p, p] + 2*sp[p, q] - 
-      sp[q, q])*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
+     (sp[p, q] - sp[q, q])*(-2*mc^2 + sp[q, q]))/
+    ((-1 + n7)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
       2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (2*(1 + n2)*j[e0, n1, 2 + n2, n3, n4, n5, -1 + n6, -1 + n7]*
-     (2*sp[p, q]^2 + sp[p, p]*sp[q, q] - 6*sp[p, q]*sp[q, q] - 
-      2*sp[p, q]^2*sp[q, q] + 3*sp[q, q]^2 + 4*sp[p, q]*sp[q, q]^2 - 
-      2*sp[q, q]^3))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - (2*n4*j[e0, n1, 1 + n2, n3, 1 + n4, n5, n6, -2 + n7]*
-     (sp[p, p] - 2*sp[p, q] - 3*sp[p, q]^2 + sp[q, q] + 6*sp[p, q]*sp[q, q] + 
-      sp[p, q]^2*sp[q, q] - 3*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) + ((1 + n2)*j[e0, n1, 2 + n2, n3, n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(4*sp[p, q]^2 - 4*sp[p, p]*sp[q, q] + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3))/
-    ((-1 + n7)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)), 
- j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
-    (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
+   (2*n4*j[e0, n1, 1 + n2, n3, 1 + n4, n5, n6, -2 + n7]*
+     (sp[p, q] - sp[q, q])^2*(-2*mc^2 + sp[q, q]))/
+    ((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])*(-(mb^2*mc^2) + 
+      2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + 
+      sp[q, q]^2)) - (j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*
+     (sp[p, q] - sp[q, q])*(2*sp[p, q]^2 - mb^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2))/((-mb^2 + 2*sp[p, q] - sp[q, q])*
+     (-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
+   (j[e0, n1, 1 + n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q])*
+     (4*mb^2*mc^2 + 2*mb^2*mc^2*n2 + 2*mb^2*mc^2*n5 - 2*mb^2*mc^2*n6 - 
+      2*mb^2*mc^2*n7 - 8*mc^2*sp[p, q] - 4*mc^2*n2*sp[p, q] - 
+      4*mc^2*n5*sp[p, q] + 4*mc^2*n6*sp[p, q] + 4*mc^2*n7*sp[p, q] - 
+      6*sp[p, q]^2 + 2*d*sp[p, q]^2 - 4*n1*sp[p, q]^2 - 4*n2*sp[p, q]^2 - 
+      2*n4*sp[p, q]^2 - 2*n5*sp[p, q]^2 + 2*n7*sp[p, q]^2 + mb^2*sp[q, q] - 
+      d*mb^2*sp[q, q] + 4*mc^2*sp[q, q] + 2*mb^2*n1*sp[q, q] + 
+      mb^2*n2*sp[q, q] + 2*mc^2*n2*sp[q, q] + mb^2*n4*sp[q, q] + 
+      2*mc^2*n5*sp[q, q] + mb^2*n6*sp[q, q] - 2*mc^2*n6*sp[q, q] - 
+      2*mc^2*n7*sp[q, q] + 10*sp[p, q]*sp[q, q] - 2*d*sp[p, q]*sp[q, q] + 
+      4*n1*sp[p, q]*sp[q, q] + 6*n2*sp[p, q]*sp[q, q] + 
+      2*n4*sp[p, q]*sp[q, q] + 4*n5*sp[p, q]*sp[q, q] - 
+      2*n6*sp[p, q]*sp[q, q] - 4*n7*sp[p, q]*sp[q, q] - 5*sp[q, q]^2 + 
+      d*sp[q, q]^2 - 2*n1*sp[q, q]^2 - 3*n2*sp[q, q]^2 - n4*sp[q, q]^2 - 
+      2*n5*sp[q, q]^2 + n6*sp[q, q]^2 + 2*n7*sp[q, q]^2))/
+    ((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])*(-(mb^2*mc^2) + 
+      2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + 
+      sp[q, q]^2)) - (2*(1 + n2)*j[e0, n1, 2 + n2, n3, n4, n5, -1 + n6, 
+      -1 + n7]*(2*mc^2*sp[p, q]^2 + mb^2*mc^2*sp[q, q] - 
+      6*mc^2*sp[p, q]*sp[q, q] - 2*sp[p, q]^2*sp[q, q] + 3*mc^2*sp[q, q]^2 + 
+      4*sp[p, q]*sp[q, q]^2 - 2*sp[q, q]^3))/
+    ((-1 + n7)*(mb^2 - 2*sp[p, q] + sp[q, q])*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+   ((1 + n2)*j[e0, n1, 2 + n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q])*
+     (4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3))/
+    ((-1 + n7)*(-mb^2 + 2*sp[p, q] - sp[q, q])*(-(mb^2*mc^2) + 
+      2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + 
+      sp[q, q]^2)), j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
+    (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
     !(n4 == 0 || n5 == 1) -> j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, n7] + 
-   (n3*j[e0, n1, -1 + n2, 1 + n3, 1 + n4, -1 + n5, n6, n7])/(-1 + n5) - 
-   (n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, n7])/(-1 + n5) - 
-   (4*j[e0, n1, n2, n3, 1 + n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q]))/
-    (sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 
-     4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 
-     2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
-   (4*j[e0, n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q]))/
-    (sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 
-     4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 
-     2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
-   (4*(1 + n4)*j[e0, n1, n2, n3, 2 + n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n3*j[e0, n1, n2, 1 + n3, 1 + n4, -1 + n5, -1 + n6, 
-      n7]*(sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n3*j[e0, n1, n2, 1 + n3, 1 + n4, -1 + n5, n6, 
-      -1 + n7]*(sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (2*(1 + n4)*j[e0, -1 + n1, n2, n3, 2 + n4, -1 + n5, n6, 
-      n7]*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*(1 + n4)*j[e0, n1, n2, n3, 2 + n4, -2 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*(1 + n4)*j[e0, n1, n2, n3, 2 + n4, -1 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*n3*j[e0, n1, n2, 1 + n3, 1 + n4, -2 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   ((1 + n4)*j[e0, n1, -1 + n2, n3, 2 + n4, -1 + n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 
-     4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-     2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-     sp[q, q]^3) + ((1 + n4)*j[e0, n1, n2, -1 + n3, 2 + n4, -1 + n5, n6, n7]*
-     (-1 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (n7*j[e0, n1, n2, n3, 1 + n4, -1 + n5, -1 + n6, 1 + n7]*(1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, n7]*(-3*sp[p, p] - n3*sp[p, p] - 
-      n4*sp[p, p] + 2*n5*sp[p, p] + 6*sp[p, q] + 2*n3*sp[p, q] + 
-      2*n4*sp[p, q] - 4*n5*sp[p, q] - 4*sp[p, q]^2 + 4*d*sp[p, q]^2 - 
-      4*n3*sp[p, q]^2 - 8*n4*sp[p, q]^2 - 4*n5*sp[p, q]^2 - 4*n7*sp[p, q]^2 - 
-      3*sp[q, q] - n3*sp[q, q] - n4*sp[q, q] + 2*n5*sp[q, q] + 
-      2*sp[p, p]*sp[q, q] - 3*d*sp[p, p]*sp[q, q] + 4*n3*sp[p, p]*sp[q, q] + 
-      5*n4*sp[p, p]*sp[q, q] + 3*n5*sp[p, p]*sp[q, q] + 
-      3*n7*sp[p, p]*sp[q, q] + 4*sp[p, q]*sp[q, q] - 2*d*sp[p, q]*sp[q, q] + 
-      6*n4*sp[p, q]*sp[q, q] + 2*n5*sp[p, q]*sp[q, q] + 
-      2*n7*sp[p, q]*sp[q, q] - 2*sp[q, q]^2 + d*sp[q, q]^2 - 
-      3*n4*sp[q, q]^2 - n5*sp[q, q]^2 - n7*sp[q, q]^2 - sp[p, p]*sp[q, q]^2 + 
-      d*sp[p, p]*sp[q, q]^2 - n3*sp[p, p]*sp[q, q]^2 - 
-      2*n4*sp[p, p]*sp[q, q]^2 - n5*sp[p, p]*sp[q, q]^2 - 
-      n7*sp[p, p]*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
-      2*d*sp[p, q]*sp[q, q]^2 + 2*n3*sp[p, q]*sp[q, q]^2 + 
-      4*n4*sp[p, q]*sp[q, q]^2 + 2*n5*sp[p, q]*sp[q, q]^2 + 
-      2*n7*sp[p, q]*sp[q, q]^2 - sp[q, q]^3 + d*sp[q, q]^3 - n3*sp[q, q]^3 - 
-      2*n4*sp[q, q]^3 - n5*sp[q, q]^3 - n7*sp[q, q]^3))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
- j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
-    (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
+   (n3*j[e0, n1, -1 + n2, 1 + n3, 1 + n4, -1 + n5, n6, n7])/(-1 + n5) + 
+   ((-1 + d - n3 - 2*n4 - n5 - n7)*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, 
+      n7])/(-1 + n5) - (n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, n7])/
+    (-1 + n5), j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
+    (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
     !(n1 == 1 || n4 == 0) -> 
-  (n6*j[e0, -1 + n1, n2, n3, 1 + n4, n5, 1 + n6, -1 + n7])/(-1 + n1) + 
-   (n2*j[e0, -1 + n1, 1 + n2, -1 + n3, 1 + n4, n5, n6, n7])/(-1 + n1) - 
-   (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7])/(-1 + n1) + 
-   j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, n7] + 
-   ((1 + n4)*j[e0, -2 + n1, n2, n3, 2 + n4, n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) + (n2*j[e0, -2 + n1, 1 + n2, n3, 1 + n4, n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - (n7*j[e0, -1 + n1, n2, n3, 1 + n4, n5, -1 + n6, 1 + n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - ((1 + n4)*j[e0, -1 + n1, n2, n3, 2 + n4, -1 + n5, n6, 
-      n7]*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    (2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
-      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
-   ((1 + n4)*j[e0, -1 + n1, n2, n3, 2 + n4, n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - ((1 + n4)*j[e0, -1 + n1, n2, n3, 2 + n4, n5, n6, 
-      -1 + n7]*(sp[p, q] - sp[q, q]))/((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (n2*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-      sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (j[e0, n1, n2, n3, 1 + n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q]))/
-    (-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + 
-     sp[q, q]^2) + (n2*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, n6, n7]*
-     (-2 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    (2*(-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, n7]*(-3*sp[p, p] + d*sp[p, p] - 
-      n2*sp[p, p] - 3*n4*sp[p, p] + n6*sp[p, p] - 2*n7*sp[p, p] + 
-      6*sp[p, q] - 2*d*sp[p, q] + 2*n2*sp[p, q] + 6*n4*sp[p, q] - 
-      2*n6*sp[p, q] + 4*n7*sp[p, q] + 2*sp[p, q]^2 - 2*d*sp[p, q]^2 + 
-      2*n1*sp[p, q]^2 + 2*n2*sp[p, q]^2 + 4*n4*sp[p, q]^2 + 2*n7*sp[p, q]^2 - 
-      3*sp[q, q] + d*sp[q, q] - n2*sp[q, q] - 3*n4*sp[q, q] + n6*sp[q, q] - 
-      2*n7*sp[q, q] - 4*sp[p, q]*sp[q, q] + 4*d*sp[p, q]*sp[q, q] - 
-      4*n1*sp[p, q]*sp[q, q] - 4*n2*sp[p, q]*sp[q, q] - 
-      8*n4*sp[p, q]*sp[q, q] - 4*n7*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 - 
-      2*d*sp[q, q]^2 + 2*n1*sp[q, q]^2 + 2*n2*sp[q, q]^2 + 4*n4*sp[q, q]^2 + 
-      2*n7*sp[q, q]^2))/(2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + 
-      sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)), 
+  ((-1 + d - n1 - n2 - 2*n4 - n7)*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, n7])/
+    (-1 + n1) + (n6*j[e0, -1 + n1, n2, n3, 1 + n4, n5, 1 + n6, -1 + n7])/
+    (-1 + n1) + (n2*j[e0, -1 + n1, 1 + n2, -1 + n3, 1 + n4, n5, n6, n7])/
+    (-1 + n1) - (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7])/(-1 + n1) + 
+   j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, n7], 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
     !(n1 == 1 || n2 == 0) -> 
   -((n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, n7])/(-1 + n1)) + 
    (n4*j[e0, -1 + n1, 1 + n2, -1 + n3, 1 + n4, n5, n6, n7])/(-1 + n1) + 
+   (n4*j[e0, -2 + n1, 1 + n2, n3, 1 + n4, n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+   ((1 + n2)*j[e0, -2 + n1, 2 + n2, n3, n4, n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
+   (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, -1 + n5, n6, n7]*
+     (2*mc^2 - sp[q, q])*(mb^2 - 2*sp[p, q] + sp[q, q]))/
+    (2*(-1 + n1)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
+   (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, n6, -1 + n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n1)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+   ((1 + n2)*j[e0, -1 + n1, 2 + n2, n3, n4, n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n1)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+   (j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + 
+     mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2) + 
    (n7*j[e0, -1 + n1, 1 + n2, n3, n4, n5, -1 + n6, 1 + n7]*
-     (-2*sp[p, q]^2 + sp[p, p]*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    (2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
-      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
-   (n4*j[e0, -2 + n1, 1 + n2, n3, 1 + n4, n5, n6, n7]*(-2 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + 
-      sp[q, q]^2)) + ((1 + n2)*j[e0, -2 + n1, 2 + n2, n3, n4, n5, n6, n7]*
-     (-2 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    (2*(-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, -1 + n5, n6, n7]*(-2 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + 
-      sp[q, q]^2)) + (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, n6, n7]*
-     (-2 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    (2*(-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (n4*j[e0, -1 + n1, 1 + n2, n3, 1 + n4, n5, n6, -1 + n7]*(-2 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   ((1 + n2)*j[e0, -1 + n1, 2 + n2, n3, n4, n5, -1 + n6, n7]*(-2 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(-2 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-     sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2) + 
-   (j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7]*(-4*sp[p, p] + 2*n1*sp[p, p] - 
-      2*n2*sp[p, p] + 8*sp[p, q] - 4*n1*sp[p, q] + 4*n2*sp[p, q] + 
-      2*sp[p, q]^2 - 2*d*sp[p, q]^2 + 2*n1*sp[p, q]^2 + 4*n2*sp[p, q]^2 + 
-      2*n4*sp[p, q]^2 + 2*n6*sp[p, q]^2 - 4*sp[q, q] + 2*n1*sp[q, q] - 
-      2*n2*sp[q, q] + sp[p, p]*sp[q, q] + d*sp[p, p]*sp[q, q] - 
-      2*n1*sp[p, p]*sp[q, q] - n2*sp[p, p]*sp[q, q] - n4*sp[p, p]*sp[q, q] - 
-      n6*sp[p, p]*sp[q, q] - 6*sp[p, q]*sp[q, q] + 2*d*sp[p, q]*sp[q, q] - 
-      6*n2*sp[p, q]*sp[q, q] - 2*n4*sp[p, q]*sp[q, q] - 
-      2*n6*sp[p, q]*sp[q, q] + 3*sp[q, q]^2 - d*sp[q, q]^2 + 
-      3*n2*sp[q, q]^2 + n4*sp[q, q]^2 + n6*sp[q, q]^2))/
-    (2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
-      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+     (2*sp[p, q]^2 - mb^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2))/
+    (2*(-1 + n1)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - 
+      mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
+   (j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7]*(-4*mb^2*mc^2 + 
+      2*mb^2*mc^2*n1 - 2*mb^2*mc^2*n2 + 8*mc^2*sp[p, q] - 
+      4*mc^2*n1*sp[p, q] + 4*mc^2*n2*sp[p, q] + 2*sp[p, q]^2 - 
+      2*d*sp[p, q]^2 + 2*n1*sp[p, q]^2 + 4*n2*sp[p, q]^2 + 2*n4*sp[p, q]^2 + 
+      2*n6*sp[p, q]^2 + mb^2*sp[q, q] + d*mb^2*sp[q, q] - 4*mc^2*sp[q, q] - 
+      2*mb^2*n1*sp[q, q] + 2*mc^2*n1*sp[q, q] - mb^2*n2*sp[q, q] - 
+      2*mc^2*n2*sp[q, q] - mb^2*n4*sp[q, q] - mb^2*n6*sp[q, q] - 
+      6*sp[p, q]*sp[q, q] + 2*d*sp[p, q]*sp[q, q] - 6*n2*sp[p, q]*sp[q, q] - 
+      2*n4*sp[p, q]*sp[q, q] - 2*n6*sp[p, q]*sp[q, q] + 3*sp[q, q]^2 - 
+      d*sp[q, q]^2 + 3*n2*sp[q, q]^2 + n4*sp[q, q]^2 + n6*sp[q, q]^2))/
+    (2*(-1 + n1)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
    ((1 + n2)*j[e0, -1 + n1, 2 + n2, n3, n4, n5, n6, n7]*
-     (4*sp[p, q]^2 - 4*sp[p, p]*sp[q, q] + sp[p, p]*sp[q, q]^2 - 
-      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3))/
-    (2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
+     (-4*mc^2*sp[p, q]^2 + 4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 
+      2*sp[p, q]*sp[q, q]^2 - sp[q, q]^3))/
+    (2*(-1 + n1)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
       2*sp[p, q]*sp[q, q] - sp[q, q]^2)), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; n7 != 1 -> 
-  (4*n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) + (4*n4*j[e0, n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+  (4*mc^2*n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*
+     (sp[p, q] - sp[q, q]))/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (4*mc^2*n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, 
+      -1 + n7]*(sp[p, q] - sp[q, q]))/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (4*mc^2*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, 
+      -1 + n7]*(sp[p, q] - sp[q, q]))/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, n6, -2 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n4*j[e0, n1, n2, n3, 1 + n4, n5, n6, -2 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, n6, -2 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
       sp[q, q]^3)) + (2*n4*j[e0, n1, -1 + n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, n6, -2 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n4*j[e0, n1, n2, n3, 1 + n4, n5, n6, -2 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, n6, -2 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q])*
-     (1 + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-     2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-     sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n7)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, n6, -1 + n7]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-1 + n7)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, -1 + n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n7)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
+   (2*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*sp[q, q]*(-sp[p, q] + sp[q, q]))/
+    (4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+     2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
    (2*j[e0, n1, n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q])*
-     (-1 - d + n4 + 3*n5 + n7 - sp[q, q] - d*sp[q, q] + 2*n3*sp[q, q] + 
+     (-2*mc^2*n3 + 2*mc^2*n5 - sp[q, q] - d*sp[q, q] + 2*n3*sp[q, q] + 
       n4*sp[q, q] + n5*sp[q, q] + n7*sp[q, q]))/
-    ((-1 + n7)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
+    ((-1 + n7)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; n6 != 1 -> 
-  (-2*n2*j[e0, n1, 1 + n2, n3, n4, n5, -2 + n6, n7])/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
+  (-2*mc^2*n2*j[e0, n1, 1 + n2, n3, n4, n5, -2 + n6, n7])/
+    ((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
       2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
-   (2*n1*j[e0, 1 + n1, n2, n3, n4, n5, -2 + n6, n7])/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
+   (2*mc^2*n1*j[e0, 1 + n1, n2, n3, n4, n5, -2 + n6, n7])/
+    ((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
       2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
+   (n2*j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
    (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q]))/
-    ((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
+    ((-1 + n6)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
       2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
-   (n2*j[e0, n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q])*
-     (-2 + sp[q, q]))/((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-      sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (4*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) + (2*n4*j[e0, n1, -1 + n2, n3, 1 + n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-1 + sp[q, q]))/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -2 + n6, n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -2 + n6, n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*(-1 + sp[q, q])^2)/
-    ((-1 + n6)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, -1 + n6, n7]*(2*mc^2 - sp[q, q])^2*
+     (mb^2 - 2*sp[p, q] + sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)*(-4*mc^2*sp[p, q]^2 + 
+      4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+      sp[q, q]^3)) - (n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])^2*(mb^2 - 2*sp[p, q] + sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)*
+     (-4*mc^2*sp[p, q]^2 + 4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 
+      2*sp[p, q]*sp[q, q]^2 - sp[q, q]^3)) - 
    (2*n4*j[e0, n1, n2, n3, 1 + n4, n5, -1 + n6, -1 + n7]*
-     (sp[p, q] - sp[q, q])^2*(5 - 2*sp[q, q] + sp[q, q]^2))/
-    ((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) + (n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-sp[p, p] + 2*sp[p, q] - sp[q, q])*
-     (5 - 2*sp[q, q] + sp[q, q]^2))/((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)*
-     (sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 
-      4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 
+     (2*mc^2 - sp[q, q])^2*(-sp[p, q] + sp[q, q])^2)/
+    ((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)*(-4*mc^2*sp[p, q]^2 + 
+      4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+      sp[q, q]^3)) - (n7*j[e0, n1, n2, n3, n4, n5, -2 + n6, 1 + n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q])*(2*sp[p, q]^2 - 
+      mb^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2))/
+    ((-1 + n6)*(mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2)*(-4*mc^2*sp[p, q]^2 + 
+      4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+      sp[q, q]^3)) - (4*mc^2*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, -1 + n6, 
+      n7]*(sp[p, q] - sp[q, q]))/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -2 + n6, n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n5*j[e0, n1, n2, n3, n4, 1 + n5, -1 + n6, -1 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -2 + n6, n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n3*j[e0, n1, n2, 1 + n3, n4, n5, -1 + n6, -1 + n7]*
+     (4*mc^2 - sp[q, q])*sp[q, q])/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*n4*j[e0, n1, -1 + n2, n3, 1 + n4, n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n6)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
       2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, -1 + n6, n7]*(sp[p, q] - sp[q, q])*
-     (-sp[p, p] + 2*sp[p, q] - sp[q, q])*(5 - 2*sp[q, q] + sp[q, q]^2))/
-    ((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) + (n4*j[e0, n1, n2, n3, 1 + n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-sp[p, p] + 2*sp[p, q] - sp[q, q])*
-     (5 - 2*sp[q, q] + sp[q, q]^2))/((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + 
-      sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)*
-     (sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 
-      4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 
+   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, -1 + n6, n7]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-1 + n6)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n6)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
       2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (n7*j[e0, n1, n2, n3, n4, n5, -2 + n6, 1 + n7]*(sp[p, q] - sp[q, q])*
-     (-3*sp[p, p] + 6*sp[p, q] - 2*sp[p, q]^2 - 3*sp[q, q] + 
-      4*sp[p, q]*sp[q, q] + 2*sp[p, q]^2*sp[q, q] - 2*sp[q, q]^2 - 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3))/
-    ((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q])*(-sp[p, p] + d*sp[p, p] + 2*n1*sp[p, p] + 
-      n2*sp[p, p] - n4*sp[p, p] - 6*n5*sp[p, p] + n6*sp[p, p] - 
-      2*n7*sp[p, p] + 2*sp[p, q] - 2*d*sp[p, q] - 4*n1*sp[p, q] - 
-      2*n2*sp[p, q] + 2*n4*sp[p, q] + 12*n5*sp[p, q] - 2*n6*sp[p, q] + 
-      4*n7*sp[p, q] - 4*sp[p, q]^2 - 6*d*sp[p, q]^2 + 8*n1*sp[p, q]^2 + 
-      4*n2*sp[p, q]^2 + 6*n4*sp[p, q]^2 + 6*n5*sp[p, q]^2 + 4*n6*sp[p, q]^2 + 
-      2*n7*sp[p, q]^2 - sp[q, q] + d*sp[q, q] + 2*n1*sp[q, q] + n2*sp[q, q] - 
-      n4*sp[q, q] - 6*n5*sp[q, q] + n6*sp[q, q] - 2*n7*sp[q, q] + 
-      2*sp[p, p]*sp[q, q] + 4*d*sp[p, p]*sp[q, q] - 4*n1*sp[p, p]*sp[q, q] - 
-      2*n2*sp[p, p]*sp[q, q] - 4*n3*sp[p, p]*sp[q, q] - 
-      4*n4*sp[p, p]*sp[q, q] - 2*n5*sp[p, p]*sp[q, q] - 
-      2*n6*sp[p, p]*sp[q, q] - 2*n7*sp[p, p]*sp[q, q] + 4*sp[p, q]*sp[q, q] + 
-      4*d*sp[p, q]*sp[q, q] - 8*n1*sp[p, q]*sp[q, q] - 
-      4*n2*sp[p, q]*sp[q, q] + 8*n3*sp[p, q]*sp[q, q] - 
-      4*n4*sp[p, q]*sp[q, q] - 8*n5*sp[p, q]*sp[q, q] - 
-      4*n6*sp[p, q]*sp[q, q] - 2*d*sp[p, q]^2*sp[q, q] + 
-      4*n3*sp[p, q]^2*sp[q, q] + 2*n4*sp[p, q]^2*sp[q, q] + 
-      2*n5*sp[p, q]^2*sp[q, q] + 2*n7*sp[p, q]^2*sp[q, q] - 2*sp[q, q]^2 - 
-      2*d*sp[q, q]^2 + 4*n1*sp[q, q]^2 + 2*n2*sp[q, q]^2 - 4*n3*sp[q, q]^2 + 
-      2*n4*sp[q, q]^2 + 4*n5*sp[q, q]^2 + 2*n6*sp[q, q]^2 - 
-      sp[p, p]*sp[q, q]^2 - d*sp[p, p]*sp[q, q]^2 + 
-      2*n1*sp[p, p]*sp[q, q]^2 + n2*sp[p, p]*sp[q, q]^2 + 
-      n4*sp[p, p]*sp[q, q]^2 + n6*sp[p, p]*sp[q, q]^2 + 
+   (j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q])*
+     (4*mb^2*mc^4*n3 - 4*mb^2*mc^4*n5 - 8*mc^4*n3*sp[p, q] + 
+      8*mc^4*n5*sp[p, q] - 4*mc^2*sp[p, q]^2 - 4*d*mc^2*sp[p, q]^2 + 
+      8*mc^2*n1*sp[p, q]^2 + 4*mc^2*n2*sp[p, q]^2 - 4*mc^2*n3*sp[p, q]^2 + 
+      4*mc^2*n4*sp[p, q]^2 + 4*mc^2*n5*sp[p, q]^2 + 4*mc^2*n6*sp[p, q]^2 + 
+      4*mb^2*mc^2*sp[q, q] + 6*d*mb^2*mc^2*sp[q, q] - 
+      8*mb^2*mc^2*n1*sp[q, q] - 4*mb^2*mc^2*n2*sp[q, q] - 
+      4*mb^2*mc^2*n3*sp[q, q] + 4*mc^4*n3*sp[q, q] - 
+      6*mb^2*mc^2*n4*sp[q, q] - 2*mb^2*mc^2*n5*sp[q, q] - 
+      4*mc^4*n5*sp[q, q] - 4*mb^2*mc^2*n6*sp[q, q] - 
+      2*mb^2*mc^2*n7*sp[q, q] - 4*d*mc^2*sp[p, q]*sp[q, q] + 
+      16*mc^2*n3*sp[p, q]*sp[q, q] + 4*mc^2*n4*sp[p, q]*sp[q, q] - 
+      4*mc^2*n5*sp[p, q]*sp[q, q] + 4*mc^2*n7*sp[p, q]*sp[q, q] - 
+      2*d*sp[p, q]^2*sp[q, q] + 4*n3*sp[p, q]^2*sp[q, q] + 
+      2*n4*sp[p, q]^2*sp[q, q] + 2*n5*sp[p, q]^2*sp[q, q] + 
+      2*n7*sp[p, q]^2*sp[q, q] - mb^2*sp[q, q]^2 - d*mb^2*sp[q, q]^2 + 
+      2*d*mc^2*sp[q, q]^2 + 2*mb^2*n1*sp[q, q]^2 + mb^2*n2*sp[q, q]^2 - 
+      8*mc^2*n3*sp[q, q]^2 + mb^2*n4*sp[q, q]^2 - 2*mc^2*n4*sp[q, q]^2 + 
+      2*mc^2*n5*sp[q, q]^2 + mb^2*n6*sp[q, q]^2 - 2*mc^2*n7*sp[q, q]^2 + 
       2*sp[p, q]*sp[q, q]^2 + 6*d*sp[p, q]*sp[q, q]^2 - 
       4*n1*sp[p, q]*sp[q, q]^2 - 2*n2*sp[p, q]*sp[q, q]^2 - 
       8*n3*sp[p, q]*sp[q, q]^2 - 6*n4*sp[p, q]*sp[q, q]^2 - 
@@ -431,254 +267,199 @@
       4*n7*sp[p, q]*sp[q, q]^2 - sp[q, q]^3 - 3*d*sp[q, q]^3 + 
       2*n1*sp[q, q]^3 + n2*sp[q, q]^3 + 4*n3*sp[q, q]^3 + 3*n4*sp[q, q]^3 + 
       2*n5*sp[q, q]^3 + n6*sp[q, q]^3 + 2*n7*sp[q, q]^3))/
-    ((-1 + n6)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
-      2*sp[p, q]*sp[q, q] + sp[q, q]^2)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+    ((-1 + n6)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
       sp[q, q]^3)), j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
     (n4_)?NonPositive, (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
-   n5 != 1 -> (-4*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + 
-     sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-     sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
-   (4*j[e0, n1, n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q]))/
-    (sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 
-     4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 
+   n5 != 1 -> (j[e0, n1, n2, -1 + n3, n4, n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(-4*mc^2*sp[p, q]^2 + 
+     4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+     sp[q, q]^3) - (4*mc^2*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*
+     (sp[p, q] - sp[q, q]))/(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + 
+     mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
+   (4*mc^2*j[e0, n1, n2, n3, n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q]))/
+    (4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) - 
-   (4*n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, -1 + n6, n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (4*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (2*n4*j[e0, -1 + n1, n2, n3, 1 + n4, -1 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*n4*j[e0, n1, n2, n3, 1 + n4, -2 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (2*n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*n3*j[e0, n1, n2, 1 + n3, n4, -2 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (n4*j[e0, n1, -1 + n2, n3, 1 + n4, -1 + n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, -1 + n3, n4, n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 
-     4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-     2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-     sp[q, q]^3) + (n4*j[e0, n1, n2, -1 + n3, 1 + n4, -1 + n5, n6, n7]*
-     (-1 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (n7*j[e0, n1, n2, n3, n4, -1 + n5, -1 + n6, 1 + n7]*(1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, n3, n4, -1 + n5, n6, n7]*(sp[p, p] - 2*sp[p, q] + sp[q, q])*
-     (-3 - d + n4 + 3*n5 + n7 - sp[q, q] - d*sp[q, q] + 2*n3*sp[q, q] + 
-      n4*sp[q, q] + n5*sp[q, q] + n7*sp[q, q]))/
-    ((-1 + n5)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
+   (4*mc^2*n4*j[e0, n1, n2, n3, 1 + n4, -1 + n5, n6, -1 + n7]*
+     (sp[p, q] - sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (4*mc^2*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, -1 + n6, 
+      n7]*(sp[p, q] - sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (4*mc^2*n3*j[e0, n1, n2, 1 + n3, n4, -1 + n5, n6, 
+      -1 + n7]*(sp[p, q] - sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (2*mc^2*n4*j[e0, -1 + n1, n2, n3, 1 + n4, -1 + n5, n6, 
+      n7]*(mb^2 - 2*sp[p, q] + sp[q, q]))/
+    ((-1 + n5)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
+   (2*mc^2*n4*j[e0, n1, n2, n3, 1 + n4, -2 + n5, n6, n7]*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (2*mc^2*n3*j[e0, n1, n2, 1 + n3, n4, -2 + n5, n6, n7]*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (n4*j[e0, n1, -1 + n2, n3, 1 + n4, -1 + n5, n6, n7]*
+     (2*mc^2 - sp[q, q])*(mb^2 - 2*sp[p, q] + sp[q, q]))/
+    ((-1 + n5)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (n4*j[e0, n1, n2, -1 + n3, 1 + n4, -1 + n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/((-1 + n5)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) + (n7*j[e0, n1, n2, n3, n4, -1 + n5, -1 + n6, 1 + n7]*
+     sp[q, q]*(mb^2 - 2*sp[p, q] + sp[q, q]))/
+    ((-1 + n5)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
+   (j[e0, n1, n2, n3, n4, -1 + n5, n6, n7]*(mb^2 - 2*sp[p, q] + sp[q, q])*
+     (-2*mc^2 - 2*mc^2*n3 + 2*mc^2*n5 - sp[q, q] - d*sp[q, q] + 
+      2*n3*sp[q, q] + n4*sp[q, q] + n5*sp[q, q] + n7*sp[q, q]))/
+    ((-1 + n5)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; n3 != 1 -> 
-  (2*n4*j[e0, n1, -1 + n2, -1 + n3, 1 + n4, n5, n6, n7]*
-     (sp[p, q] - sp[q, q])^2)/((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (2*n5*j[e0, n1, n2, -2 + n3, n4, 1 + n5, n6, n7]*
-     (sp[p, q] - sp[q, q])^2)/((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (2*n4*j[e0, n1, n2, -2 + n3, 1 + n4, n5, n6, n7]*
-     (sp[p, q] - sp[q, q])^2)/((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) - (n4*j[e0, -1 + n1, n2, -1 + n3, 1 + n4, n5, n6, n7]*
-     (-1 + sp[q, q])*(sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (n4*j[e0, n1, n2, -1 + n3, 1 + n4, -1 + n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
-   (n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, n3, n4, -1 + n5, n6, n7]*(-1 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 
-     4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-     2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-     sp[q, q]^3) + (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, -1 + n6, n7]*
-     (-1 + sp[q, q])*(-sp[p, q] + sp[q, q]))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, n6, -1 + n7]*(-1 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 
-      4*sp[p, q]^2 + sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 
-      2*sp[q, q]^2 + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3)) + (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, -1 + n7]*
-     (-1 + sp[q, q])*(-sp[p, q] + sp[q, q]))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (2*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*(-1 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + 
-     sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-     sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) + 
-   (2*j[e0, n1, n2, n3, n4, n5, n6, -1 + n7]*(-1 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + 
-     sp[q, q] - 2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-     sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3) + 
-   (n7*j[e0, n1, n2, -1 + n3, n4, n5, -1 + n6, 1 + n7]*
-     (-sp[p, p] + 2*sp[p, q] - 2*sp[p, q]^2 - sp[q, q] + sp[p, p]*sp[q, q] + 
+  (j[e0, n1, n2, n3, n4, -1 + n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(-4*mc^2*sp[p, q]^2 + 
+     4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+     sp[q, q]^3) + (2*j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/(-4*mc^2*sp[p, q]^2 + 
+     4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+     sp[q, q]^3) + (2*j[e0, n1, n2, n3, n4, n5, n6, -1 + n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/(-4*mc^2*sp[p, q]^2 + 
+     4*mb^2*mc^2*sp[q, q] - mb^2*sp[q, q]^2 + 2*sp[p, q]*sp[q, q]^2 - 
+     sp[q, q]^3) + (n4*j[e0, -1 + n1, n2, -1 + n3, 1 + n4, n5, n6, n7]*
+     (2*mc^2 - sp[q, q])*(mb^2 - 2*sp[p, q] + sp[q, q]))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (n4*j[e0, n1, n2, -1 + n3, 1 + n4, -1 + n5, n6, n7]*(2*mc^2 - sp[q, q])*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/((-1 + n3)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, -1 + n6, n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (2*n5*j[e0, n1, n2, -1 + n3, n4, 1 + n5, n6, -1 + n7]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-1 + n3)*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3)) - (2*n4*j[e0, n1, n2, -1 + n3, 1 + n4, n5, n6, -1 + n7]*
+     (2*mc^2 - sp[q, q])*(-sp[p, q] + sp[q, q]))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (2*n4*j[e0, n1, -1 + n2, -1 + n3, 1 + n4, n5, n6, n7]*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
       2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
-   (j[e0, n1, n2, -1 + n3, n4, n5, n6, n7]*(sp[p, p] + d*sp[p, p] - 
-      n3*sp[p, p] - n4*sp[p, p] - 2*n5*sp[p, p] - n7*sp[p, p] - 2*sp[p, q] - 
-      2*d*sp[p, q] + 2*n3*sp[p, q] + 2*n4*sp[p, q] + 4*n5*sp[p, q] + 
-      2*n7*sp[p, q] + 4*sp[p, q]^2 + 2*d*sp[p, q]^2 - 4*n3*sp[p, q]^2 - 
-      2*n4*sp[p, q]^2 - 2*n5*sp[p, q]^2 - 2*n7*sp[p, q]^2 + sp[q, q] + 
-      d*sp[q, q] - n3*sp[q, q] - n4*sp[q, q] - 2*n5*sp[q, q] - n7*sp[q, q] - 
-      sp[p, p]*sp[q, q] - d*sp[p, p]*sp[q, q] + n3*sp[p, p]*sp[q, q] + 
-      n4*sp[p, p]*sp[q, q] + 2*n5*sp[p, p]*sp[q, q] + n7*sp[p, p]*sp[q, q] - 
-      6*sp[p, q]*sp[q, q] - 2*d*sp[p, q]*sp[q, q] + 6*n3*sp[p, q]*sp[q, q] + 
-      2*n4*sp[p, q]*sp[q, q] + 2*n7*sp[p, q]*sp[q, q] + 3*sp[q, q]^2 + 
-      d*sp[q, q]^2 - 3*n3*sp[q, q]^2 - n4*sp[q, q]^2 - n7*sp[q, q]^2))/
-    ((-1 + n3)*(sp[p, p] - 2*sp[p, q] + 4*sp[p, q]^2 + sp[q, q] - 
-      2*sp[p, p]*sp[q, q] - 4*sp[p, q]*sp[q, q] + 2*sp[q, q]^2 + 
-      sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
+   (2*n5*j[e0, n1, n2, -2 + n3, n4, 1 + n5, n6, n7]*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) + 
+   (2*n4*j[e0, n1, n2, -2 + n3, 1 + n4, n5, n6, n7]*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (n7*j[e0, n1, n2, -1 + n3, n4, n5, -1 + n6, 1 + n7]*
+     (2*sp[p, q]^2 - mb^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)) - 
+   (j[e0, n1, n2, -1 + n3, n4, n5, n6, n7]*(2*mb^2*mc^2 - 2*mb^2*mc^2*n3 + 
+      2*mb^2*mc^2*n5 - 4*mc^2*sp[p, q] + 4*mc^2*n3*sp[p, q] - 
+      4*mc^2*n5*sp[p, q] - 4*sp[p, q]^2 - 2*d*sp[p, q]^2 + 4*n3*sp[p, q]^2 + 
+      2*n4*sp[p, q]^2 + 2*n5*sp[p, q]^2 + 2*n7*sp[p, q]^2 + mb^2*sp[q, q] + 
+      d*mb^2*sp[q, q] + 2*mc^2*sp[q, q] - mb^2*n3*sp[q, q] - 
+      2*mc^2*n3*sp[q, q] - mb^2*n4*sp[q, q] - 2*mb^2*n5*sp[q, q] + 
+      2*mc^2*n5*sp[q, q] - mb^2*n7*sp[q, q] + 6*sp[p, q]*sp[q, q] + 
+      2*d*sp[p, q]*sp[q, q] - 6*n3*sp[p, q]*sp[q, q] - 
+      2*n4*sp[p, q]*sp[q, q] - 2*n7*sp[p, q]*sp[q, q] - 3*sp[q, q]^2 - 
+      d*sp[q, q]^2 + 3*n3*sp[q, q]^2 + n4*sp[q, q]^2 + n7*sp[q, q]^2))/
+    ((-1 + n3)*(4*mc^2*sp[p, q]^2 - 4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 
+      2*sp[p, q]*sp[q, q]^2 + sp[q, q]^3)), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; n1 != 1 -> 
-  -1/2*(n4*j[e0, -2 + n1, n2, n3, 1 + n4, n5, n6, n7]*
-      (sp[p, p] - 2*sp[p, q] + sp[q, q]))/
-     ((-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 
-       2*sp[p, q]*sp[q, q] - sp[q, q]^2)) - 
-   (n2*j[e0, -2 + n1, 1 + n2, n3, n4, n5, n6, n7]*(sp[p, p] - 2*sp[p, q] + 
-      sp[q, q]))/(2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + 
-      sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
-   (n7*j[e0, -1 + n1, n2, n3, n4, n5, -1 + n6, 1 + n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - ((-2 - d + 2*n1 + n2 + n4 + n6)*
-     j[e0, -1 + n1, n2, n3, n4, n5, n6, n7]*(sp[p, p] - 2*sp[p, q] + 
-      sp[q, q]))/(2*(-1 + n1)*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + 
-      sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
-   (n4*j[e0, -1 + n1, n2, n3, 1 + n4, -1 + n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) - (n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, n7]*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2)) + (n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*
-     (sp[p, q] - sp[q, q]))/((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-      sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q]))/
-    ((-1 + n1)*(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 
+  -1/2*(n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7]*(2*mc^2 - sp[q, q])*
+      (mb^2 - 2*sp[p, q] + sp[q, q]))/((-1 + n1)*
+      (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+       2*sp[p, q]*sp[q, q] - sp[q, q]^2)) + 
+   (n4*j[e0, -1 + n1, n2, n3, 1 + n4, n5, n6, -1 + n7]*(sp[p, q] - sp[q, q]))/
+    ((-1 + n1)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
       2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
-   (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, n6, n7]*(-2 + sp[q, q])*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
-     (-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - sp[q, q] - 2*sp[p, q]*sp[q, q] + 
-      sp[q, q]^2)) + (j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*
-     (-sp[p, q] + sp[q, q]))/(-sp[p, p] + 2*sp[p, q] + sp[p, q]^2 - 
-     sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2), 
+   (n2*j[e0, -1 + n1, 1 + n2, n3, n4, n5, -1 + n6, n7]*(sp[p, q] - sp[q, q]))/
+    ((-1 + n1)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
+   (n4*j[e0, -2 + n1, n2, n3, 1 + n4, n5, n6, n7]*(mb^2 - 2*sp[p, q] + 
+      sp[q, q]))/(2*(-1 + n1)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - 
+      mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
+   (n2*j[e0, -2 + n1, 1 + n2, n3, n4, n5, n6, n7]*(mb^2 - 2*sp[p, q] + 
+      sp[q, q]))/(2*(-1 + n1)*(-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - 
+      mc^2*sp[q, q] - 2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
+   (n7*j[e0, -1 + n1, n2, n3, n4, n5, -1 + n6, 1 + n7]*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
+     (-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
+   ((-2 - d + 2*n1 + n2 + n4 + n6)*j[e0, -1 + n1, n2, n3, n4, n5, n6, n7]*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
+     (-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) - 
+   (n4*j[e0, -1 + n1, n2, n3, 1 + n4, -1 + n5, n6, n7]*
+     (mb^2 - 2*sp[p, q] + sp[q, q]))/(2*(-1 + n1)*
+     (-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+      2*sp[p, q]*sp[q, q] + sp[q, q]^2)) + 
+   (j[e0, n1, n2, n3, n4, n5, -1 + n6, n7]*(-sp[p, q] + sp[q, q]))/
+    (-(mb^2*mc^2) + 2*mc^2*sp[p, q] + sp[p, q]^2 - mc^2*sp[q, q] - 
+     2*sp[p, q]*sp[q, q] + sp[q, q]^2), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
    n1 == 1 && n3 == 1 && n5 == 1 && n6 == 1 && n7 == 1 && n4 != 0 -> 
-  (n4*j[e0, 0, n2, 1, 1 + n4, 1, 1, 1])/(-3 + d - n2 - n4) + 
-   ((1 + n4)*j[e0, 0, n2, 1, 2 + n4, 1, 1, 1])/(-3 + d - n2 - n4) - 
-   (n2*j[e0, 0, 1 + n2, 1, n4, 1, 1, 1])/(3 - d + n2 + n4) - 
-   (n2*j[e0, 0, 1 + n2, 1, 1 + n4, 1, 1, 1])/(3 - d + n2 + n4) + 
+  (n4*j[e0, 0, n2, 1, 1 + n4, 1, 1, 1])/(-3 + d - n2 - n4) - 
+   (n2*j[e0, 0, 1 + n2, 1, n4, 1, 1, 1])/(3 - d + n2 + n4) + 
    j[e0, 1, n2, 1, n4, 1, 0, 2]/(3 - d + n2 + n4) - 
-   (n4*j[e0, 1, n2, 1, 1 + n4, 0, 1, 1])/(-3 + d - n2 - n4) + 
-   j[e0, 1, n2, 1, 1 + n4, 1, 0, 2]/(3 - d + n2 + n4) + 
-   ((1 + n4)*j[e0, 1, n2, 1, 2 + n4, 0, 1, 1])/(3 - d + n2 + n4) + 
-   ((1 + n4)*j[e0, 1, n2, 1, 2 + n4, 1, 1, 1])/(-3 + d - n2 - n4) - 
+   (n4*j[e0, 1, n2, 1, 1 + n4, 0, 1, 1])/(-3 + d - n2 - n4) - 
    (2*n4*j[e0, 1, n2, 1, 1 + n4, 1, 1, 0]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2 - n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
-   (2*(1 + n4)*j[e0, 1, n2, 1, 2 + n4, 1, 1, 0]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2 - n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
+    ((-3 + d - n2 - n4)*(-mb^2 + 2*sp[p, q] - sp[q, q])) - 
    (2*n2*j[e0, 1, 1 + n2, 1, n4, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((3 - d + n2 + n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
-   (2*n2*j[e0, 1, 1 + n2, 1, 1 + n4, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((3 - d + n2 + n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) + 
+    ((3 - d + n2 + n4)*(-mb^2 + 2*sp[p, q] - sp[q, q])) + 
    (2*j[e0, 2, n2, 1, n4, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2 - n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) + 
-   (2*j[e0, 2, n2, 1, 1 + n4, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2 - n4)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) + 
-   (n2*j[e0, 1, 1 + n2, 1, 1 + n4, 1, 1, 1]*(-2 + sp[q, q]))/
-    (3 - d + n2 + n4) + (2*j[e0, 1, n2, 1, 1 + n4, 1, 2, 0]*
-     (sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - 
-      sp[q, q]^2))/((-3 + d - n2 - n4)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) - 
-   (2*n2*j[e0, 1, 1 + n2, 0, 1 + n4, 1, 1, 1]*(sp[p, p] - 2*sp[p, q] - 
-      sp[p, q]^2 + sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    ((3 - d + n2 + n4)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   (2*j[e0, 2, n2, 1, 1 + n4, 0, 1, 1]*(sp[p, p] - 2*sp[p, q] - sp[p, q]^2 + 
-      sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    ((-3 + d - n2 - n4)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   (j[e0, 1, 1 + n2, 1, n4, 1, 1, 1]*(2*n2*sp[p, q]^2 - 
-      n2*sp[p, p]*sp[q, q] - 2*n2*sp[p, q]*sp[q, q] + n2*sp[q, q]^2))/
-    ((-3 + d - n2 - n4)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   (j[e0, 1, n2, 1, 1 + n4, 1, 1, 1]*(-4*sp[p, p] + d*sp[p, p] - 
-      n2*sp[p, p] - 2*n4*sp[p, p] + 8*sp[p, q] - 2*d*sp[p, q] + 
-      2*n2*sp[p, q] + 4*n4*sp[p, q] + 8*sp[p, q]^2 - 2*d*sp[p, q]^2 + 
-      2*n2*sp[p, q]^2 + 4*n4*sp[p, q]^2 - 4*sp[q, q] + d*sp[q, q] - 
-      n2*sp[q, q] - 2*n4*sp[q, q] - 16*sp[p, q]*sp[q, q] + 
-      4*d*sp[p, q]*sp[q, q] - 4*n2*sp[p, q]*sp[q, q] - 
-      8*n4*sp[p, q]*sp[q, q] + 8*sp[q, q]^2 - 2*d*sp[q, q]^2 + 
-      2*n2*sp[q, q]^2 + 4*n4*sp[q, q]^2))/((-3 + d - n2 - n4)*
-     (sp[p, p] - 2*sp[p, q] + sp[q, q])), 
+    ((-3 + d - n2 - n4)*(-mb^2 + 2*sp[p, q] - sp[q, q])) + 
+   (n2*j[e0, 1, 1 + n2, 1, n4, 1, 1, 1]*(-2*sp[p, q]^2 + mb^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2))/((3 - d + n2 + n4)*
+     (mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*(-4 + d - n2 - 2*n4)*j[e0, 1, n2, 1, 1 + n4, 1, 1, 1]*
+     (mb^2*mc^2 - 2*mc^2*sp[p, q] - sp[p, q]^2 + mc^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2))/((-3 + d - n2 - n4)*
+     (mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*j[e0, 1, n2, 1, 1 + n4, 1, 2, 0]*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((-3 + d - n2 - n4)*(mb^2 - 2*sp[p, q] + sp[q, q])) - 
+   (2*n2*j[e0, 1, 1 + n2, 0, 1 + n4, 1, 1, 1]*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((3 - d + n2 + n4)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*j[e0, 2, n2, 1, 1 + n4, 0, 1, 1]*(mb^2*mc^2 - 2*mc^2*sp[p, q] - 
+      sp[p, q]^2 + mc^2*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
+    ((-3 + d - n2 - n4)*(mb^2 - 2*sp[p, q] + sp[q, q])), 
  j[e0, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, (n4_)?NonPositive, 
     (n5_)?Positive, (n6_)?Positive, (n7_)?Positive] /; 
    n1 == 1 && n3 == 1 && n4 == 0 && n5 == 1 && n6 == 1 && n7 == 1 && 
     n2 != 0 -> (n2*j[e0, 0, 1 + n2, 1, 0, 1, 1, 1])/(-3 + d - n2) + 
    j[e0, 1, n2, 1, 0, 1, 0, 2]/(3 - d + n2) + 
-   (2*n2*j[e0, 1, 1 + n2, 1, 0, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) + 
+   ((1 + n2)*j[e0, 0, 2 + n2, 1, 0, 1, 1, 1]*(2*mc^2 - sp[q, q]))/
+    (-3 + d - n2) + (2*n2*j[e0, 1, 1 + n2, 1, 0, 1, 0, 1]*
+     (sp[p, q] - sp[q, q]))/((-3 + d - n2)*(-mb^2 + 2*sp[p, q] - sp[q, q])) + 
    (2*j[e0, 2, n2, 1, 0, 1, 0, 1]*(sp[p, q] - sp[q, q]))/
-    ((-3 + d - n2)*(-sp[p, p] + 2*sp[p, q] - sp[q, q])) - 
-   ((1 + n2)*j[e0, 0, 2 + n2, 1, 0, 1, 1, 1]*(-2 + sp[q, q]))/(-3 + d - n2) - 
-   (2*(1 + n2)*j[e0, 1, 2 + n2, 1, 0, 1, 0, 1]*(-2 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/((-3 + d - n2)*(sp[p, p] - 2*sp[p, q] + 
-      sp[q, q])) - (2*j[e0, 2, 1 + n2, 1, 0, 1, 0, 1]*(-2 + sp[q, q])*
-     (-sp[p, q] + sp[q, q]))/((-3 + d - n2)*(sp[p, p] - 2*sp[p, q] + 
-      sp[q, q])) + (j[e0, 1, 1 + n2, 1, 0, 1, 0, 2]*
-     (-2*sp[p, q]^2 + sp[p, p]*sp[q, q] + 2*sp[p, q]*sp[q, q] - sp[q, q]^2))/
-    ((-3 + d - n2)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
+    ((-3 + d - n2)*(-mb^2 + 2*sp[p, q] - sp[q, q])) + 
+   (2*(1 + n2)*j[e0, 1, 2 + n2, 1, 0, 1, 0, 1]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-3 + d - n2)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (2*j[e0, 2, 1 + n2, 1, 0, 1, 0, 1]*(2*mc^2 - sp[q, q])*
+     (-sp[p, q] + sp[q, q]))/((-3 + d - n2)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   (j[e0, 1, 1 + n2, 1, 0, 1, 0, 2]*(-2*sp[p, q]^2 + mb^2*sp[q, q] + 
+      2*sp[p, q]*sp[q, q] - sp[q, q]^2))/((-3 + d - n2)*
+     (mb^2 - 2*sp[p, q] + sp[q, q])) + 
    (j[e0, 1, 1 + n2, 1, 0, 1, 1, 1]*(8*sp[p, q]^2 - 2*d*sp[p, q]^2 + 
-      4*n2*sp[p, q]^2 - 4*sp[p, p]*sp[q, q] + d*sp[p, p]*sp[q, q] - 
-      2*n2*sp[p, p]*sp[q, q] - 8*sp[p, q]*sp[q, q] + 2*d*sp[p, q]*sp[q, q] - 
+      4*n2*sp[p, q]^2 - 4*mb^2*sp[q, q] + d*mb^2*sp[q, q] - 
+      2*mb^2*n2*sp[q, q] - 8*sp[p, q]*sp[q, q] + 2*d*sp[p, q]*sp[q, q] - 
       4*n2*sp[p, q]*sp[q, q] + 4*sp[q, q]^2 - d*sp[q, q]^2 + 
-      2*n2*sp[q, q]^2))/((-3 + d - n2)*(sp[p, p] - 2*sp[p, q] + sp[q, q])) + 
-   ((1 + n2)*j[e0, 1, 2 + n2, 1, 0, 1, 1, 1]*(4*sp[p, q]^2 - 
-      4*sp[p, p]*sp[q, q] + sp[p, p]*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
-      sp[q, q]^3))/((-3 + d - n2)*(sp[p, p] - 2*sp[p, q] + sp[q, q]))}
+      2*n2*sp[q, q]^2))/((-3 + d - n2)*(mb^2 - 2*sp[p, q] + sp[q, q])) + 
+   ((1 + n2)*j[e0, 1, 2 + n2, 1, 0, 1, 1, 1]*(4*mc^2*sp[p, q]^2 - 
+      4*mb^2*mc^2*sp[q, q] + mb^2*sp[q, q]^2 - 2*sp[p, q]*sp[q, q]^2 + 
+      sp[q, q]^3))/((-3 + d - n2)*(mb^2 - 2*sp[p, q] + sp[q, q]))}
