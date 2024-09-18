@@ -5,11 +5,7 @@
 
 
 (* ::Text:: *)
-(*Automated code to apply EoMs and to convert all scalars to some linear combination of \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], "1"]\)to \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], "13"]\)*)
+(*Automated code to apply EoMs and to convert all scalars in terms of momenta into a basis of P_i propagators*)
 
 
 (* ::Section:: *)
@@ -21,10 +17,7 @@
 
 
 (* ::Text:: *)
-(*Creates amplitude and applies EoM. Takes two arguments - numerator without external propagators and denominator (denominator can be in terms of momenta or \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], *)
-(*StyleBox["i", "TI"]]\))*)
+(*Creates amplitude and applies EoM. Takes two arguments - numerator without external propagators and denominator (denominator can be in terms of momenta or P_i*)
 
 
 (* ::Subsection:: *)
@@ -32,10 +25,7 @@
 
 
 (* ::Text:: *)
-(*Five functions. One for each diagram; function applies rules to convert scalar propagators in amplitude in form of \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], *)
-(*StyleBox["i", "TI"]]\) (takes diagram type and amplitude to reduce as arguments)*)
+(*Five functions. One for each diagram; function applies rules to convert scalar propagators in amplitude into P_i basis (takes diagram type and amplitude to reduce as arguments)*)
 
 
 (* ::Section:: *)
@@ -132,7 +122,7 @@ P12==(l+q+r) . (l+q+r)-mc^2,{l . l,r . r,l . r,l . p,r . p,l . q,r . q}]
 (*Testing*)
 
 
-numeratorE0I = FullSimplify[DiracMatrix[Subscript[\[Gamma], \[Alpha]],\[DoubleStruckCapitalP]L,\[Gamma] . (l+r)+mc \[DoubleStruckOne],Subscript[\[Gamma], \[Nu]],(\[Gamma] . l+mc \[DoubleStruckOne]),Subscript[\[Gamma], \[Nu]],\[Gamma] . (l+r)+mc \[DoubleStruckOne],Subscript[\[Gamma], \[Alpha]],\[DoubleStruckCapitalP]L,\[Gamma] . (p-q)+mb \[DoubleStruckOne],Subscript[\[Gamma], \[Mu]]]]
+numeratorE0I = FullSimplify[DiracMatrix[LTensor[\[Gamma], \[Alpha]],\[DoubleStruckCapitalP]L,\[Gamma] . (l+r)+mc \[DoubleStruckOne],LTensor[\[Gamma], \[Rho]],(\[Gamma] . l+mc \[DoubleStruckOne]),LTensor[\[Gamma], \[Rho]],\[Gamma] . (l+r)+mc \[DoubleStruckOne],LTensor[\[Gamma], \[Alpha]],\[DoubleStruckCapitalP]L,\[Gamma] . (p-q)+mb \[DoubleStruckOne],LTensor[\[Gamma], \[Mu]]]]
 
 
 CreateAmplitude[numeratorE0I,P2 (P3)^2 P4 mb^2]
