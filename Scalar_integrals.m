@@ -5,10 +5,7 @@
 
 
 (* ::Text:: *)
-(*Code to convert from tensor integrals to scalar integral (via tensor reduction). After application of this function scalar integrals are written only in terms of \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], *)
-(*StyleBox["i", "TI"]]\)*)
+(*Code to convert from tensor integrals to scalar integral (via tensor reduction). After application of this function scalar integrals are written only in terms of P_i*)
 
 
 (* ::Section:: *)
@@ -20,10 +17,7 @@
 
 
 (* ::Text:: *)
-(*Five functions, one for each class of diagram. Takes a tensor integrand with all scalars written in terms of \!\(TraditionalForm\`*)
-(*SubscriptBox[*)
-(*StyleBox["P", "TI"], *)
-(*StyleBox["i", "TI"]]\) and converts to a scalar integrand using Passarino-Veltman. Takes two arguments , type of diagram ("a" to "e") and tensor integral to reduce. *)
+(*Five functions, one for each class of diagram. Takes a tensor integrand with all scalars written in terms of P_i and converts to a scalar integrand using Passarino-Veltman. Takes two arguments , type of diagram ("a" to "e") and tensor integral to reduce. *)
 
 
 (* ::Section:: *)
@@ -35,49 +29,45 @@
 
 
 Needs["X`"]
-<<X`
 
 
 (* ::Subsection:: *)
 (*Reductions*)
 
 
-ReduceToScalar["a",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{Subscript[l, \[Mu]]->Subscript[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Mu]]->Subscript[p, \[Mu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-mb^2-P4+P8))-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))}
-/.{Subscript[\[Sigma], \[Mu],{r}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[r, \[Nu]],Subscript[\[Sigma], \[Mu],{l}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[l, \[Nu]]}/.{Subscript[l, \[Nu]]->Subscript[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Nu]]->Subscript[p, \[Nu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-mb^2-P4+P8))-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))})
-/.Subscript[q, \[Nu]]->Subscript[p, \[Nu]]-Subscript[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{Subscript[p, \[Mu]],Subscript[q, \[Mu]],Subscript[\[Gamma], \[Mu]]},FullSimplify]
+ReduceToScalar["a",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{LTensor[l, \[Mu]]->LTensor[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Mu]]->LTensor[p, \[Mu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-mb^2-P4+P8))-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))}
+/.{LTensor[\[Sigma], \[Mu],{r}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[r, \[Nu]],LTensor[\[Sigma], \[Mu],{l}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[l, \[Nu]]}/.{LTensor[l, \[Nu]]->LTensor[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Nu]]->LTensor[p, \[Nu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-mb^2-P4+P8))-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))})
+/.LTensor[q, \[Nu]]->LTensor[p, \[Nu]]-LTensor[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{LTensor[p, \[Mu]],LTensor[q, \[Mu]],LTensor[\[Gamma], \[Mu]]},FullSimplify]
 
 
-ReduceToScalar["b",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{Subscript[l, \[Mu]]->Subscript[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Mu]]->Subscript[p, \[Mu]]((1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))}
-/.{Subscript[\[Sigma], \[Mu],{r}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[r, \[Nu]],Subscript[\[Sigma], \[Mu],{l}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[l, \[Nu]]}/.{Subscript[l, \[Nu]]->Subscript[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Nu]]->Subscript[p, \[Nu]]((1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))})
-/.Subscript[q, \[Nu]]->Subscript[p, \[Nu]]-Subscript[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{Subscript[p, \[Mu]],Subscript[q, \[Mu]],Subscript[\[Gamma], \[Mu]]},FullSimplify]
+ReduceToScalar["b",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{LTensor[l, \[Mu]]->LTensor[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Mu]]->LTensor[p, \[Mu]]((1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))}
+/.{LTensor[\[Sigma], \[Mu],{r}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[r, \[Nu]],LTensor[\[Sigma], \[Mu],{l}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[l, \[Nu]]}/.{LTensor[l, \[Nu]]->LTensor[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((P7+P9)-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Nu]]->LTensor[p, \[Nu]]((1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (mb^2+P10-P4))/(1/2 mb^2-1/2 q^2))})
+/.LTensor[q, \[Nu]]->LTensor[p, \[Nu]]-LTensor[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{LTensor[p, \[Mu]],LTensor[q, \[Mu]],LTensor[\[Gamma], \[Mu]]},FullSimplify]
 
 
-ReduceToScalar["c",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{Subscript[l, \[Mu]]->Subscript[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Mu]]->Subscript[p, \[Mu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-P4+P5)+P6)-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))}
-/.{Subscript[\[Sigma], \[Mu],{r}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[r, \[Nu]],Subscript[\[Sigma], \[Mu],{l}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[l, \[Nu]]}/.{Subscript[l, \[Nu]]->Subscript[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Nu]]->Subscript[p, \[Nu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-P4+P5)+P6)-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))})
-/.Subscript[q, \[Nu]]->Subscript[p, \[Nu]]-Subscript[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{Subscript[p, \[Mu]],Subscript[q, \[Mu]],Subscript[\[Gamma], \[Mu]]},FullSimplify]
+ReduceToScalar["c",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{LTensor[l, \[Mu]]->LTensor[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Mu]]->LTensor[p, \[Mu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-P4+P5)+P6)-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))}
+/.{LTensor[\[Sigma], \[Mu],{r}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[r, \[Nu]],LTensor[\[Sigma], \[Mu],{l}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[l, \[Nu]]}/.{LTensor[l, \[Nu]]->LTensor[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Nu]]->LTensor[p, \[Nu]]((1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (-P4+P5)+P6)-mb^2 (1/2 (-P4+P5))/(1/2 mb^2-1/2 q^2))})
+/.LTensor[q, \[Nu]]->LTensor[p, \[Nu]]-LTensor[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{LTensor[p, \[Mu]],LTensor[q, \[Mu]],LTensor[\[Gamma], \[Mu]]},FullSimplify]
 
 
-{P7,1/2 (P1-P2+2 P7-q . q),1/2 (P11-P4-2 P6),(P11-P4)/2}
+ReduceToScalar["d",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{SLTensor[l, \[Mu]]->LTensor[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Mu]]->LTensor[p, \[Mu]]((1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))}
+/.{LTensor[\[Sigma], \[Mu],{r}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[r, \[Nu]],LTensor[\[Sigma], \[Mu],{l}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[l, \[Nu]]}/.{LTensor[l, \[Nu]]->LTensor[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Nu]]->LTensor[p, \[Nu]]((1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))})
+/.LTensor[q, \[Nu]]->LTensor[p, \[Nu]]-LTensor[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{LTensor[p, \[Mu]],LTensor[q, \[Mu]],LTensor[\[Gamma], \[Mu]]},FullSimplify]
 
 
-ReduceToScalar["d",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{Subscript[l, \[Mu]]->Subscript[p, \[Mu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Mu]]->Subscript[p, \[Mu]]((1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))}
-/.{Subscript[\[Sigma], \[Mu],{r}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[r, \[Nu]],Subscript[\[Sigma], \[Mu],{l}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[l, \[Nu]]}/.{Subscript[l, \[Nu]]->Subscript[p, \[Nu]]((P7)/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) ((1/2 (P1-P2+2 P7-q . q))-mb^2 (P7)/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Nu]]->Subscript[p, \[Nu]]((1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (((P11-P4)/2)-mb^2 (1/2 (P11-P4-2 P6))/(1/2 mb^2-1/2 q^2))})
-/.Subscript[q, \[Nu]]->Subscript[p, \[Nu]]-Subscript[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{Subscript[p, \[Mu]],Subscript[q, \[Mu]],Subscript[\[Gamma], \[Mu]]},FullSimplify]
-
-
-ReduceToScalar["e",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{Subscript[l, \[Mu]]->Subscript[p, \[Mu]](P7/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (P7+1/2 (P1-P2-q^2)-mb^2 P7/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Mu]]->Subscript[p, \[Mu]](P13/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Mu]]-Subscript[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (P13+1/2 (P12-P3-P1+P2)-mb^2 P13/(1/2 mb^2-1/2 q^2))}
-/.{Subscript[\[Sigma], \[Mu],{r}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[r, \[Nu]],Subscript[\[Sigma], \[Mu],{l}]->Subscript[\[Sigma], \[Mu],\[Nu]] Subscript[l, \[Nu]]}/.{Subscript[l, \[Nu]]->Subscript[p, \[Nu]](P7/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (P7+1/2 (P1-P2-q^2)-mb^2 P7/(1/2 mb^2-1/2 q^2)),
-Subscript[r, \[Nu]]->Subscript[p, \[Nu]](P13/(1/2 mb^2-1/2 q^2))+(Subscript[p, \[Nu]]-Subscript[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (P13+1/2 (P12-P3-P1+P2)-mb^2 P13/(1/2 mb^2-1/2 q^2))})
-/.Subscript[q, \[Nu]]->Subscript[p, \[Nu]]-Subscript[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{Subscript[p, \[Mu]],Subscript[q, \[Mu]],Subscript[\[Gamma], \[Mu]]},FullSimplify]
+ReduceToScalar["e",pAmp_]:=Collect[FermionLineExpand[(pAmp /.{LTensor[l, \[Mu]]->LTensor[p, \[Mu]](P7/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (P7+1/2 (P1-P2-q^2)-mb^2 P7/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Mu]]->LTensor[p, \[Mu]](P13/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Mu]]-LTensor[q, \[Mu]]) 1/(1/2 mb^2-1/2 q^2) (P13+1/2 (P12-P3-P1+P2)-mb^2 P13/(1/2 mb^2-1/2 q^2))}
+/.{LTensor[\[Sigma], \[Mu],{r}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[r, \[Nu]],LTensor[\[Sigma], \[Mu],{l}]->LTensor[\[Sigma], \[Mu],\[Nu]] LTensor[l, \[Nu]]}/.{LTensor[l, \[Nu]]->LTensor[p, \[Nu]](P7/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (P7+1/2 (P1-P2-q^2)-mb^2 P7/(1/2 mb^2-1/2 q^2)),
+LTensor[r, \[Nu]]->LTensor[p, \[Nu]](P13/(1/2 mb^2-1/2 q^2))+(LTensor[p, \[Nu]]-LTensor[q, \[Nu]]) 1/(1/2 mb^2-1/2 q^2) (P13+1/2 (P12-P3-P1+P2)-mb^2 P13/(1/2 mb^2-1/2 q^2))})
+/.LTensor[q, \[Nu]]->LTensor[p, \[Nu]]-LTensor[k, \[Nu]]/.p-q->k//Contract,GordonIdentity->False]/.k->p-q,{LTensor[p, \[Mu]],LTensor[q, \[Mu]],LTensor[\[Gamma], \[Mu]]},FullSimplify]
 
 
 (* ::Section:: *)
@@ -312,10 +302,10 @@ p . r->1/2 (-P1+P12+2 P13+P2-P3),l . q->1/2 (P1-P2-q . q),q . r->1/2 (-P1+P12+P2
 (*Testing*)
 
 
-pAmpE0i=((-2+\[ScriptD]) (2 (-2+\[ScriptD]) P13 (P2+P3-P4)+2 (-2+\[ScriptD]) (P2-P4) P7-8 mc^2 (P13+P7)) \[LeftAngleBracket]\[ScriptU][p-q,0],Subscript[\[Gamma], \[Mu]],\[DoubleStruckCapitalP]L,\[ScriptU][p,mb]\[RightAngleBracket])/(mb^2 P2 P3^2 P4)+
-1/(mb^2 P2 P3^2 P4) (-2+\[ScriptD]) (I (-2+\[ScriptD]) mb (P2-P4) \[LeftAngleBracket]\[ScriptU][p-q,0],Subscript[\[Sigma], \[Mu],{l}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]+I (-2+\[ScriptD]) mb (P2+P3-P4) \[LeftAngleBracket]\[ScriptU][p-q,0],Subscript[\[Sigma], \[Mu],{r}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]-
-4 I mb mc^2 (\[LeftAngleBracket]\[ScriptU][p-q,0],Subscript[\[Sigma], \[Mu],{l}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]+\[LeftAngleBracket]\[ScriptU][p-q,0],Subscript[\[Sigma], \[Mu],{r}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]))+((-2+\[ScriptD]) (-4 mc^2+(-2+\[ScriptD]) (P2-P4)) \[LeftAngleBracket]\[ScriptU][p-q,0],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket] Subscript[l, \[Mu]])/(mb P2 P3^2 P4)+
-((-2+\[ScriptD]) (-4 mc^2+(-2+\[ScriptD]) (P2+P3-P4)) \[LeftAngleBracket]\[ScriptU][p-q,0],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket] Subscript[r, \[Mu]])/(mb P2 P3^2 P4)
+pAmpE0i=((-2+\[ScriptD]) (2 (-2+\[ScriptD]) P13 (P2+P3-P4)+2 (-2+\[ScriptD]) (P2-P4) P7-8 mc^2 (P13+P7)) \[LeftAngleBracket]\[ScriptU][p-q,0],LTensor[\[Gamma], \[Mu]],\[DoubleStruckCapitalP]L,\[ScriptU][p,mb]\[RightAngleBracket])/(mb^2 P2 P3^2 P4)+
+1/(mb^2 P2 P3^2 P4) (-2+\[ScriptD]) (I (-2+\[ScriptD]) mb (P2-P4) \[LeftAngleBracket]\[ScriptU][p-q,0],LTensor[\[Sigma], \[Mu],{l}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]+I (-2+\[ScriptD]) mb (P2+P3-P4) \[LeftAngleBracket]\[ScriptU][p-q,0],LTensor[\[Sigma], \[Mu],{r}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]-
+4 I mb mc^2 (\[LeftAngleBracket]\[ScriptU][p-q,0],LTensor[\[Sigma], \[Mu],{l}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]+\[LeftAngleBracket]\[ScriptU][p-q,0],LTensor[\[Sigma], \[Mu],{r}],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket]))+((-2+\[ScriptD]) (-4 mc^2+(-2+\[ScriptD]) (P2-P4)) \[LeftAngleBracket]\[ScriptU][p-q,0],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket] LTensor[l, \[Mu]])/(mb P2 P3^2 P4)+
+((-2+\[ScriptD]) (-4 mc^2+(-2+\[ScriptD]) (P2+P3-P4)) \[LeftAngleBracket]\[ScriptU][p-q,0],\[DoubleStruckCapitalP]R,\[ScriptU][p,mb]\[RightAngleBracket] LTensor[r, \[Mu]])/(mb P2 P3^2 P4)
 
 
 ReduceToScalar["e",pAmpE0i]
